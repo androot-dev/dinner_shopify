@@ -46,7 +46,7 @@
       },
       {
         "id": "primary_color",
-        "type": "color_background",
+        "type": "color",
         "label": "primary color",
         "default": "#FF9900"
       },
