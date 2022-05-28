@@ -60,7 +60,13 @@
         "id": "secondary_color",
         "type": "color",
         "label": "Secondary Dark",
-        "default": "#383838;"
+        "default": "#383838"
+      },
+      {
+        "id": "secondary_color_dark",
+        "type": "color",
+        "label": "Secondary Dark",
+        "default": "#2d2d2d"
       },
       {
         "type": "header",
