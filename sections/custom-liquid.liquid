@@ -3,7 +3,10 @@
   padding-top: calc({{ section.settings.padding_top }}px * 0.75);
   padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
 }
-
+.section-{{ section.id }} {
+  background-color: {{ section.settings.background-color }};
+  height:auto;
+}
 @media screen and (min-width: 750px) {
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top }}px;
@@ -11,11 +14,10 @@
   }
 }
 {%- endstyle -%}
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="section-{{ section.id }}-padding">
-    {{ section.settings.custom_liquid }}
-  </div>
-</div>
+
+  <section class="section-{{ section.id }}-padding section-{{ section.id }}">
+    sadfsdfasldfihsdfihsdofihsdofihsfoisdfoisdjfoisdjfoisdjfoisdjfosfjosdjifosdjif
+  </section>
 
 {% schema %}
 {
@@ -24,38 +26,13 @@
   "class": "section",
   "settings": [
     {
-      "type": "liquid",
-      "id": "custom_liquid",
-      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
-      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+      "type": "header",
+      "content": "Custom Colors"
     },
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
+        "id": "background-color",
+        "type": "color",
+        "label": "Background Color"
     },
     {
       "type": "header",
@@ -84,7 +61,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.custom-liquid.presets.name"
+      "name": "Custom Liquid",
     }
   ]
 }
