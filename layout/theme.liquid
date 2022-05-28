@@ -50,6 +50,29 @@
     %}
 
     {% style %}
+/* MY CUSTOM FONT */
+      @font-face {
+        font-family: "Kanit";
+        src: url("Kanit-Regular.ttf") format("truetype");
+        font-display: block;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Kanit-Bold";
+        src: url("{{"Kanit-Bold.ttf" || asset_url }}") format("truetype");
+        font-display: block;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Poppins-Bold";
+        src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+        font-display: block;
+        font-style: normal;
+      }
+/* END MY CUSTOM FONT */
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -166,12 +189,12 @@
         --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
         --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
         --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
-
+ /* MY CUSTOM VAR */
         --primary: {{ settings.primary_color }};
         --primary_color_dark: {{ settings.primary_color_dark }};
         --secondary: {{ settings.secondary_color }};
         --secondary_color_dark: {{ settings.secondary_color_dark }};
-        
+/*END MY CUSTOM VAR */        
         
       }
 
