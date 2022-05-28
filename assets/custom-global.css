@@ -38,26 +38,7 @@
   }
 }
 
-@font-face {
-  font-family: "Kanit";
-  src: url("../fonts/Kanit-Regular.ttf") format("truetype");
-  font-display: block;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Kanit-Bold";
-  src: url("../fonts/Kanit-Bold.ttf") format("truetype");
-  font-display: block;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins-Bold";
-  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
-  font-display: block;
-  font-style: normal;
-}
 
 .border-menu {
   -webkit-box-sizing: border-box;
