@@ -53,7 +53,7 @@
 /* MY CUSTOM FONT */
       @font-face {
         font-family: "Kanit";
-        src: url({{"Kanit-Regular.ttf"}}) format("truetype");
+        src: url({{"Kanit-Regular.ttf" | asset_url }}) format("truetype");
         font-display: block;
         font-style: normal;
       }
@@ -67,7 +67,7 @@
 
       @font-face {
         font-family: "Poppins-Bold";
-        src: url({{ "Poppins-Bold.ttf" }}) format("truetype");
+        src: url({{ "Poppins-Bold.ttf" | asset_url }}) format("truetype");
         font-display: block;
         font-style: normal;
       }
