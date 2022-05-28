@@ -47,7 +47,8 @@
       {
         "id": "primary_color",
         "type": "color_background",
-        "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
+        "label": "primary color",
+        "default": "#FF9900"
       },
       {
         "type": "header",
