@@ -47,8 +47,20 @@
       {
         "id": "primary_color",
         "type": "color",
-        "label": "primary color",
+        "label": "Primary Color",
         "default": "#FF9900"
+      },
+      {
+        "id": "primary_color_dark",
+        "type": "color",
+        "label": "Primary Dark",
+        "default": "#D88100"
+      },
+      {
+        "id": "secondary_color",
+        "type": "color",
+        "label": "Secondary Dark",
+        "default": "#383838;"
       },
       {
         "type": "header",
