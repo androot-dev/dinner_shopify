@@ -12,6 +12,34 @@
     "settings": [
       {
         "type": "header",
+        "content": "CUSTOM COLORS"
+      },
+      {
+        "id": "primary_color",
+        "type": "color",
+        "label": "Primary Color",
+        "default": "#FF9900"
+      },
+      {
+        "id": "primary_color_dark",
+        "type": "color",
+        "label": "Primary Dark",
+        "default": "#D88100"
+      },
+      {
+        "id": "secondary_color",
+        "type": "color",
+        "label": "Secondary Dark",
+        "default": "#383838"
+      },
+      {
+        "id": "secondary_color_dark",
+        "type": "color",
+        "label": "Secondary Dark",
+        "default": "#2d2d2d"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
@@ -43,30 +71,6 @@
         "id": "gradient_accent_2",
         "type": "color_background",
         "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
-      },
-      {
-        "id": "primary_color",
-        "type": "color",
-        "label": "Primary Color",
-        "default": "#FF9900"
-      },
-      {
-        "id": "primary_color_dark",
-        "type": "color",
-        "label": "Primary Dark",
-        "default": "#D88100"
-      },
-      {
-        "id": "secondary_color",
-        "type": "color",
-        "label": "Secondary Dark",
-        "default": "#383838"
-      },
-      {
-        "id": "secondary_color_dark",
-        "type": "color",
-        "label": "Secondary Dark",
-        "default": "#2d2d2d"
       },
       {
         "type": "header",
