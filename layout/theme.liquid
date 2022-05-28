@@ -53,21 +53,21 @@
 /* MY CUSTOM FONT */
       @font-face {
         font-family: "Kanit";
-        src: url("Kanit-Regular.ttf") format("truetype");
+        src: url({{"Kanit-Regular.ttf"}}) format("truetype");
         font-display: block;
         font-style: normal;
       }
 
       @font-face {
         font-family: "Kanit-Bold";
-        src: url("{{ "Kanit-Bold.ttf" | asset_url }}") format("truetype");
+        src: url({{ "Kanit-Bold.ttf" | asset_url }}) format("truetype");
         font-display: block;
         font-style: normal;
       }
 
       @font-face {
         font-family: "Poppins-Bold";
-        src: url("{{"Poppins-Bold.ttf"}}") format("truetype");
+        src: url({{ "Poppins-Bold.ttf" }}) format("truetype");
         font-display: block;
         font-style: normal;
       }
