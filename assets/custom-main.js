@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", function(){
             var loader = document.querySelector('.loader');
             if (loader) {
               let containerLoader = document.querySelector('.container-loader');
-        
+               containerLoader.style.opacity = "0";
+                setTimeout(function () {
+                    console.log(containerLoader)
+                  containerLoader.style.display = "none";
+                }, 200);
             }
             document.body.style.overflowY = 'visible';
         });
