@@ -1,6 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function(){
+    alert("DOM LOAD")
     window.addEventListener("pageshow", function () {  
+        alert("PAGE LOAD")
             var loader = document.querySelector('.loader');
             if (loader) {
               let containerLoader = document.querySelector('.container-loader');
