@@ -45,6 +45,11 @@
         "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
       },
       {
+        "id": "primary_color",
+        "type": "color_background",
+        "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },
