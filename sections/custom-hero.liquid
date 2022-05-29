@@ -160,11 +160,9 @@
                     {% if block.settings.type == "item_social" %}
                 <li><a target="_blank"
                         href="{{block.settings.social_link}}">{{block.settings.social_label}}</a></li>
-                <?php endwhile; ?>
+                    {% endif %}
+                {% endfor %}
             </ul>
-            <?php endif; ?>
+       
         </div>
-    
-        <?php endwhile; ?>
-        <?php endif; ?>
   </section>
