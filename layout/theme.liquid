@@ -8,16 +8,7 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
     
-    <!-- 
-    REF
-    -->
-    <link rel="stylesheet" href="{{ 'owl.carousel.css' | asset_url}}">
-    <link rel="stylesheet" href="{{'owl.theme.default.min.css' | asset_url}}">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="{{ 'bootstrap-4.6.min.css' | asset_url}}">
-    <link rel="stylesheet" href="{{ 'custom-global.css' | asset_url}}">
-    <link rel="stylesheet" href="{{ 'custom-styles.css' | asset_url }}">
-    <!--END REF -->
+ 
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -233,6 +224,8 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    
+ 
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -250,6 +243,18 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
+
+          <!-- 
+    REF
+    -->
+    {{ 'owl.carousel.css' | asset_url  | stylesheet_tag  }}
+    {{ 'owl.theme.default.min.css' | asset_url  | stylesheet_tag  }}
+    {{ 'bootstrap-4.6.min.css' | asset_url  | stylesheet_tag  }}
+    {{ 'custom-global.css' | asset_url  | stylesheet_tag  }}
+    {{ 'custom-styles.css' | asset_url  | stylesheet_tag  }}
+
+    <!--END REF -->
   </head>
 
   <body class="gradient">
