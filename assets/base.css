@@ -2822,7 +2822,7 @@ details-disclosure > details {
 }
 
 details[open] .modal-overlay:after{
-  background: #e1d2d22b !important;
+ background: #02020252!important
 }
 predictive-search[open] .predictive-search{
   display: block;
@@ -2876,4 +2876,8 @@ predictive-search[open] .predictive-search{
   .search__input.field__input{
     border: solid 1px #ededed;
   }
+  .search-modal.modal__content{
+  	background: #0000004f
+  }
+ 
 /* MY OVERWRITE STYLES */
