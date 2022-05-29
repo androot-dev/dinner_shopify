@@ -222,7 +222,7 @@ footer .my-logo {
               <h2 class="text-md-left text-center">{{block.settings.heading}}</h2>
               <ul class="quick-links">
                 
-              {% for link in block.settings.menu %}
+              {% for link in linklists[block.settings.menu].links %}
                     <li>
                         <a href="{{link.url}}">{{link.title}}</a>
                     </li>
