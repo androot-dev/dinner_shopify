@@ -1274,7 +1274,6 @@ button.shopify-payment-button__button--unbranded {
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
-  --border-offset: 1.3px;
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
 }
@@ -1515,8 +1514,8 @@ details[open] > .share-button__fallback {
 
 .share-button__fallback .field__input:focus,
 .share-button__fallback .field__input:-webkit-autofill {
-  outline: 0.2rem solid rgba(var(--color-foreground),.5);
-  outline-offset: 0.1rem;
+  /*outline: 0.2rem solid rgba(var(--color-foreground),.5);
+  outline-offset: 0.1rem;*/
   box-shadow: 0 0 0 0.1rem rgb(var(--color-background)),0 0 0.5rem 0.4rem rgba(var(--color-foreground),.3);
 }
 
@@ -1639,7 +1638,7 @@ details[open] > .share-button__fallback {
 .customer .field input:focus,
 .customer select:focus,
 .localization-form__select:focus.localization-form__select:after {
-  box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
+  /*box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));*/
   outline: 0;
   border-radius: var(--inputs-radius);
 }
@@ -2815,7 +2814,6 @@ details-disclosure > details {
   background-color: white;
   padding: 10px;
   border: none;
-  outline-color: #FF9900;
   font-family: "Kanit", sans-serif;
   font-size: 1em;
   font-style: normal;
