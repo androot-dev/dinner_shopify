@@ -64,30 +64,6 @@
         "padding_bottom": 0
       }
     },
-    "1653855621992d0dec": {
-      "type": "custom-herosubpage",
-      "disabled": true,
-      "blocks": {
-        "31313df6-a5fa-4c85-95f5-59f54ea88774": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Facebook",
-            "social_link": "https:\/\/www.facebook.com"
-          }
-        }
-      },
-      "block_order": [
-        "31313df6-a5fa-4c85-95f5-59f54ea88774"
-      ],
-      "settings": {
-        "video-hero": "",
-        "title-page": "",
-        "banner-text": "DELICIOUS FOOD",
-        "background-color": "radial-gradient(rgba(121, 128, 252, 1), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "1653859416754852bf": {
       "type": "custom-bestsellers",
       "blocks": {
@@ -96,10 +72,17 @@
           "settings": {
             "best_product": "gourmet-dish-1"
           }
+        },
+        "2f0a7ca4-2704-471b-9eb1-133a256ce7d7": {
+          "type": "best_product",
+          "settings": {
+            "best_product": "gourmet"
+          }
         }
       },
       "block_order": [
-        "476213eb-1f14-4395-ae82-53c2e346a150"
+        "476213eb-1f14-4395-ae82-53c2e346a150",
+        "2f0a7ca4-2704-471b-9eb1-133a256ce7d7"
       ],
       "settings": {
         "title-section": "Best Sellers",
@@ -107,13 +90,12 @@
         "description": "<p>In our menu you will find the best dishes in the whole city, dishes made with fresh ingredients and excellent quality, and selected with great care to offer you unique dishes, so that you live with us a unique experience<\/p>",
         "background-color": "#ffffff",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
       }
     }
   },
   "order": [
     "165379797322edf4d0",
-    "1653855621992d0dec",
     "1653859416754852bf"
   ]
 }
