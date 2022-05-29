@@ -88,12 +88,13 @@
   }
 
         header .logo-top {
-            background-image: url({{section.setting}});
+            background-image: url({{section.setting.logo_up | img_url: "master"}});
         }
 
         .topheader-with-background .logo-top {
-            <?php if ($logo_fixed): ?> background-image: url(<?php echo $logo_fixed ?>);
-            <?php endif ?>
+            {% if section.settings.logo_fixed  %} 
+              background-image: url({{ section.setting.logo_fixed | img_url: "master"}});
+            {% endif %}
         }
 
         .modal-menu .my-logo-mobile-menu {
