@@ -31,7 +31,7 @@
                     <h1 class="title-section">{{ section.settings.title_section }}</h1>
                     <h2 class="title">{{ section.settings.subtitle }}</h2>
                     <p>
-                        <?php the_field( 'description' ); ?>
+                        {{ section.settings.description }}
                     </p>
                     <?php $button_action_2 = get_field( 'button_action_2' ); ?>
                     <?php if ( $button_action_2 ) : ?>
