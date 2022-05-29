@@ -2010,6 +2010,9 @@ input[type='checkbox'] {
   height: 4.4rem;
   width: 4.4rem;
   background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 23px;
 }
 
 .modal__close-button .icon {
