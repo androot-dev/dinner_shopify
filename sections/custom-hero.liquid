@@ -38,14 +38,58 @@
         "id": "line-title-1",
         "type": "text",
         "label": "Line Title 1",
-        "default": "ONLY GIVE THE BEST",
+        "default": "ONLY GIVE THE BEST"
     },
     {
         "id": "line-title-2",
         "type": "text",
         "label": "Line Title 2",
-        "default": "TO YOUR PALATE",
+        "default": "TO YOUR PALATE"
     },
+    {
+        "id": "banner-text",
+        "type": "text",
+        "label": "Banner Text",
+        "default":"DELICIOUS FOOD"
+    }
+    ],
+    "blocks": [
+        {
+            "type": "button",
+            "name": "button",
+            "limit": 1,
+            "settings": [
+              {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "Button text"
+              },
+              {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button_link"
+              }
+            ],
+            "type": "text",
+            "id": "social-bar",
+            "label": "Social Item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "social_label",
+                    "default": "Facebook",
+                    "label": "Red Social"
+                },
+                {
+                    "type": "url",
+                    "id": "social_link",
+                    "label": "Social Link"
+                }
+            ]
+
+        }
+      ],
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
