@@ -2,6 +2,7 @@
   "sections": {
     "165379797322edf4d0": {
       "type": "custom-hero",
+      "disabled": true,
       "blocks": {
         "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897": {
           "type": "button",
@@ -31,9 +32,33 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "1653855621992d0dec": {
+      "type": "custom-herosubpage",
+      "blocks": {
+        "31313df6-a5fa-4c85-95f5-59f54ea88774": {
+          "type": "item_social",
+          "settings": {
+            "social_label": "Facebook",
+            "social_link": "https:\/\/www.facebook.com"
+          }
+        }
+      },
+      "block_order": [
+        "31313df6-a5fa-4c85-95f5-59f54ea88774"
+      ],
+      "settings": {
+        "video-hero": "",
+        "title-page": "",
+        "banner-text": "DELICIOUS FOOD",
+        "background-color": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "165379797322edf4d0"
+    "165379797322edf4d0",
+    "1653855621992d0dec"
   ]
 }
