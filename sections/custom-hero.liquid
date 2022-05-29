@@ -17,16 +17,8 @@
 
   <section class="my-section hero section-{{ section.id }}-padding section-{{ section.id }}">
     
-    <?php if ( have_rows( 'hero', 'option' ) ) : ?>
-        <?php while ( have_rows( 'hero', 'option' ) ) : the_row(); ?>
-        <?php
-             $video = get_sub_field( 'video' );
-             if(get_field("change_hero_video")){
-                 $video = get_field("change_hero_video");
-             }
-         ?>
         <video autoplay="autoplay" class="video-background" loop="loop" muted playsinline="playsinline"
-            src="<?php echo $video; ?>"></video>
+            src="{{ section.settings.video-hero }}"></video>
         <div class="hero-action">
             <div class="text">
                 <h1 class="first-text"><?php the_field( 'line_title_1' ); ?></h1>
