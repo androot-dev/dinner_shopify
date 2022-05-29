@@ -165,6 +165,14 @@
               "url": "https:\/\/www.youtube.com"
             }
           },
+          "0784e13c-460d-4225-926d-483e40e20f8e": {
+            "type": "more_information",
+            "settings": {
+              "url": "https:\/\/www.google.com\/maps",
+              "label": "5191 Eastside Hwy Stevensville, MT 59870",
+              "icon": "bxs-map"
+            }
+          },
           "7b288d19-ec46-49ae-a818-0b599cd8ee48": {
             "type": "more_information",
             "settings": {
@@ -180,14 +188,6 @@
               "label": "000005555",
               "icon": "bxs-phone"
             }
-          },
-          "0784e13c-460d-4225-926d-483e40e20f8e": {
-            "type": "more_information",
-            "settings": {
-              "url": "https:\/\/www.google.com\/maps",
-              "label": "5191 Eastside Hwy Stevensville, MT 59870",
-              "icon": "bxs-map"
-            }
           }
         },
         "block_order": [
@@ -195,9 +195,9 @@
           "d8525b3f-50e2-42f8-8b0e-0240ec02c294",
           "71da192a-c2c4-4438-856d-1ec72d528ceb",
           "e34dcb05-d445-4ce2-aa3e-cb7839aa20b3",
+          "0784e13c-460d-4225-926d-483e40e20f8e",
           "7b288d19-ec46-49ae-a818-0b599cd8ee48",
-          "7224ee27-0b91-4275-9bd3-9a44d8027a61",
-          "0784e13c-460d-4225-926d-483e40e20f8e"
+          "7224ee27-0b91-4275-9bd3-9a44d8027a61"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo_blanco_amarillo.png",
