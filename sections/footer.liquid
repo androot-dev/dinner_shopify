@@ -50,7 +50,7 @@ footer {
 .my-logo {
   width: 100px;
   height: 100px;
-  background-image: url("../logo blanco amarillo.png") !important;
+  background-image: url({{section.settings.logo}}) !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,7 +196,7 @@ footer .my-logo {
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding my-section container-fluid m-0 p-0 d-flex flex-wrap bg-footer text-white">
   <div class="row w-100 py-5 m-0">
 
-    
+    {% if section.settings.logo %}
       <div class="col-md-4 col-12 ">
           <div class="row justify-content-center">
               <div class="my-logo"> </div>
@@ -213,6 +213,7 @@ footer .my-logo {
           </div>
 
       </div>
+    {% endif %}
 
       {% for block in section.blocks %}
         {% if block.type == 'quick_links' %}
