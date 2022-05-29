@@ -468,7 +468,7 @@ header .topheader a i:hover {
   color: #FF9900;
 }
 
-header .topheader nav {
+header .topheader > nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,7 +489,7 @@ header .topheader nav {
   margin-right: 60px !important;
 }
 
-header .topheader nav ul {
+header .topheader > nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +507,7 @@ header .topheader nav ul {
           justify-content: center;
 }
 
-header .topheader nav ul li {
+header .topheader > nav ul li {
   font-family: "Kanit-Bold", sans-serif;
   font-size: 0.75em;
   font-style: normal;
@@ -515,7 +515,7 @@ header .topheader nav ul li {
   color: white;
 }
 
-header .topheader nav ul li a {
+header .topheader > nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,17 +537,17 @@ header .topheader nav ul li a {
   white-space: pre;
 }
 
-header .topheader nav ul i {
+header .topheader > nav ul i {
   font-size: 1.2em;
 }
 
-header .topheader nav ul .line-menu {
+header .topheader > nav ul .line-menu {
   height: 26px;
   width: 1px;
   background-color: white;
 }
 
-header .topheader nav .icon-menu {
+header .topheader > nav .icon-menu {
   width: calc(350px - 60px);
   min-width: calc(350px - 60px);
   display: -webkit-box;
@@ -567,49 +567,49 @@ header .topheader nav .icon-menu {
           justify-content: center;
 }
 
-header .topheader nav .text-menu {
+header .topheader > nav .text-menu {
   padding-right: 8% !important;
 }
 
 @media screen and (max-width: 850px) {
-  header .topheader nav .text-menu {
+  header .topheader > nav .text-menu {
     padding-right: 1% !important;
   }
 }
 
 @media (max-width: 767px) {
-  header .topheader nav .text-menu {
+  header .topheader > nav .text-menu {
     padding-right: 0 !important;
   }
 }
 
 @media (max-width: 767px) {
-  header .topheader nav {
+  header .topheader > nav {
     width: calc(200px - 50px) !important;
     margin-right: 50px !important;
   }
-  header .topheader nav ul {
+  header .topheader > nav ul {
     width: calc(200px - 50px) !important;
     min-width: calc(200px - 50px) !important;
   }
-  header .topheader nav .tablets-hide {
+  header .topheader > nav .tablets-hide {
     display: none !important;
   }
-  header .topheader nav .icon-menu {
+  header .topheader > nav .icon-menu {
     width: calc(200px - 50px);
     min-width: calc(200px - 50px);
   }
 }
 
 @media (max-width: 360px) {
-  header .topheader nav {
+  header .topheader > nav {
     width: calc(180px - 30px) !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 30px !important;
   }
-  header .topheader nav .icon-menu {
+  header .topheader > nav .icon-menu {
     width: calc(180px - 30px);
   }
 }
