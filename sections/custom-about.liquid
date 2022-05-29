@@ -151,7 +151,7 @@
             <div class="about-img col-sm-5 col-12 p-0 m-0 order-sm-1 order-2">
                 <div class="img-background ">
                     {% if section.settings.image %}
-                         <img src="{{ section.settings.image.url | img_url : "master" }}" alt="Delicious Food" />
+                         <img src="{{ section.settings.image | img_url : "master" }}" alt="Delicious Food" />
                     {% endif %}
                 </div>
             </div>
