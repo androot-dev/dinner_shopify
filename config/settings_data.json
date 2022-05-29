@@ -128,7 +128,8 @@
           "menu": "main-menu",
           "email": "{{ shop.email }}",
           "phone": "{{shop.phone}}",
-          "location": ""
+          "location": "",
+          "mobile_logo": "shopify:\/\/shop_images\/Logo_Negro2.png"
         }
       },
       "footer": {
