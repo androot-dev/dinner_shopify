@@ -2862,4 +2862,11 @@ predictive-search[open] .predictive-search{
     color: var(--primary);
     
   }
+  .header__search:hover{
+    transform: none;
+    
+  }
+  .header__search:hover i{
+    color: var(--primary);
+  }
 /* MY OVERWRITE STYLES */
