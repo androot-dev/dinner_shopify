@@ -172,6 +172,22 @@
               "label": "info@dinner.com",
               "icon": "bxs-envelope"
             }
+          },
+          "7224ee27-0b91-4275-9bd3-9a44d8027a61": {
+            "type": "more_information",
+            "settings": {
+              "url": "tel:00005555",
+              "label": "000005555",
+              "icon": "bxs-phone"
+            }
+          },
+          "0784e13c-460d-4225-926d-483e40e20f8e": {
+            "type": "more_information",
+            "settings": {
+              "url": "",
+              "label": "",
+              "icon": ""
+            }
           }
         },
         "block_order": [
@@ -179,7 +195,9 @@
           "d8525b3f-50e2-42f8-8b0e-0240ec02c294",
           "71da192a-c2c4-4438-856d-1ec72d528ceb",
           "e34dcb05-d445-4ce2-aa3e-cb7839aa20b3",
-          "7b288d19-ec46-49ae-a818-0b599cd8ee48"
+          "7b288d19-ec46-49ae-a818-0b599cd8ee48",
+          "7224ee27-0b91-4275-9bd3-9a44d8027a61",
+          "0784e13c-460d-4225-926d-483e40e20f8e"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo_blanco_amarillo.png",
