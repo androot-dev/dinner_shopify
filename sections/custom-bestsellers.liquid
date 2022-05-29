@@ -166,54 +166,45 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-text col-12 col-md-6">
-                <h1 class="title-section"><?php the_field( 'title-section-1' ); ?></h1>
-                <h2 class="title"><?php the_field( 'subtitle-section-1' ); ?></h2>
+                <h1 class="title-section">{{section.settings.title-section}}</h1>
+                <h2 class="title">{{section.settings.subtitle-section}}</h2>
                 <p class="description">
-                    <?php the_field( 'description-section-1' ); ?>
+                    {{section.settings.description}}
                 </p>
-                <?php if ( have_rows( 'button_action_1' ) ) : ?>
-                <?php while ( have_rows( 'button_action_1' ) ) : the_row(); ?>
+                {% for block in section.blocks %}
+                    {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+             
+                        <a href="{{  block.settings.button_link }}" role="button"
+                        class="btn-primary d-none d-md-flex">{{ block.settings.button_label }}</a>
+                        
+                    {% endif %}
+                {% endfor %}
+           
 
-                <?php $page_link = get_sub_field( 'page_link' ); ?>
-                <?php if ( $page_link ) : ?>
-                <a href="<?php echo esc_url( $page_link); ?>" role="button"
-                    class="btn-primary d-none d-md-flex"><?php the_sub_field( 'label' ); ?></a>
-
-                <?php endif; ?>
-                <?php endwhile; ?>
-                <?php endif; ?>
-
-                <?php $button_action_1 = get_field( 'button_action_1' ); ?>
-                <?php if ( $button_action_1 ) : ?>
-                <a target="<?php echo esc_attr( $button_action_1['target'] ); ?>"
-                    href="<?php echo esc_url( $button_action_1['url'] ); ?>" role="button"
-                    class="btn-primary d-none d-md-flex"><?php echo esc_html( $button_action_1['title'] ); ?></a>
-
-
-                <?php endif; ?>
-
+     
             </div>
             <div
                 class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center  align-items-center col-carousel">
                 <div class="owl-carousel owl-theme justify-content-md-around justify-content-center d-flex">
-
-                    <?php if ( have_rows( 'carousel_best_sellers' ) ) : ?>
-                    <?php while ( have_rows( 'carousel_best_sellers' ) ) : the_row(); ?>
-                    <?php $image = get_sub_field( 'image' ); ?>
-                    <div class="item-food card position-relative">
-                        <?php if ( $image ) : ?>
-                        <img class="card-img-top" src="<?php echo esc_url( $image['url'] ); ?>"
-                            alt="<?php the_sub_field( 'name_product' ); ?>" />
-                        <?php endif; ?>
-                        <div class="tag-price"><?php the_sub_field( 'price' ); ?></div>
-                        <div class="card-footer  p-0 d-flex justify-content-between">
-                            <span class="name-plate"> <?php the_sub_field( 'name_product' ); ?></span>
-                            <a href="#" role="button" class="btn-primary-small"><i
-                                    class="bx bx-tada-hover bx-cart"></i></a>
-                        </div>
-                    </div>
-                    <?php endwhile; ?>
-                    <?php endif; ?>
+                    {% for block in section.blocks %}
+                        {% if block.type == "best_product" %}
+                            
+                                <div class="item-food card position-relative">
+                            
+                                    <img class="card-img-top" src="{{ block.settings.best_product.images.first.url }}" alt="{{ block.settings.best_product.title }}">"
+                                        alt="<?php the_sub_field( 'name_product' ); ?>" />
+                                    <?php endif; ?>
+                                    <div class="tag-price"><?php the_sub_field( 'price' ); ?></div>
+                                    <div class="card-footer  p-0 d-flex justify-content-between">
+                                        <span class="name-plate"> <?php the_sub_field( 'name_product' ); ?></span>
+                                        <a href="#" role="button" class="btn-primary-small"><i
+                                                class="bx bx-tada-hover bx-cart"></i></a>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+    
                 </div>
             </div>
             <?php $button_action_1 = get_field( 'button_action_1' ); ?>
@@ -334,6 +325,18 @@ $(document).ready(function () {
                 "type": "url",
                 "id": "button_link",
                 "label": "Button_link"
+            }
+        ]
+    },
+    {
+        "type": "best_product",
+        "name": "Best Item",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "product",
+                "id": "best_product",
+                "label": "Select Product"
             }
         ]
     }
