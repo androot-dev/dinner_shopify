@@ -2852,7 +2852,8 @@ predictive-search[open] .predictive-search{
     border-radius:0 0 10px 10px;
     margin: 0 !important;
   }
-  #predictive-search-results{
+  .predictive-search__item-heading{
   	font-family: "Kanit";
+    font-weight: 700;
   }
 /* MY OVERWRITE STYLES */
