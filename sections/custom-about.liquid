@@ -21,15 +21,15 @@
             <div class="about-img col-sm-5 col-12 p-0 m-0 order-sm-1 order-2">
                 <div class="img-background ">
                     {% if section.settings.image %}
-                         <img src="{{ section.settings.image.url | img_url : "master"}}" alt="Delicious Food" />
+                         <img src="{{ section.settings.image.url | img_url : "master" }}" alt="Delicious Food" />
                     {% endif %}
                 </div>
             </div>
             <div class="about-info col-sm-7 col-12 order-sm-2 order-1">
 
                 <div class="container-text">
-                    <h1 class="title-section"><?php the_field( 'title_section_2' ); ?></h1>
-                    <h2 class="title"><?php the_field( 'subtitle_section_2' ); ?></h2>
+                    <h1 class="title-section">{{ section.settings.title_section }}</h1>
+                    <h2 class="title">{{ section.settings.subtitle }}</h2>
                     <p>
                         <?php the_field( 'description' ); ?>
                     </p>
