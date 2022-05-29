@@ -2815,7 +2815,6 @@ details-disclosure > details {
   background-color: white;
   padding: 10px;
   border: none;
-  
   outline-color: #FF9900;
   font-family: "Kanit", sans-serif;
   font-size: 1em;
@@ -2832,18 +2831,29 @@ predictive-search[open] .predictive-search{
   border: none;
   background: rgb(255, 255, 255);
   border-radius: 10px;
-  margin: 8px;
+  margin: 8px 0px;
   color: black;
-  font-size: "Kanit";
+  
 }
 .predictive-search__image{
   width:50px;
   height: 50px;
   object-fit: cover !important;
   margin-bottom: 5px;
+  
 }
 .predictive-search__item--link{
-  justify-content: flex-start;
-}
+  justify-content: flex-start !important;
 
+}
+  .predictive-search__item--term{
+  	border: none;
+    width: 100%;
+    border-radius:0 0 10px 10px;
+    margin: 0 !important;
+  }
+  .predictive-search__item-heading{
+  	font-family: "Kanit";
+    font-weight: 700;
+  }
 /* MY OVERWRITE STYLES */
