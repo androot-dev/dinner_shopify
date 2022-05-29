@@ -9,10 +9,18 @@
             "button_label": "MAKE A ORDER",
             "button_link": "shopify:\/\/pages\/menu"
           }
+        },
+        "29bf634d-90a7-450a-b125-faf6a9f48439": {
+          "type": "item_social",
+          "settings": {
+            "social_label": "Facebook",
+            "social_link": "https:\/\/www.facebook.com"
+          }
         }
       },
       "block_order": [
-        "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897"
+        "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897",
+        "29bf634d-90a7-450a-b125-faf6a9f48439"
       ],
       "settings": {
         "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
