@@ -2857,14 +2857,10 @@ predictive-search[open] .predictive-search{
   	font-family: "Kanit";
     font-weight: 700;
   }
-  
-  #predictive-search-results ul li:hover, #predictive-search-results ul li a:hover{
-  	text-decoration:none !important;
-    
-  }
   #predictive-search-results ul li a:hover >
     .predictive-search__item-content > .predictive-search__item-heading {
   	text-decoration:none !important;
+    color: var(--primary);
     
   }
 /* MY OVERWRITE STYLES */
