@@ -128,9 +128,9 @@
           "logo_mobile_width": 120,
           "logo_mobile_height": 100,
           "menu": "main-menu",
-          "email": "{{ shop.email }}",
-          "phone": "{{shop.phone}}",
-          "location": "",
+          "email": "info@gmail.com",
+          "phone": "+584215515667",
+          "location": "https:\/\/www.google.com\/maps\/@39.550051,-105.782067,6z?hl=es",
           "mobile_logo": "shopify:\/\/shop_images\/Logo_Negro2.png"
         }
       },
