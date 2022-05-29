@@ -162,9 +162,7 @@
                 </predictive-search>
               {%- endif -%}
               <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
-                  <use href="#icon-close">
-                </svg>
+                <i class='bx bx-search-alt'></i>
               </button>
             </div>
           </div>
@@ -251,7 +249,7 @@
                       class="bx bxs-map"></i></a></li>
                 <li class="d-none d-md-block"><a href="tel:5555555"><i class="bx bxs-phone"></i></a></li>
                 <li class="line-menu"></li>
-                <li><a href="#"><i class='bx bx-search-alt'></i></a></li>
+                <li><a href="#"></a></li>
                 <li>
                   <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
                     {%- liquid
