@@ -2849,7 +2849,7 @@ predictive-search[open] .predictive-search{
   .predictive-search__item--term{
   	border: none;
     width: 100%;
-    border-radius:0 0 10px 10px;
+    border-radius: 10px;
     margin: 0 !important;
   }
   .predictive-search__item-heading{
