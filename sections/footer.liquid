@@ -34,6 +34,163 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  
+footer {
+  margin-top: 100px;
+  font-family: "Kanit";
+}
+
+@media (max-width: 767px) {
+  footer li {
+    text-align: center;
+  }
+}
+
+.my-logo {
+  width: 100px;
+  height: 100px;
+  background-image: url("../logo blanco amarillo.png") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  color: #FF9900;
+}
+
+footer a:hover {
+  color: #FF9900;
+}
+
+footer .copyright {
+  background-color: black;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+footer .copyright span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  footer .copyright span {
+    text-align: center;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .copyright {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+footer h2 {
+  font-family: "Poppins-Bold";
+  font-size: 0.9em;
+  color: #FF9900;
+}
+
+@media (max-width: 768px) {
+  footer a {
+    word-break: break-all;
+  }
+}
+
+footer i {
+  font-size: 1em;
+  margin-right: 8px;
+}
+
+footer li a {
+  font-size: 0.75em;
+}
+
+.container-more-footer ul {
+  list-style: none;
+}
+
+.container-more-footer ul i {
+  font-size: 1em;
+}
+
+.container-quick-links ul {
+  list-style: none;
+}
+
+.container-quick-links ul li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .my-logo {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  footer .my-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
