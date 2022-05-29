@@ -223,7 +223,7 @@ footer .my-logo {
               <ul class="quick-links" id="quick-links">
                 
               {% for link in linklists[block.settings.menu].links %}
-                    <li>
+                    <li class="d-flex">
                         <a href="{{link.url}}">{{link.title}}</a>
                     </li>
               {% endfor %}
