@@ -2866,7 +2866,7 @@ predictive-search[open] .predictive-search{
     transform: none;
     
   }
-  .header__search:hover i{
+  .header__search i:hover{
     color: var(--primary);
   }
 /* MY OVERWRITE STYLES */
