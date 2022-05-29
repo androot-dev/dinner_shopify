@@ -220,6 +220,51 @@
         font-weight: var(--font-body-weight);
       }
 
+      /* 
+        MY THEME.LIQUID STYLES
+      */
+
+      input[type=text]{
+        border: none;
+        box-sizing: border-box;
+        box-shadow: -5px 4px 0px rgba(0, 0, 0, 0.25);
+        width: 75%;
+        margin: 20px 0;
+        margin-right: 5% !important;
+        outline:none;
+        background: #ffffff;
+        color: black;
+      }
+      .cart-notification.active{
+        top: calc(40px + var(--size-logo-header));
+      }
+      .cart-notification.active button {
+        font-size: 1em;
+        width: 100%;
+      }
+      .button--secondary:after{
+        box-shadow:none !important;
+      }
+      .cart-notification.active a {
+        box-shadow: -5px 4px 0px rgb(0 0 0 / 25%);
+        background: #ffffff00;
+        border-radius: 15px;
+        box-shadow: none !important;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      .search-modal.modal__content{
+        background: #ffffff1f;
+      }
+
+
+
+
+
+
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
