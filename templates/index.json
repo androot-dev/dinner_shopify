@@ -96,10 +96,17 @@
           "settings": {
             "best_product": "gourmet-dish-1"
           }
+        },
+        "2f0a7ca4-2704-471b-9eb1-133a256ce7d7": {
+          "type": "best_product",
+          "settings": {
+            "best_product": "gourmet"
+          }
         }
       },
       "block_order": [
-        "476213eb-1f14-4395-ae82-53c2e346a150"
+        "476213eb-1f14-4395-ae82-53c2e346a150",
+        "2f0a7ca4-2704-471b-9eb1-133a256ce7d7"
       ],
       "settings": {
         "title-section": "Best Sellers",
