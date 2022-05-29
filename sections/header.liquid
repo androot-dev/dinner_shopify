@@ -89,6 +89,8 @@
 
         header .logo-top {
             background-image: url({{ section.settings.logo_up | img_url: "master"}});
+            width: {{section.settings.logo_width}}px;
+            height: {{section.settings.logo_height}}px;
         }
 
         .topheader-with-background .logo-top {
@@ -478,6 +480,16 @@
 		{
 			"type": "range",
 			"id": "logo_width",
+			"min": 50,
+			"max": 250,
+			"step": 10,
+			"default": 100,
+			"unit": "t:sections.header.settings.logo_width.unit",
+			"label": "t:sections.header.settings.logo_width.label"
+		},
+    {
+			"type": "range",
+			"id": "logo_height",
 			"min": 50,
 			"max": 250,
 			"step": 10,
