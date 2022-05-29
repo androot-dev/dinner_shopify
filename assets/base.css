@@ -2846,5 +2846,10 @@ predictive-search[open] .predictive-search{
   justify-content: flex-start !important;
   font-family: "Kanit";
 }
-
+  .predictive-search__item--term{
+  	border: none;
+    width: 100%;
+    border-radius:0 0 10px 10px;
+    margin: 0;
+  }
 /* MY OVERWRITE STYLES */
