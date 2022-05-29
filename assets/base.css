@@ -2876,4 +2876,7 @@ predictive-search[open] .predictive-search{
   .search__input.field__input{
     border: solid 1px #ededed;
   }
+  .search-modal.modal__content{
+  	background: #0000004f
+  }
 /* MY OVERWRITE STYLES */
