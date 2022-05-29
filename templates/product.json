@@ -52,6 +52,7 @@
             "type": "text",
             "id": "social-bar",
             "label": "Social Item",
+            "limit": 5,
             "settings": [
                 {
                     "type": "text",
