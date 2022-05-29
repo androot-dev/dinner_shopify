@@ -139,7 +139,7 @@
             <h2 class="large-text">{{ section.settings.banner-text }}</h2>
             
             <ul>
-                {% for block in sections.header.blocks %}
+                {% for block in section.blocks %}
                     {% if block.type == "item_social" %}
                 <li><a target="_blank"
                         href="{{block.settings.social_link}}">{{ block.settings.social_label }}</a></li>
