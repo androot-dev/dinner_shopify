@@ -2080,7 +2080,7 @@ input[type='checkbox'] {
 }
 
 .announcement-bar__link:hover {
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--primary));
   background-color: rgba(var(--color-card-hover), 0.06);
 }
 
@@ -2207,7 +2207,7 @@ input[type='checkbox'] {
 }
 
 .header__heading-link:hover .h2 {
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--primary));
 }
 
 .header__heading-link .h2 {
