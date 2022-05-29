@@ -2463,7 +2463,17 @@ details[open] .modal-overlay::after {
 details[open] .modal-overlay:after{
   background: #e1d2d22b !important;
 }
+predictive-search[open] .predictive-search{
+  display: block;
+  border: none;
+  background: rgb(221, 221, 221);
+  border-radius: 10px;
+  margin: 8px 10px;
+  color: black;
+
+}
 /* MY STYLES */
+
 .search-modal__content-bottom {
   bottom: calc((var(--inputs-margin-offset) / 2) );
 }
