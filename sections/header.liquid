@@ -107,9 +107,11 @@
       </button>
 
       <nav class="menu-principal">
+
           <a role="button" class="logo-ref" href="./home">
               <div class="my-logo-mobile-menu pb-0 mb-0"> </div>
           </a>
+          <ul>
           {% for link in linklists.main-menu.links %}
             {% assign child_list_handle = link.title | handleize %}
             {% if linklists[child_list_handle].links != blank %}
@@ -127,7 +129,7 @@
                 </li>
             {% endif %}
         {% endfor %}
-        
+      </ul>
       </nav>
     </div>
     <header class="my-section ">
