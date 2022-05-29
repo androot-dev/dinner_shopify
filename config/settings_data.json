@@ -151,6 +151,13 @@
               "url": "https:\/\/www.facebook.com"
             }
           },
+          "71da192a-c2c4-4438-856d-1ec72d528ceb": {
+            "type": "social_links",
+            "settings": {
+              "icon": "bxl-instagram",
+              "url": "https:\/\/www.instagram.com"
+            }
+          },
           "e34dcb05-d445-4ce2-aa3e-cb7839aa20b3": {
             "type": "social_links",
             "settings": {
@@ -162,6 +169,7 @@
         "block_order": [
           "75a3322b-6b7a-4abf-bb0c-d7113d7b8db4",
           "d8525b3f-50e2-42f8-8b0e-0240ec02c294",
+          "71da192a-c2c4-4438-856d-1ec72d528ceb",
           "e34dcb05-d445-4ce2-aa3e-cb7839aa20b3"
         ],
         "settings": {
