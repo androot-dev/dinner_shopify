@@ -2843,7 +2843,7 @@ predictive-search[open] .predictive-search{
   margin-bottom: 5px;
 }
 .predictive-search__item--link{
-  justify-content: flex-start;
+  justify-content: flex-start !important;
 }
 
 /* MY OVERWRITE STYLES */
