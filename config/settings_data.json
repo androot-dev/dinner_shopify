@@ -119,60 +119,32 @@
       "header": {
         "type": "header",
         "settings": {
+          "menu": "main-menu",
+          "email": "info@gmail.com",
+          "phone": "+584215515667",
           "logo_up": "shopify:\/\/shop_images\/Logo_Blanco2.png",
           "background_color_menu_fixed": "#ffffff",
           "text_color_menu_fixed": "#000000",
           "logo_fixed": "shopify:\/\/shop_images\/Logo_Negro2.png",
           "logo_width": 100,
           "logo_height": 100,
-          "logo_mobile_width": 100,
-          "logo_mobile_height": 100,
-          "menu": "main-menu",
-          "email": "info@gmail.com",
-          "phone": "+584215515667",
           "location": "https:\/\/www.google.com\/maps\/@39.550051,-105.782067,6z?hl=es",
-          "mobile_logo": "shopify:\/\/shop_images\/Logo_Negro2.png"
+          "mobile_logo": "shopify:\/\/shop_images\/Logo_Negro2.png",
+          "logo_mobile_width": 100,
+          "logo_mobile_height": 100
         }
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Quick links",
-              "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": "footer"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "footer-0",
-          "footer-1",
-          "footer-2"
-        ],
         "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": true,
+          "color_scheme": "background-2",
+          "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
-          "show_social": true,
+          "show_social": false,
           "enable_country_selector": false,
           "enable_language_selector": false,
-          "payment_enable": true,
-          "margin_top": 48,
+          "payment_enable": false,
+          "margin_top": 44,
           "padding_top": 36,
           "padding_bottom": 36
         }
