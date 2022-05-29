@@ -2869,4 +2869,7 @@ predictive-search[open] .predictive-search{
   .header__search i:hover{
     color: var(--primary);
   }
+  .search__button:not(:focus-visible):not(.focused){
+  	color:black;
+  }
 /* MY OVERWRITE STYLES */
