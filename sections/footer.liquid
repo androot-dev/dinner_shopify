@@ -271,7 +271,7 @@
   "blocks": [
     {
       "type": "link_list",
-      "name": "t:sections.footer.blocks.link_list.name",
+      "name": "Quick Links",
       "settings": [
         {
           "type": "text",
@@ -290,64 +290,43 @@
       ]
     },
     {
-      "type": "text",
-      "name": "t:sections.footer.blocks.text.name",
+      "type": "more_information",
+      "name": "More Information",
+      "limit": 4,
       "settings": [
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        },
         {
           "type": "text",
-          "id": "heading",
-          "default": "Heading",
-          "label": "t:sections.footer.blocks.text.settings.heading.label"
+          "id": "label",
+          "label": "label"
         },
         {
-          "type": "richtext",
-          "id": "subtext",
-          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
-          "label": "t:sections.footer.blocks.text.settings.subtext.label"
+          "type": "text",
+          "id": "icon",
+          "label": "Boxi Icon or Font Awesome Icon" 
         }
       ]
-    },
-    {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "range",
-          "id": "image_width",
-          "min": 50,
-          "max": 200,
-          "step": 5,
-          "unit": "px",
-          "label": "Image width",
-          "default": 100
-        },
-        {
-          "type": "select",
-          "id": "alignment",
-          "label": "Image alignment on large screen",
-          "options": [
-            {
-              "value": "",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "center"
-        }
-      ]
-    }
+  },
+  {
+    "type": "social_links",
+    "name": "Social Links",
+    "settings": [
+      {
+        "type": "text",
+        "id": "icon",
+        "label": "Boxi Icon or Font Awesome Icon"
+      },
+      {
+        "type": "url",
+        "id": "url",
+        "label": "Link"
+      }
+    ]
+  } 
   ],
   "settings": [    
     {
