@@ -244,7 +244,7 @@ footer .my-logo {
                   {% if block.type == 'more_information' %}
                   <li class="d-flex pr-md-5 pt-3 justify-content-center justify-content-md-start  align-items-center">
                     <i class="bx fa {{ block.settings.icon }}"></i>
-                    <a  href="{{ block.settings.url }}">
+                    <a {% if block.settings.new_tab %} target="_blank" {% endif %} href="{{ block.settings.url }}">
                           {{ block.settings.label }}
                     </a>
                   </li>
@@ -303,7 +303,13 @@ footer .my-logo {
 					"type": "text",
 					"id": "icon",
 					"label": "Boxi Icon or Font Awesome Icon"
-				}
+				},
+        {
+          "type": "checkbox",
+          "id": "new_tab",
+          "label": "Open in new tab",
+          "default": false
+        }
 			]
 		},
 		{
