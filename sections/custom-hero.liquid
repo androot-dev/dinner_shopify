@@ -103,8 +103,7 @@
             ]
         },
         {
-            "type": "text",
-            
+            "type": "item_social", 
 			"name": "Social Item",
             "limit": 5,
             "settings": [
@@ -154,12 +153,13 @@
         </div>
     
         <div class="social-bar">
-            <h2 class="large-text"><?php the_sub_field( 'banner_text' ); ?></h2>
-            <?php if ( have_rows( 'social_bar' ) ) : ?>
+            <h2 class="large-text">{{ section.settings.banner-text }}</h2>
+            
             <ul>
-                <?php while ( have_rows( 'social_bar' ) ) : the_row(); ?>
+                {% for block in section.blocks %}
+                    {% if block.settings.type == "item_social" %}
                 <li><a target="_blank"
-                        href="<?php the_sub_field( 'link' ); ?>"><?php the_sub_field( 'red_social' ); ?></a></li>
+                        href="{{block.settings.social_link}}">{{block.settings.social_label}}</a></li>
                 <?php endwhile; ?>
             </ul>
             <?php endif; ?>
