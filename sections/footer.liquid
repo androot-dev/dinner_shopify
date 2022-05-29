@@ -372,7 +372,31 @@ footer .my-logo {
 			"unit": "px",
 			"label": "t:sections.all.padding.padding_bottom",
 			"default": 36
-		}
+		},
+    {
+			"type": "header",
+			"content": "LOGO SIZE"
+		},
+		{
+			"type": "range",
+			"id": "logo_width",
+			"min": 50,
+			"max": 250,
+			"step": 10,
+			"default": 100,
+			"unit": "t:sections.header.settings.logo_width.unit",
+			"label": "t:sections.header.settings.logo_width.label"
+		},
+    {
+			"type": "range",
+			"id": "logo_height",
+			"min": 50,
+			"max": 250,
+			"step": 10,
+			"default": 100,
+			"unit": "t:sections.header.settings.logo_width.unit",
+			"label": "Logo Height"
+		},
 	]
 }
 {% endschema %}
