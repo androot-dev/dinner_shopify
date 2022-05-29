@@ -2817,7 +2817,7 @@ details-disclosure > details {
   border: none;
   
   outline-color: #FF9900;
-  font-family: "Kanit-Medium", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1em;
   font-style: normal;
   font-weight: inherit;
@@ -2834,13 +2834,14 @@ predictive-search[open] .predictive-search{
   border-radius: 10px;
   margin: 8px 0px;
   color: black;
-  font-size: "Kanit";
+  font-family: "Kanit";
 }
 .predictive-search__image{
   width:50px;
   height: 50px;
   object-fit: cover !important;
   margin-bottom: 5px;
+  font-family: "Kanit";
 }
 .predictive-search__item--link{
   justify-content: flex-start !important;
