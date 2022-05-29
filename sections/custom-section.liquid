@@ -15,24 +15,9 @@
 }
 {%- endstyle -%}
 
-  <section class="my-section menu-food container-fluid h-auto section-{{ section.id }}-padding section-{{ section.id }}">
-    <div class="row justify-content-center">
-      <h1 class="title-section text-center px-4 w-100">{{section.settings.title-section}}</h1>
-      <h2 class="title px-5">{{section.settings.subtitle-section}}</h2>
-  </div>
-  <div class="px-5 pb-3 row justify-content-center" style=" min-height: 750px;">
-    
-    
-    {% assign col = 12 %}
-
-    {% for block in section.blocks %}
-      {% if block.type == "category" %}
-        {% assign count = block.size %}
-        <h1>:::::{{ count }}:::::</h1>
-      {% endif %}
-    {% endfor %}
+  <section class="section-{{ section.id }}-padding section-{{ section.id }}">
+   
   </section>
-<!--FOOD -->
 
 {% schema %}
 {
@@ -52,7 +37,6 @@
       "label": "Subtitle Section",
       "default": "Meet all our dishes"
     },
-
     {
       "type": "header",
       "content": "Custom Colors"
@@ -87,21 +71,6 @@
       "default": 52
     }
   ],
-  "blocks":[
-    {
-      "type": "category",
-      "name": "Category",
-      "limit": 5,
-      "settings": [
-        {
-          "type": "collection",
-          "id": "collection",
-          "label": "Select a Collection with Image ",
-        }
-      ]
-    }
-    
-  ]
   "presets": [
     {
       "name": "Custom Menu"
