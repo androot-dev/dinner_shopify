@@ -1,0 +1,279 @@
+{%- style -%}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+.section-{{ section.id }} {
+  background-color: {{ section.settings.background-color }};
+  height:auto;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+
+
+.best-sellers {
+  padding-top: 50px;
+  height: auto;
+}
+
+.best-sellers .owl-carousel {
+  position: relative;
+}
+
+.best-sellers .owl-carousel .owl-dots {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+}
+
+.best-sellers .title-section {
+  position: relative;
+}
+
+.best-sellers .title-section:before {
+  content: "";
+  background: #FF9900;
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  width: 41%;
+  left: -45%;
+  bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  .best-sellers .title-section:before {
+    display: none;
+  }
+}
+
+.best-sellers .btn-primary {
+  max-width: 254px;
+  margin-top: 50px;
+}
+
+.best-sellers .description {
+  padding-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  word-wrap: break-word;
+  padding-right: 15%;
+}
+
+@media (max-width: 767px) {
+  .best-sellers .description {
+    padding-right: 0;
+  }
+}
+
+.best-sellers .col-text {
+  padding-left: 8% !important;
+  min-width: 390px;
+}
+
+.best-sellers .col-carousel {
+  padding-right: 5% !important;
+}
+
+@media screen and (max-width: 989px) {
+  .best-sellers .col-carousel {
+    padding-right: 10% !important;
+    padding-left: 5% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .best-sellers .col-carousel {
+    padding-right: 8% !important;
+    padding-left: 8% !important;
+  }
+}
+
+.best-sellers .col-carousel .btn-primary-small {
+  color: white !important;
+  margin-right: 1px;
+  pointer-events: none;
+}
+
+.best-sellers .col-carousel .btn-primary-small i {
+  pointer-events: all;
+}
+
+@media (max-width: 767px) {
+  .best-sellers .col-text {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .best-sellers .col-text {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+  .best-sellers .col-carousel {
+    padding-right: 5% !important;
+    padding-left: 5% !important;
+  }
+}
+
+.best-sellers .tag-price {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 35px;
+  padding: 8px 30px;
+  background: #FF9900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+  color: white;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: inherit;
+  -webkit-box-shadow: 4px 6px 45px -14px rgba(0, 0, 0, 0.75);
+          box-shadow: 4px 6px 45px -14px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 860px) {
+  .best-sellers .col-text {
+    padding-left: 40px;
+    min-width: 250px;
+  }
+}
+
+{%- endstyle -%}
+
+  <section class="best-sellers mysection section-{{ section.id }}-padding section-{{ section.id }}">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-text col-12 col-md-6">
+                <h1 class="title-section"><?php the_field( 'title-section-1' ); ?></h1>
+                <h2 class="title"><?php the_field( 'subtitle-section-1' ); ?></h2>
+                <p class="description">
+                    <?php the_field( 'description-section-1' ); ?>
+                </p>
+                <?php if ( have_rows( 'button_action_1' ) ) : ?>
+                <?php while ( have_rows( 'button_action_1' ) ) : the_row(); ?>
+
+                <?php $page_link = get_sub_field( 'page_link' ); ?>
+                <?php if ( $page_link ) : ?>
+                <a href="<?php echo esc_url( $page_link); ?>" role="button"
+                    class="btn-primary d-none d-md-flex"><?php the_sub_field( 'label' ); ?></a>
+
+                <?php endif; ?>
+                <?php endwhile; ?>
+                <?php endif; ?>
+
+                <?php $button_action_1 = get_field( 'button_action_1' ); ?>
+                <?php if ( $button_action_1 ) : ?>
+                <a target="<?php echo esc_attr( $button_action_1['target'] ); ?>"
+                    href="<?php echo esc_url( $button_action_1['url'] ); ?>" role="button"
+                    class="btn-primary d-none d-md-flex"><?php echo esc_html( $button_action_1['title'] ); ?></a>
+
+
+                <?php endif; ?>
+
+            </div>
+            <div
+                class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center  align-items-center col-carousel">
+                <div class="owl-carousel owl-theme justify-content-md-around justify-content-center d-flex">
+
+                    <?php if ( have_rows( 'carousel_best_sellers' ) ) : ?>
+                    <?php while ( have_rows( 'carousel_best_sellers' ) ) : the_row(); ?>
+                    <?php $image = get_sub_field( 'image' ); ?>
+                    <div class="item-food card position-relative">
+                        <?php if ( $image ) : ?>
+                        <img class="card-img-top" src="<?php echo esc_url( $image['url'] ); ?>"
+                            alt="<?php the_sub_field( 'name_product' ); ?>" />
+                        <?php endif; ?>
+                        <div class="tag-price"><?php the_sub_field( 'price' ); ?></div>
+                        <div class="card-footer  p-0 d-flex justify-content-between">
+                            <span class="name-plate"> <?php the_sub_field( 'name_product' ); ?></span>
+                            <a href="#" role="button" class="btn-primary-small"><i
+                                    class="bx bx-tada-hover bx-cart"></i></a>
+                        </div>
+                    </div>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php $button_action_1 = get_field( 'button_action_1' ); ?>
+            <?php if ( $button_action_1 ) : ?>
+            <div class="col-12 d-flex d-md-none justify-content-center mt-4">
+                <a target="<?php echo esc_attr( $button_action_1['target'] ); ?> href="
+                    href="<?php echo esc_url( $button_action_1['url'] ); ?>" role="button"
+                    class="btn-primary"><?php echo esc_html( $button_action_1['title'] ); ?></a>
+            </div>
+            <?php endif; ?>
+        </div>
+    </div>
+  </section>
+
+
+{% schema %}
+{
+  "name": "t:sections.custom-liquid.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Custom Colors"
+    },
+    {
+        "id": "background-color",
+        "type": "color",
+        "label": "Background Color"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Section"
+    }
+  ]
+}
+{% endschema %}
