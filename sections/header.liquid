@@ -106,7 +106,7 @@
           <i class="bx bx-x"></i>
       </button>
 
-      <nav>
+      <nav class="menu-principal">
           <a role="button" class="logo-ref" href="./home">
               <div class="my-logo-mobile-menu pb-0 mb-0"> </div>
           </a>
@@ -135,7 +135,7 @@
           <a href="{{routes.root_url}}">
               <div class="logo-top"></div>
           </a>
-          <nav>
+          <nav class="menu-principal">
               <ul class="text-menu d-none d-md-flex">
                    {% for link in linklists.main-menu.links %}
               {% assign child_list_handle = link.title | handleize %}
