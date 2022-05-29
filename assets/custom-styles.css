@@ -489,7 +489,7 @@ header .topheader > nav {
   margin-right: 60px !important;
 }
 
-header .topheader > nav ul {
+header .topheader > nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +507,7 @@ header .topheader > nav ul {
           justify-content: center;
 }
 
-header .topheader > nav ul li {
+header .topheader > nav > ul li {
   font-family: "Kanit-Bold", sans-serif;
   font-size: 0.75em;
   font-style: normal;
@@ -515,7 +515,7 @@ header .topheader > nav ul li {
   color: white;
 }
 
-header .topheader > nav ul li a {
+header .topheader > nav > ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,11 +537,11 @@ header .topheader > nav ul li a {
   white-space: pre;
 }
 
-header .topheader > nav ul i {
+header .topheader > nav > ul i {
   font-size: 1.2em;
 }
 
-header .topheader > nav ul .line-menu {
+header .topheader > nav > ul .line-menu {
   height: 26px;
   width: 1px;
   background-color: white;
@@ -588,7 +588,7 @@ header .topheader > nav .text-menu {
     width: calc(200px - 50px) !important;
     margin-right: 50px !important;
   }
-  header .topheader > nav ul {
+  header .topheader > nav > ul {
     width: calc(200px - 50px) !important;
     min-width: calc(200px - 50px) !important;
   }
