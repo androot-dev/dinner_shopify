@@ -379,21 +379,17 @@ footer .my-logo {
           <div class="row justify-content-center">
               <div class="my-logo"> </div>
           </div>
-          {% for block in section.blocks %}
-            {% if block.type == "social_links" %}
+          
           <div class="row justify-content-center">
+            {% for block in section.blocks %}
+              {% if block.type == "social_links" %}
               <a class="px-2" href="{{block.settings.url}}" target="_blank">
                   <i class="bx {{block.settings.icon}}"></i>
               </a>
-              <a class="px-2" href="https://www.instagram.com" target="_blank">
-                  <i class="bx bxl-instagram"></i>
-              </a>
-              <a class="px-2" href="https://www.youtube.com" target="_blank">
-                  <i class="bx bxl-youtube"></i>
-              </a>
-          </div>
             {% endif %}
           {% endfor %}
+          </div>
+
       </div>
 
       {% for block in section.blocks %}
