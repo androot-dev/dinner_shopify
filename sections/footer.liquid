@@ -373,13 +373,17 @@ footer .my-logo {
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding my-section container-fluid m-0 p-0 d-flex flex-wrap bg-footer text-white">
   <div class="row w-100 py-5 m-0">
+
+    
       <div class="col-md-4 col-12 ">
           <div class="row justify-content-center">
               <div class="my-logo"> </div>
           </div>
+          {% for block in section.blocks %}
+            {% if block.type == "social_links" %}
           <div class="row justify-content-center">
-              <a class="px-2" href="https://www.facebook.com" target="_blank">
-                  <i class="bx bxl-facebook-circle"></i>
+              <a class="px-2" href="{{block.settings.url}}" target="_blank">
+                  <i class="bx {{block.settings.icon}}"></i>
               </a>
               <a class="px-2" href="https://www.instagram.com" target="_blank">
                   <i class="bx bxl-instagram"></i>
@@ -388,25 +392,27 @@ footer .my-logo {
                   <i class="bx bxl-youtube"></i>
               </a>
           </div>
+            {% endif %}
+          {% endfor %}
       </div>
+
+      {% for block in section.blocks %}
+        {% if block.type == 'quick_links' %}
       <div class="col-md-3 col-12 container-quick-links d-md-block d-flex justify-content-center">
           <div class="container-menu-footer pt-3">
-              <h2 class="text-md-left text-center">Quick Links</h2>
-
-
-              <?php
-        wp_nav_menu( array(
-                      'theme_location' => 'Quick Links',
-                      'menu_id'        => 'quick-links',
-                      'container'      => 'ul',
-                      "menu_class"     => "quick-links"
-                  ));
-        ?>
-
-
-
+              <h2 class="text-md-left text-center">{{block.settings.heading}}</h2>
+              {% for link in block.menu %}
+                <ul class="quick-links">
+                    <li class="quick-links__item">
+                        <a class="quick-links__link" href="{{link.url}}">{{link.title}}</a>
+                    </li>
+                </ul>
+              {% endfor %}
           </div>
       </div>
+        {% endif %}
+      {% endfor %}
+
       <div class="col-md-5 col-12 container-more-footer pt-3 d-md-block d-flex justify-content-center">
           <div class="container-menu-footer">
               <h2 class="text-md-left text-center">More Information</h2>
@@ -466,7 +472,7 @@ footer .my-logo {
 {
 	"name": "t:sections.footer.name",
 	"blocks": [{
-			"type": "link_list",
+			"type": "quick_links",
 			"name": "Quick Links",
 			"settings": [{
 					"type": "text",
