@@ -77,24 +77,6 @@
     ],
     "blocks": [
         {
-            "type": "button",
-            "name": "button",
-            "limit": 1,
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "button_label",
-                    "default": "Button label",
-                    "label": "Button text"
-                },
-                {
-                    "type": "url",
-                    "id": "button_link",
-                    "label": "Button_link"
-                }
-            ]
-        },
-        {
             "type": "item_social", 
 			"name": "Social Item",
             "limit": 5,
@@ -127,7 +109,11 @@
             src="{{ section.settings.video-hero }}"></video>
         <div class="hero-action">
             <div class="text">
+                {% if section.settings.title-page %}
+                <h1 class="first-text">{{ section.settings.title-page }}</h1>
+                    {% else %}
                 <h1 class="first-text">{{ page_title }}</h1>
+                {% endif %}
             </div>
         </div>
     
