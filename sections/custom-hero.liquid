@@ -14,10 +14,7 @@
   }
 }
 {%- endstyle -%}
-
-  <section class="section-{{ section.id }}-padding section-{{ section.id }}">
   
-  </section>
 
 {% schema %}
 {
@@ -106,8 +103,7 @@
             ]
         },
         {
-            "type": "text",
-            
+            "type": "item_social", 
 			"name": "Social Item",
             "limit": 5,
             "settings": [
@@ -132,3 +128,41 @@
     ]
 }
 {% endschema %}
+
+  <section class="my-section hero section-{{ section.id }}-padding section-{{ section.id }}">
+    
+        <video autoplay="autoplay" class="video-background" loop="loop" muted playsinline="playsinline"
+            src="{{ section.settings.video-hero }}"></video>
+        <div class="hero-action">
+            <div class="text">
+                <h1 class="first-text">{{ section.settings.line-title-1 }}</h1>
+    
+                <div class="container-text">
+                    <h1 class="second-text">{{ section.settings.line-title-2}}</h1>
+                </div>
+            </div>
+            {% for block in section.blocks %}
+                {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+                  
+                    <a class="btn-primary" href="{{ block.settings.button_link }}"> 
+                            {{ block.settings.button_label }}
+                    </a>
+                    
+                {% endif %}
+            {% endfor %}
+        </div>
+    
+        <div class="social-bar">
+            <h2 class="large-text">{{ section.settings.banner-text }}</h2>
+            
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.settings.type == "item_social" %}
+                <li><a target="_blank"
+                        href="{{block.settings.social_link}}">{{block.settings.social_label}}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+       
+        </div>
+  </section>
