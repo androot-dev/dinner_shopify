@@ -600,10 +600,6 @@ header .topheader > nav .text-menu {
 
 header .topheader .logo-top {
   margin-left: 5vw;
-  width: 100px;
-  height: 183px;
-  min-width: 105px;
-  min-height: 80px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
