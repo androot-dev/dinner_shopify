@@ -101,6 +101,8 @@
 
         .modal-menu .my-logo-mobile-menu {
             background-image: url( {{ section.settings.mobile_logo | img_url: "master" }});
+            width: {{section.settings.logo_mobile_width}}px;
+            height: {{section.settings.logo_mobile_height}}px;
         }
 
         header .topheader-with-background {
@@ -507,6 +509,26 @@
 			"default": 100,
 			"unit": "t:sections.header.settings.logo_width.unit",
 			"label": "Logo Height"
+		},
+    {
+			"type": "range",
+			"id": "logo_mobile_width",
+			"min": 50,
+			"max": 250,
+			"step": 10,
+			"default": 100,
+			"unit": "t:sections.header.settings.logo_width.unit",
+			"label": "Logo Mobile Width"
+		},
+    {
+			"type": "range",
+			"id": "logo_mobile_height",
+			"min": 50,
+			"max": 250,
+			"step": 10,
+			"default": 100,
+			"unit": "t:sections.header.settings.logo_width.unit",
+			"label": "Logo Mobile Height"
 		},
 		{
 			"type": "link_list",
