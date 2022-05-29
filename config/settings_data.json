@@ -125,7 +125,7 @@
           "logo_fixed": "shopify:\/\/shop_images\/Logo_Negro2.png",
           "logo_width": 100,
           "logo_height": 100,
-          "logo_mobile_width": 180,
+          "logo_mobile_width": 100,
           "logo_mobile_height": 100,
           "menu": "main-menu",
           "email": "{{ shop.email }}",
