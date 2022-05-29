@@ -502,17 +502,17 @@
         value=""
         placeholder="{{ 'general.search.search' | t }}"
         {%- if settings.predictive_search_enabled -%}
-        role="combobox"
-        aria-expanded="false"
-        aria-owns="predictive-search-results-list"
-        aria-controls="predictive-search-results-list"
-        aria-haspopup="listbox"
-        aria-autocomplete="list"
-        autocorrect="off"
-        autocomplete="off"
-        autocapitalize="off"
-        spellcheck="false"
-    {%- endif -%}
+          role="combobox"
+          aria-expanded="false"
+          aria-owns="predictive-search-results-list"
+          aria-controls="predictive-search-results-list"
+          aria-haspopup="listbox"
+          aria-autocomplete="list"
+          autocorrect="off"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+        {%- endif -%}
                     >
     <label class="field__label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
     <input type="hidden" name="options[prefix]" value="last">
