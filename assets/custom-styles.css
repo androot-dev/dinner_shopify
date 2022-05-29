@@ -322,7 +322,6 @@ nav li, ul li {
 }
 
 .modal-menu .my-logo-mobile-menu {
-  background-image: url("../Logo Negro.png");
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -412,24 +411,9 @@ header {
 
 header .logo-top {
   margin-left: 5vw;
-  background-image: url("../logo Blanco.png");
+
 }
 
-header .topheader-with-background {
-  background-color: white;
-}
-
-header .topheader-with-background .logo-top {
-  background-image: url("../logo Negro.png") !important;
-}
-
-header .topheader-with-background a, header .topheader-with-background i {
-  color: black;
-}
-
-header .topheader-with-background .line-menu {
-  background-color: black !important;
-}
 
 header .topheader {
   display: -webkit-box;
