@@ -33,29 +33,44 @@
                     <p>
                         {{ section.settings.description }}
                     </p>
-                    <?php $button_action_2 = get_field( 'button_action_2' ); ?>
-                    <?php if ( $button_action_2 ) : ?>
-                    <div class="d-none d-sm-flex justify-content-end pr-3">
-                        <a href="<?php echo esc_url( $button_action_2['url'] ); ?>"
-                            target="<?php echo esc_attr( $button_action_2['target'] ); ?>" role="button"
-                            class="btn-primary">
-                            <?php echo esc_html( $button_action_2['title'] ); ?>
-                        </a>
-                    </div>
-                    <?php endif; ?>
+                    
+
+                    {% for block in section.blocks %}
+                        {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+                 
+                            <div class="d-none d-sm-flex justify-content-end pr-3">
+                                <a href="{{block.settings.button_link}}" role="button" class="btn-primary">
+                                 {{ block.settings.button_label }}   
+                                </a>
+                            </div>
+                            
+                        {% endif %}
+                    {% endfor %}
+
+            
+                   
                 </div>
             </div>
 
         </div>
-        <?php $button_action_2 = get_field( 'button_action_2' ); ?>
-        <?php if ( $button_action_2 ) : ?>
+        
+        {% for block in section.blocks %}
+            {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+     
+               
         <div class="d-flex d-sm-none justify-content-center">
-            <a href="<?php echo esc_url( $button_action_2['url'] ); ?>"
-                target="<?php echo esc_attr( $button_action_2['target'] ); ?>" role="button" class="btn-primary">
-                <?php echo esc_html( $button_action_2['title'] ); ?>
+            <a href="{{block.settings.button_link}}"
+                 role="button" class="btn-primary">
+                 {{block.settings.button_label}}
             </a>
         </div>
-        <?php endif; ?>
+                
+            {% endif %}
+        {% endfor %}
+
+
+
+      
     </div>
   </section>
 <!--ABOUT US-->
