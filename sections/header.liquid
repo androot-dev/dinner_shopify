@@ -95,30 +95,7 @@
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
 </svg>
-
-  <header class="header header--{{ section.settings.logo_position }} page-width">
-    <div class="header__icons">
-
-
-      {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          {% render 'icon-account' %}
-          <span class="visually-hidden">
-            {%- liquid
-              if customer
-                echo 'customer.account_fallback' | t
-              else
-                echo 'customer.log_in' | t
-              endif
-            -%}
-          </span>
-        </a>
-      {%- endif -%}
-
-      
-    </div>
-  </header>  
-     <!--HEADER -->
+    <!--HEADER -->
     <div class="modal-menu my-section">
       <button class="closeMenu bg-danger text-white">
           <i class="bx bx-x"></i>
@@ -180,6 +157,22 @@
                       class="bx bxs-map"></i></a></li>
                 <li class="d-none d-md-block"><a href="tel:5555555"><i class="bx bxs-phone"></i></a></li>
                 <li class="line-menu"></li>
+                <li>
+                  {%- if shop.customer_accounts_enabled -%}
+                    <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+                      {% render 'icon-account' %}
+                      <span class="visually-hidden">
+                        {%- liquid
+                          if customer
+                            echo 'customer.account_fallback' | t
+                          else
+                            echo 'customer.log_in' | t
+                          endif
+                        -%}
+                      </span>
+                    </a>
+                  {%- endif -%}
+                </li>
                 <li>
                 
                   <details-modal class="header__search">
