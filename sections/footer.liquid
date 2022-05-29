@@ -221,8 +221,8 @@ footer .my-logo {
           <div class="container-menu-footer pt-3">
               <h2 class="text-md-left text-center">{{block.settings.heading}}</h2>
               <ul class="quick-links">
-                {{block.menu}}
-              {% for link in block.menu %}
+                
+              {% for link in block.settings.menu %}
                     <li>
                         <a href="{{link.url}}">{{link.title}}</a>
                     </li>
