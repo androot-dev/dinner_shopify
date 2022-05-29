@@ -170,7 +170,8 @@
             "settings": {
               "url": "https:\/\/www.google.com\/maps",
               "label": "5191 Eastside Hwy Stevensville, MT 59870",
-              "icon": "bxs-map"
+              "icon": "bxs-map",
+              "new_tab": true
             }
           },
           "7b288d19-ec46-49ae-a818-0b599cd8ee48": {
@@ -178,7 +179,8 @@
             "settings": {
               "url": "mailto:info@dinner.com",
               "label": "info@dinner.com",
-              "icon": "bxs-envelope"
+              "icon": "bxs-envelope",
+              "new_tab": true
             }
           },
           "7224ee27-0b91-4275-9bd3-9a44d8027a61": {
@@ -186,7 +188,8 @@
             "settings": {
               "url": "tel:00005555",
               "label": "000005555",
-              "icon": "bxs-phone"
+              "icon": "bxs-phone",
+              "new_tab": false
             }
           }
         },
