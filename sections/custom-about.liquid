@@ -1,12 +1,299 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{%- style -%}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+.section-{{ section.id }} {
+  background-color: {{ section.settings.background-color }};
+  height:auto;
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+}
+
+
+.aboutUs .title-section {
+  position: relative;
+}
+
+.aboutUs .title-section:before {
+  content: "";
+  background: #FF9900;
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  bottom: 20px;
+  left: -60%;
+  z-index: 5;
+  width: 55%;
+}
+
+@media (max-width: 575px) {
+  .aboutUs .title-section:before {
+    display: none;
+  }
+}
+
+.aboutUs .about-info {
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#575757));
+  background: linear-gradient(180deg, #000000 0%, #575757 100%);
+  color: white;
+  padding: 5% 5% 5% 3%;
+}
+
+@media (max-width: 767px) {
+  .aboutUs .about-info {
+    padding: 5% 3% 5% 3%;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs .about-info {
+    padding: 5%;
+  }
+}
+
+.aboutUs .about-info h1, .aboutUs .about-info h2 {
+  margin-left: 15px;
+}
+
+.aboutUs .about-info p {
+  color: white;
+}
+
+.aboutUs .about-info .title {
+  color: white;
+}
+
+.aboutUs .about-info .container-text {
+  padding-left: 18%;
+}
+
+@media (max-width: 575px) {
+  .aboutUs .about-info .container-text {
+    padding-left: 0;
+  }
+}
+
+.aboutUs .about-img {
+  position: relative;
+}
+
+.aboutUs .about-img .img-background {
+  background: #D88100;
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  right: -3%;
+  bottom: -7%;
+  z-index: 5;
+  max-height: 550px;
+}
+
+@media screen and (max-width: 940px) {
+  .aboutUs .about-img .img-background {
+    top: 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  .aboutUs .about-img .img-background {
+    top: 8%;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs .about-img .img-background {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.aboutUs .about-img .img-background img {
+  position: absolute;
+  right: -16%;
+  bottom: 3%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 113.5%;
+  height: 100%;
+  -o-object-position: right;
+     object-position: right;
+}
+
+@media (max-width: 767px) {
+  .aboutUs .about-img .img-background img {
+    width: 110.5%;
+  }
+}
+
+@media (max-width: 575px) {
+  .aboutUs .about-img .img-background img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+  }
+}
+
+.aboutUs .btn-primary {
+  margin-top: 50px;
+}
+{%- endstyle -%}
+
+  <section class="my-section aboutUs section-{{ section.id }}-padding section-{{ section.id }}">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="about-img col-sm-5 col-12 p-0 m-0 order-sm-1 order-2">
+                <div class="img-background ">
+                    {% if section.settings.image %}
+                         <img src="{{ section.settings.image.url | img_url : "master" }}" alt="Delicious Food" />
+                    {% endif %}
+                </div>
+            </div>
+            <div class="about-info col-sm-7 col-12 order-sm-2 order-1">
+
+                <div class="container-text">
+                    <h1 class="title-section">{{ section.settings.title_section }}</h1>
+                    <h2 class="title">{{ section.settings.subtitle }}</h2>
+                    <p>
+                        {{ section.settings.description }}
+                    </p>
+                    
+
+                    {% for block in section.blocks %}
+                        {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+                 
+                            <div class="d-none d-sm-flex justify-content-end pr-3">
+                                <a href="{{block.settings.button_link}}" role="button" class="btn-primary">
+                                 {{ block.settings.button_label }}   
+                                </a>
+                            </div>
+                            
+                        {% endif %}
+                    {% endfor %}
+
+            
+                   
+                </div>
+            </div>
+
+        </div>
+        
+        {% for block in section.blocks %}
+            {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+     
+               
+        <div class="d-flex d-sm-none justify-content-center">
+            <a href="{{block.settings.button_link}}"
+                 role="button" class="btn-primary">
+                 {{block.settings.button_label}}
+            </a>
+        </div>
+                
+            {% endif %}
+        {% endfor %}
+
+      
+    </div>
+  </section>
+<!--ABOUT US-->
+
+
+{% schema %}
+{
+  "name": "t:sections.custom-liquid.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+        "type": "header",
+        "content": "About Us Config"
+    },
+    {
+        "type": "text",
+        "id": "title-section",
+        "label": "Title Section",
+        "default": "Best Sellers"
+    },
+    {
+        "type": "text",
+        "id": "subtitle-section",
+        "label": "Subtitle Section",
+        "default": "Our Best Dishes"
+    },
+    {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description Section"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image About"        
+    },
+    {
+      "type": "header",
+      "content": "Custom Colors"
+    },
+    {
+        "id": "background-color",
+        "type": "color",
+        "label": "Background Color"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks":[
+    {
+        "type": "button",
+        "name": "button",
+        "limit": 1,
+        "settings": [
+            {
+                "type": "text",
+                "id": "button_label",
+                "default": "Button label",
+                "label": "Button text"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button_link"
+            }
+        ]
+    }
+],
+  "presets": [
+    {
+      "name": "Custom Section"
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
