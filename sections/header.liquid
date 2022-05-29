@@ -159,10 +159,10 @@
               </ul>
               <ul class="icon-menu">
                 <li class="px-1 px-md-none d-block d-md-none phone-menu"><i class="bx bx-menu"></i></li>
-                <li class="d-none d-md-block"><a href="mailto:info@glamping.global"><i class="bx bxs-envelope"></i></a></li>
-                <li class="d-none d-md-block"><a target="_blank" href="https://www.google.com/maps/"><i
+                <li class="d-none d-md-block"><a href="mailto:{{ section.settings.email }}"><i class="bx bxs-envelope"></i></a></li>
+                <li class="d-none d-md-block"><a target="_blank" href="{{section.settings.location}}"><i
                       class="bx bxs-map"></i></a></li>
-                <li class="d-none d-md-block"><a href="tel:5555555"><i class="bx bxs-phone"></i></a></li>
+                <li class="d-none d-md-block"><a href="tel:{{section.settings.phone}}"><i class="bx bxs-phone"></i></a></li>
                 <li class="line-menu"></li>
                 {%- if shop.customer_accounts_enabled -%}
                 <li>
@@ -435,6 +435,22 @@
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "default": "{{ shop.email }}",
+      "label": "Email"
+    },
+    {
+      "type": "number",
+      "id": "phone",
+      "default": "{{ shop.phone }}",
+    },
+    {
+      "type": "url",
+      "id": "location",
+      "label": "Url Map Location"
     }
   ]
 }
