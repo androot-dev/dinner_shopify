@@ -2870,4 +2870,7 @@ predictive-search[open] .predictive-search{
   .search__button:not(:focus-visible):not(.focused){
   	color:black;
   }
+  .search__input.field__input{
+  	font-size: 0.7em; 
+  }
 /* MY OVERWRITE STYLES */
