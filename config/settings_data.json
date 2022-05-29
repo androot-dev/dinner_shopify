@@ -119,12 +119,12 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_up": "shopify:\/\/shop_images\/Logo_Blanco.png",
+          "logo_up": "shopify:\/\/shop_images\/Logo_Blanco2.png",
           "background_color_menu_fixed": "#ffffff",
           "text_color_menu_fixed": "#000000",
-          "logo_fixed": "shopify:\/\/shop_images\/Logo_Negro.png",
+          "logo_fixed": "shopify:\/\/shop_images\/Logo_Negro2.png",
           "logo_width": 100,
-          "logo_height": 180,
+          "logo_height": 100,
           "menu": "main-menu",
           "email": "{{ shop.email }}",
           "phone": "{{shop.phone}}",
