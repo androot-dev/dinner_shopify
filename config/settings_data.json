@@ -119,14 +119,15 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "logo_up": "shopify:\/\/shop_images\/logo_blanco_amarillo.png",
+          "background_color_menu_fixed": "#ffffff",
+          "text_color_menu_fixed": "#000000",
+          "logo_fixed": "shopify:\/\/shop_images\/Logo_Negro.png",
           "logo_width": 90,
-          "logo_position": "middle-left",
           "menu": "main-menu",
-          "menu_type_desktop": "dropdown",
-          "show_line_separator": true,
-          "enable_sticky_header": true,
-          "margin_bottom": 0
+          "email": "{{ shop.email }}",
+          "phone": "{{shop.phone}}",
+          "location": ""
         }
       },
       "footer": {
