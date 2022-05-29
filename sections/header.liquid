@@ -98,7 +98,7 @@
         }
 
         .modal-menu .my-logo-mobile-menu {
-            background-image: url(<?php echo $logo_fixed ?>);
+            background-image: url( {{ section.settings.mobile_logo | img_url: "master" }} );
         }
 
         header .topheader-with-background {
@@ -513,7 +513,7 @@
 		},
     {
 			"type": "image_picker",
-			"id": "mobile_menu",
+			"id": "mobile_logo",
 			"label": "logo mobile menu"
 		}
 	]
