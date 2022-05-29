@@ -6,7 +6,7 @@
         "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "MAKE A ORDER",
             "button_link": "shopify:\/\/pages\/menu"
           }
         }
@@ -15,7 +15,7 @@
         "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897"
       ],
       "settings": {
-        "video-hero": "",
+        "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
         "line-title-1": "ONLY GIVE THE BEST",
         "line-title-2": "TO YOUR PALATE",
         "banner-text": "DELICIOUS FOOD",
