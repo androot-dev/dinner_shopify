@@ -884,27 +884,6 @@ header .topheader .logo-top {
 .aboutUs .btn-primary {
   margin-top: 50px;
 }
-
-.cyan {
-  background-color: aqua;
-}
-
-.black {
-  background-color: black;
-}
-
-.red {
-  background-color: red;
-}
-
-.yellow {
-  background: yellow;
-}
-
-.blue {
-  background-color: blue;
-}
-
 .menu-food {
   height: auto;
   padding-top: calc(50px + 50px);
