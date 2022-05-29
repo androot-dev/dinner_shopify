@@ -399,8 +399,8 @@ footer .my-logo {
               <h2 class="text-md-left text-center">{{block.settings.heading}}</h2>
               <ul class="quick-links">
               {% for link in block.menu %}
-                    <li class="quick-links__item">
-                        <a class="quick-links__link" href="{{link.url}}">{{link.title}}</a>
+                    <li>
+                        <a href="{{link.url}}">{{link.title}}</a>
                     </li>
               {% endfor %}
             </ul>
