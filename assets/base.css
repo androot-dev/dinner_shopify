@@ -2860,5 +2860,11 @@ predictive-search[open] .predictive-search{
   
   #predictive-search-results ul li:hover, #predictive-search-results ul li a:hover{
   	text-decoration:none !important;
+    
+  }
+  #predictive-search-results ul li a:hover >
+    .predictive-search__item-content > .predictive-search__item-heading {
+  	text-decoration:none !important;
+    
   }
 /* MY OVERWRITE STYLES */
