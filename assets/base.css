@@ -2841,6 +2841,8 @@ predictive-search[open] .predictive-search{
   object-fit: cover !important;
   margin-bottom: 5px;
 }
-
+.predictive-search__item--link{
+  justify-content: flex-start;
+}
 
 /* MY OVERWRITE STYLES */
