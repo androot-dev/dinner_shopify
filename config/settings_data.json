@@ -119,9 +119,15 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo": "shopify:\/\/shop_images\/logo_blanco_amarillo.png",
+          "logo_up": "shopify:\/\/shop_images\/logo_blanco_amarillo.png",
+          "background_color_menu_fixed": "#ffffff",
+          "text_color_menu_fixed": "#000000",
+          "logo_fixed": "shopify:\/\/shop_images\/Logo_Negro.png",
           "logo_width": 90,
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "email": "{{ shop.email }}",
+          "phone": "{{shop.phone}}",
+          "location": ""
         }
       },
       "footer": {
