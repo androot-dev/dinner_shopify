@@ -88,12 +88,12 @@
   }
 
         header .logo-top {
-            background-image: url({{ section.setting.logo_up | img_url: "master"}});
+            background-image: url({{ section.settings.logo_up | img_url: "master"}});
         }
 
         .topheader-with-background .logo-top {
             {% if section.settings.logo_fixed  %} 
-              background-image: url({{ section.setting.logo_fixed | img_url: "master"}});
+              background-image: url({{ section.settings.logo_fixed | img_url: "master"}});
             {% endif %}
         }
 
@@ -163,7 +163,11 @@
       </nav>
     </div>
     <header class="my-section ">
+<<<<<<< HEAD
+
+=======
      
+>>>>>>> 9f935c5f57589876493d452be13a2adc1481990a
       <div class="topheader position-fixed">
           <a href="{{routes.root_url}}">
               <div class="logo-top"></div>
