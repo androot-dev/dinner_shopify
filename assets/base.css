@@ -2833,23 +2833,26 @@ predictive-search[open] .predictive-search{
   border-radius: 10px;
   margin: 8px 0px;
   color: black;
-  font-family: "Kanit";
+  
 }
 .predictive-search__image{
   width:50px;
   height: 50px;
   object-fit: cover !important;
   margin-bottom: 5px;
-  font-family: "Kanit";
+  
 }
 .predictive-search__item--link{
   justify-content: flex-start !important;
-  font-family: "Kanit";
+
 }
   .predictive-search__item--term{
   	border: none;
     width: 100%;
     border-radius:0 0 10px 10px;
     margin: 0 !important;
+  }
+  #predictive-search-results{
+  	font-family: "kanit";
   }
 /* MY OVERWRITE STYLES */
