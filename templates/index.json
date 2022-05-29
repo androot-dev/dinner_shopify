@@ -2,6 +2,18 @@
   "sections": {
     "165379797322edf4d0": {
       "type": "custom-hero",
+      "blocks": {
+        "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "shopify:\/\/pages\/menu"
+          }
+        }
+      },
+      "block_order": [
+        "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897"
+      ],
       "settings": {
         "video-hero": "",
         "line-title-1": "ONLY GIVE THE BEST",
