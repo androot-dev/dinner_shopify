@@ -872,7 +872,7 @@ summary::-webkit-details-marker {
 }
 
 .title-wrapper-with-link a {
-  color: rgb(var(--color-link));
+  color: rgb(var(--primary));
   margin-top: 0;
   flex-shrink: 0;
 }
@@ -1384,7 +1384,7 @@ button.shopify-payment-button__button--unbranded {
   display: flex;
   min-height: 2.4rem;
   align-items: center;
-  color: rgb(var(--color-link));
+  color: rgb(var(--primary));
   margin-left: 0;
   padding-left: 0;
 }
