@@ -2830,10 +2830,11 @@ details[open] .modal-overlay:after{
 predictive-search[open] .predictive-search{
   display: block;
   border: none;
-  background: rgb(221, 221, 221);
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   margin: 8px 10px;
   color: black;
+  font-size: "Kanit";
 }
 .predictive-search__image{
   width:50px;
