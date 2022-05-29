@@ -2459,10 +2459,11 @@ details[open] .modal-overlay::after {
     padding-bottom: 0;
     color: black;
 }
-/* MY STYLES */
+
 details[open] .modal-overlay:after{
   background: #e1d2d22b !important;
 }
+/* MY STYLES */
 .search-modal__content-bottom {
   bottom: calc((var(--inputs-margin-offset) / 2) );
 }
