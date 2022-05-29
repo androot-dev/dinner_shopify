@@ -213,57 +213,97 @@
   </div>
 </footer>
 
-{% javascript %}
-  class LocalizationForm extends HTMLElement {
-    constructor() {
-      super();
-      this.elements = {
-        input: this.querySelector('input[name="locale_code"], input[name="country_code"]'),
-        button: this.querySelector('button'),
-        panel: this.querySelector('.disclosure__list-wrapper'),
-      };
-      this.elements.button.addEventListener('click', this.openSelector.bind(this));
-      this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
-      this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
 
-      this.querySelectorAll('a').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
-    }
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding my-section container-fluid m-0 p-0 d-flex flex-wrap bg-footer text-white">
+  <div class="row w-100 py-5 m-0">
+      <div class="col-md-4 col-12 ">
+          <div class="row justify-content-center">
+              <div class="my-logo"> </div>
+          </div>
+          <div class="row justify-content-center">
+              <a class="px-2" href="https://www.facebook.com" target="_blank">
+                  <i class="bx bxl-facebook-circle"></i>
+              </a>
+              <a class="px-2" href="https://www.instagram.com" target="_blank">
+                  <i class="bx bxl-instagram"></i>
+              </a>
+              <a class="px-2" href="https://www.youtube.com" target="_blank">
+                  <i class="bx bxl-youtube"></i>
+              </a>
+          </div>
+      </div>
+      <div class="col-md-3 col-12 container-quick-links d-md-block d-flex justify-content-center">
+          <div class="container-menu-footer pt-3">
+              <h2 class="text-md-left text-center">Quick Links</h2>
 
-    hidePanel() {
-      this.elements.button.setAttribute('aria-expanded', 'false');
-      this.elements.panel.setAttribute('hidden', true);
-    }
 
-    onContainerKeyUp(event) {
-      if (event.code.toUpperCase() !== 'ESCAPE') return;
+              <?php
+        wp_nav_menu( array(
+                      'theme_location' => 'Quick Links',
+                      'menu_id'        => 'quick-links',
+                      'container'      => 'ul',
+                      "menu_class"     => "quick-links"
+                  ));
+        ?>
 
-      this.hidePanel();
-      this.elements.button.focus();
-    }
 
-    onItemClick(event) {
-      event.preventDefault();
-      const form = this.querySelector('form');
-      this.elements.input.value = event.currentTarget.dataset.value;
-      if (form) form.submit();
-    }
 
-    openSelector() {
-      this.elements.button.focus();
-      this.elements.panel.toggleAttribute('hidden');
-      this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
-    }
+          </div>
+      </div>
+      <div class="col-md-5 col-12 container-more-footer pt-3 d-md-block d-flex justify-content-center">
+          <div class="container-menu-footer">
+              <h2 class="text-md-left text-center">More Information</h2>
+              <ul>
+                  <?php if ( have_rows( 'more_information', 'option' ) ): ?>
+                  <?php while ( have_rows( 'more_information', 'option' ) ) : the_row(); ?>
+                  <?php if ( get_row_layout() == 'Email' ) : ?>
 
-    closeSelector(event) {
-      const shouldClose = event.relatedTarget && event.relatedTarget.nodeName === 'BUTTON';
-      if (event.relatedTarget === null || shouldClose) {
-        this.hidePanel();
-      }
-    }
-  }
 
-  customElements.define('localization-form', LocalizationForm);
-{% endjavascript %}
+
+
+                  <li class="d-flex pr-md-5 pt-3 justify-content-center justify-content-md-start  align-items-center">
+                      <i class="bx <?php the_sub_field( 'icon' ); ?>"></i>
+                      <a target="_blank" href="mailto:<?php the_sub_field( 'email' ); ?>">
+                          <?php the_sub_field( 'label' ); ?>
+                      </a>
+                  </li>
+
+                  <?php elseif ( get_row_layout() == 'location' ) : ?>
+
+
+
+                  <li class="d-flex pr-md-5 pt-3 justify-content-center justify-content-md-start  align-items-center">
+                      <i class="bx  <?php the_sub_field( 'icon' ); ?>"></i>
+                      <a target="_blank" href=" <?php the_sub_field( 'link' ); ?>">
+                          <?php the_sub_field( 'label' ); ?>
+                      </a>
+                  </li>
+                  <?php elseif ( get_row_layout() == 'phone' ) : ?>
+
+
+
+
+                  <li class="d-flex pr-md-5 pt-3 justify-content-center justify-content-md-start align-items-center">
+                      <i class="bx  <?php the_sub_field( 'icon' ); ?>"></i>
+                      <a target="_blank" href="tel:<?php the_sub_field( 'phone' ); ?>">
+                          <?php the_sub_field( 'label' ); ?>
+                      </a>
+                  </li>
+
+
+                  <?php endif; ?>
+                  <?php endwhile; ?>
+                  <?php endif; ?>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="copyright row m-0 justify-content-around align-items-center ">
+      <span>Copyright © 2022 All rights reserved | This Website Was Designed And Developed by</span>
+      <a href="https://josesilvera.com/" target="_blank"> <img class="logoSilvera" alt="author page logo"
+              src="<?php bloginfo("stylesheet_directory")?>/assets/silvera.png"></a>
+  </div>
+</footer>
 
 {% schema %}
 {
@@ -328,7 +368,12 @@
       ]
     } 
   ],
-  "settings": [    
+  "settings": [  
+    {
+      "type": "color_background",
+      "id": "background_color",
+      "label": "Background Footer"
+    },
     {
       "type": "header",
       "content": "t:sections.all.spacing"
