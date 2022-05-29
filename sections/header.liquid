@@ -190,11 +190,20 @@
           {% endfor %}
               </ul>
               <ul class="icon-menu">
+                
                 <li class="px-1 px-md-none d-block d-md-none phone-menu"><i class="bx bx-menu"></i></li>
+              
+                {% if section.settings.email %}
                 <li class="d-none d-md-block"><a href="mailto:{{ section.settings.email }}"><i class="bx bxs-envelope"></i></a></li>
+                {% endif %}
+                {% if section.settings.location %}
                 <li class="d-none d-md-block"><a target="_blank" href="{{section.settings.location}}"><i
                       class="bx bxs-map"></i></a></li>
+                {% endif %}
+                {% if section.settings.phone %}
                 <li class="d-none d-md-block"><a href="tel:{{section.settings.phone}}"><i class="bx bxs-phone"></i></a></li>
+                {% endif %}
+         
                 <li class="line-menu"></li>
                 {%- if shop.customer_accounts_enabled -%}
                 <li>
