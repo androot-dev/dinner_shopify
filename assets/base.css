@@ -585,20 +585,6 @@ h6:empty {
   display: none;
 }
 
-.link,
-.customer a {
-  cursor: pointer;
-  display: inline-block;
-  border: none;
-  box-shadow: none;
-  text-underline-offset: 0.3rem;
-  color: rgb(var(--color-link));
-  background-color: transparent;
-  font-size: 1.4rem;
-  font-family: inherit;
-  color: white;
-}
-
 .link--text {
   color: rgb(var(--color-foreground));
 }
