@@ -15,9 +15,50 @@
 }
 {%- endstyle -%}
 
-  <section class="section-{{ section.id }}-padding section-{{ section.id }}">
-  
+  <section class="my-section hero section-{{ section.id }}-padding section-{{ section.id }}">
+    
+    <?php if ( have_rows( 'hero', 'option' ) ) : ?>
+        <?php while ( have_rows( 'hero', 'option' ) ) : the_row(); ?>
+        <?php
+             $video = get_sub_field( 'video' );
+             if(get_field("change_hero_video")){
+                 $video = get_field("change_hero_video");
+             }
+         ?>
+        <video autoplay="autoplay" class="video-background" loop="loop" muted playsinline="playsinline"
+            src="<?php echo $video; ?>"></video>
+        <div class="hero-action">
+            <div class="text">
+                <h1 class="first-text"><?php the_field( 'line_title_1' ); ?></h1>
+    
+                <div class="container-text">
+                    <h1 class="second-text"><?php the_field( 'line_title_2' ); ?></h1>
+                </div>
+            </div>
+            <?php $btn_action = get_field( 'btn_action' ); ?>
+            <?php if ( $btn_action ) : ?>
+            <a target="<?php echo esc_attr( $btn_action['target'] ); ?>" role="button"
+                href="<?php echo esc_url( $btn_action['url'] ); ?>"
+                class="btn-primary"><?php echo esc_html( $btn_action['title'] ); ?></a>
+            <?php endif; ?>
+        </div>
+    
+        <div class="social-bar">
+            <h2 class="large-text"><?php the_sub_field( 'banner_text' ); ?></h2>
+            <?php if ( have_rows( 'social_bar' ) ) : ?>
+            <ul>
+                <?php while ( have_rows( 'social_bar' ) ) : the_row(); ?>
+                <li><a target="_blank"
+                        href="<?php the_sub_field( 'link' ); ?>"><?php the_sub_field( 'red_social' ); ?></a></li>
+                <?php endwhile; ?>
+            </ul>
+            <?php endif; ?>
+        </div>
+    
+        <?php endwhile; ?>
+        <?php endif; ?>
   </section>
+  
 
 {% schema %}
 {
