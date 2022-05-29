@@ -64,30 +64,6 @@
         "padding_bottom": 0
       }
     },
-    "1653855621992d0dec": {
-      "type": "custom-herosubpage",
-      "disabled": true,
-      "blocks": {
-        "31313df6-a5fa-4c85-95f5-59f54ea88774": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Facebook",
-            "social_link": "https:\/\/www.facebook.com"
-          }
-        }
-      },
-      "block_order": [
-        "31313df6-a5fa-4c85-95f5-59f54ea88774"
-      ],
-      "settings": {
-        "video-hero": "",
-        "title-page": "",
-        "banner-text": "DELICIOUS FOOD",
-        "background-color": "radial-gradient(rgba(121, 128, 252, 1), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "1653859416754852bf": {
       "type": "custom-bestsellers",
       "blocks": {
@@ -120,7 +96,6 @@
   },
   "order": [
     "165379797322edf4d0",
-    "1653855621992d0dec",
     "1653859416754852bf"
   ]
 }
