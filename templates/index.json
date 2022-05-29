@@ -64,17 +64,21 @@
         "padding_bottom": 36
       }
     },
-    "16537688779207c488": {
-      "type": "custom-hero-home",
+    "165379797322edf4d0": {
+      "type": "custom-hero",
       "settings": {
-        "background-color": "#e70e0e",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "video-hero": "",
+        "line-title-1": "ONLY GIVE THE BEST",
+        "line-title-2": "TO YOUR PALATE",
+        "banner-text": "DELICIOUS FOOD",
+        "background-color": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "multicolumn",
-    "16537688779207c488"
+    "165379797322edf4d0"
   ]
 }
