@@ -16,7 +16,6 @@
 
 
 .best-sellers {
-  padding-top: 50px;
   height: auto;
 }
 
@@ -229,6 +228,33 @@
     </div>
   </section>
 
+{% javascript %}
+$(document).ready(function () {
+     $('.best-sellers .owl-carousel').owlCarousel({
+        loop: true,
+        nav: false,
+        margin: 50,
+        items: 2,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            476: {
+                items: 2
+            },
+            768: {
+                items: 1
+            },
+            990: {
+                items: 2
+            }
+        }
+    })
+});
+{% endjavascript %}
 
 {% schema %}
 {
