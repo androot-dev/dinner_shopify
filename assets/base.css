@@ -674,7 +674,7 @@ details > * {
 
 .underlined-link,
 .customer a {
-  color: rgba(var(--color-link), var(--alpha-link));
+  color: rgba(var(--primary), var(--alpha-link));
   text-underline-offset: 0.3rem;
   text-decoration-thickness: 0.1rem;
   transition: text-decoration-thickness ease 100ms;
@@ -682,7 +682,7 @@ details > * {
 
 .underlined-link:hover,
 .customer a:hover {
-  color: rgb(var(--color-primary));
+  color: rgb(var(--primary));
   /*text-decoration-thickness: 0.2rem;*/
 }
 
@@ -2517,7 +2517,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item:hover {
-  color: rgb(var(--color-primary));
+  color: rgb(var(--primary));
 }
 
 .header__menu-item span {
@@ -2543,7 +2543,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-primary));
+  color: rgb(var(--primary));
   /*text-decoration: underline;*/
   /*text-underline-offset: 0.3rem;*/
 }
