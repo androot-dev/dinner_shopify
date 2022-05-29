@@ -494,7 +494,67 @@
   </header>
 
 
- 
+     <!--HEADER
+    <div class="modal-menu my-section">
+      <button class="closeMenu bg-danger text-white">
+          <i class="bx bx-x"></i>
+      </button>
+
+      <nav>
+          <a role="button" class="logo-ref" href="./home">
+              <div class="my-logo-mobile-menu pb-0 mb-0"> </div>
+          </a>
+          <?php 
+            wp_nav_menu( array(
+                'theme_location' => 'Primary',
+                'menu_id'        => 'primary-menu',
+                'container'      => 'ul',       
+            ));
+            ?>
+      </nav>
+    </div>
+    <header class="my-section ">
+      <div class="topheader position-fixed">
+          <a href="./home">
+              <div class="logo-top"></div>
+          </a>
+          <nav>
+              <ul class="text-menu d-none d-md-flex">
+                   {% for link in linklists.main-menu.links %}
+              {% assign child_list_handle = link.title | handleize %}
+              {% if linklists[child_list_handle].links != blank %}
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
+                  [{% for childlink in linklists[child_list_handle].links %}
+                      <li class="nav-item">
+                          <a class="nav-link" href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+                      </li>
+                  {% endfor %}]
+              {% else %}
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ link.url }}">{{ link.title }}</a>
+                  </li>
+              {% endif %}
+          {% endfor %}
+              </ul>
+              <ul class="icon-menu">
+                  <li class="px-1 px-md-none d-block d-md-none phone-menu"><i class="bx bx-menu"></i></li>
+                  <li class="d-none d-md-block"><a href="mailto:<?php the_field( 'email', "option" ); ?>"><i
+                              class="bx bxs-envelope"></i></a></li>
+                  <li class="d-none d-md-block"><a target="_blank"
+                          href="<?php the_field( 'map_link', "option" ); ?>"><i class="bx bxs-map"></i></a></li>
+                  <li class="d-none d-md-block"><a href="tel:<?php the_field( 'phone', "option" ); ?>"><i
+                              class="bx bxs-phone"></i></a></li>
+                  <li class="line-menu"></li>
+                  <li><a href="#"><i class='bx bx-search-alt'></i></a></li>
+                  <li><a href="#"><i class="bx bx-cart"></i></a></li>
+              </ul>
+          </nav>
+      </div>
+    </header>
+
+   -->
 
     
 
