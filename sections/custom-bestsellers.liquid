@@ -196,7 +196,7 @@
                                     <div class="tag-price">{{ block.settings.best_product.price | money }} </div>
                                     <div class="card-footer  p-0 d-flex justify-content-between">
                                         <span class="name-plate"> {{ block.settings.best_product.title }}</span>
-                                        <a href="#" role="button" class="btn-primary-small"><i
+                                        <a href="{{routes.cart_add_url}}?id={{ block.settings.product.variants.first.id }}&quantity=1" role="button" class="btn-primary-small"><i
                                                 class="bx bx-tada-hover bx-cart"></i></a>
                                     </div>
                                 </div>
@@ -206,14 +206,21 @@
     
                 </div>
             </div>
-            <?php $button_action_1 = get_field( 'button_action_1' ); ?>
-            <?php if ( $button_action_1 ) : ?>
-            <div class="col-12 d-flex d-md-none justify-content-center mt-4">
-                <a target="<?php echo esc_attr( $button_action_1['target'] ); ?> href="
-                    href="<?php echo esc_url( $button_action_1['url'] ); ?>" role="button"
-                    class="btn-primary"><?php echo esc_html( $button_action_1['title'] ); ?></a>
-            </div>
-            <?php endif; ?>
+            {% for block in section.blocks %}
+                {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+         
+                    <a href="" role="button"
+                    class="btn-primary d-none d-md-flex"></a>
+
+                    <div class="col-12 d-flex d-md-none justify-content-center mt-4">
+                        <a href="
+                            href="{{ block.settings.button_link }}" role="button"
+                            class="btn-primary">{{ block.settings.button_label }}</a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            
+           
         </div>
     </div>
   </section>
