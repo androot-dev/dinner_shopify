@@ -143,10 +143,26 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "d8525b3f-50e2-42f8-8b0e-0240ec02c294": {
+            "type": "social_links",
+            "settings": {
+              "icon": "bxl-facebook-circle",
+              "url": "https:\/\/www.facebook.com"
+            }
+          },
+          "e34dcb05-d445-4ce2-aa3e-cb7839aa20b3": {
+            "type": "social_links",
+            "settings": {
+              "icon": "bxl-youtube",
+              "url": "https:\/\/www.youtube.com"
+            }
           }
         },
         "block_order": [
-          "75a3322b-6b7a-4abf-bb0c-d7113d7b8db4"
+          "75a3322b-6b7a-4abf-bb0c-d7113d7b8db4",
+          "d8525b3f-50e2-42f8-8b0e-0240ec02c294",
+          "e34dcb05-d445-4ce2-aa3e-cb7839aa20b3"
         ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo_blanco_amarillo.png",
