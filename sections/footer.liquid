@@ -187,7 +187,12 @@ footer .my-logo {
   }
 }
 .padding-bottom-footer{
-  padding-bottom: {{ section.settings.padding_bottom }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+@media screen and (min-width: 750px) {
+  .padding-bottom-footer{
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
 }
 
 {%- endstyle -%}
