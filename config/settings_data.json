@@ -184,9 +184,9 @@
           "0784e13c-460d-4225-926d-483e40e20f8e": {
             "type": "more_information",
             "settings": {
-              "url": "",
-              "label": "",
-              "icon": ""
+              "url": "https:\/\/www.google.com\/maps",
+              "label": "5191 Eastside Hwy Stevensville, MT 59870",
+              "icon": "bxs-map"
             }
           }
         },
