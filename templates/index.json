@@ -87,10 +87,33 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "1653859416754852bf": {
+      "type": "custom-bestsellers",
+      "blocks": {
+        "476213eb-1f14-4395-ae82-53c2e346a150": {
+          "type": "best_product",
+          "settings": {
+            "best_product": "gourmet-dish-1"
+          }
+        }
+      },
+      "block_order": [
+        "476213eb-1f14-4395-ae82-53c2e346a150"
+      ],
+      "settings": {
+        "title-section": "Best Sellers",
+        "subtitle-section": "Our Best Dishes",
+        "description-section": "<p>In our menu you will find the best dishes in the whole city, dishes made with fresh ingredients and excellent quality, and selected with great care to offer you unique dishes, so that you live with us a unique experience<\/p>",
+        "background-color": "#ffffff",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "165379797322edf4d0",
-    "1653855621992d0dec"
+    "1653855621992d0dec",
+    "1653859416754852bf"
   ]
 }
