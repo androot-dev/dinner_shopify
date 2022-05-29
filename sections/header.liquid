@@ -86,6 +86,36 @@
       margin-bottom: {{ section.settings.margin_bottom }}px;
     }
   }
+
+        header .logo-top {
+            background-image: url({{ section.setting.logo_up | img_url: "master"}});
+        }
+
+        .topheader-with-background .logo-top {
+            {% if section.settings.logo_fixed  %} 
+              background-image: url({{ section.setting.logo_fixed | img_url: "master"}});
+            {% endif %}
+        }
+
+        .modal-menu .my-logo-mobile-menu {
+            background-image: url( {{ section.settings.mobile_logo | img_url: "master" }});
+        }
+
+        header .topheader-with-background {
+            box-shadow: 0px 0px 29px -19px rgba(0, 0, 0, 0.75);
+            background-color: {{ section.settings.background_color_menu_fixed}};
+
+            /* box-shadow: 0 0 30px rgb(214 215 216 / 40%); */
+        }
+
+        header .topheader-with-background a,
+        header .topheader-with-background i {
+            color: {{section.settings.text_color_menu_fixed}};
+        }
+
+        header .topheader-with-background .line-menu {
+            background-color: {{section.settings.text_color_menu_fixed}} !important;
+        }
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -159,10 +189,10 @@
               </ul>
               <ul class="icon-menu">
                 <li class="px-1 px-md-none d-block d-md-none phone-menu"><i class="bx bx-menu"></i></li>
-                <li class="d-none d-md-block"><a href="mailto:info@glamping.global"><i class="bx bxs-envelope"></i></a></li>
-                <li class="d-none d-md-block"><a target="_blank" href="https://www.google.com/maps/"><i
+                <li class="d-none d-md-block"><a href="mailto:{{ section.settings.email }}"><i class="bx bxs-envelope"></i></a></li>
+                <li class="d-none d-md-block"><a target="_blank" href="{{section.settings.location}}"><i
                       class="bx bxs-map"></i></a></li>
-                <li class="d-none d-md-block"><a href="tel:5555555"><i class="bx bxs-phone"></i></a></li>
+                <li class="d-none d-md-block"><a href="tel:{{section.settings.phone}}"><i class="bx bxs-phone"></i></a></li>
                 <li class="line-menu"></li>
                 {%- if shop.customer_accounts_enabled -%}
                 <li>
@@ -412,30 +442,80 @@
 
 {% schema %}
 {
-  "name": "t:sections.header.name",
-  "class": "section-header",
-  "settings": [
+	"name": "t:sections.header.name",
+	"class": "section-header",
+	"settings": [{
+			"type": "header",
+			"content": "HEADER"
+		},
+		{
+			"type": "image_picker",
+			"id": "logo_up",
+			"label": "logo on the top"
+		},
+		{
+			"type": "header",
+			"content": "HEADER FIXED"
+		},
+		{
+			"type": "color",
+			"id": "background_color_menu_fixed",
+			"label": "Background sticky menu",
+			"default": "#ffffff"
+		},
+		{
+			"type": "color",
+			"id": "text_color_menu_fixed",
+			"label": "Text color",
+			"default": "#000000"
+		},
+		{
+			"type": "image_picker",
+			"id": "logo_fixed",
+			"label": "logo in sticky menu"
+		},
+
+		{
+			"type": "range",
+			"id": "logo_width",
+			"min": 50,
+			"max": 250,
+			"step": 10,
+			"default": 100,
+			"unit": "t:sections.header.settings.logo_width.unit",
+			"label": "t:sections.header.settings.logo_width.label"
+		},
+		{
+			"type": "link_list",
+			"id": "menu",
+			"default": "main-menu",
+			"label": "t:sections.header.settings.menu.label"
+		},
+		{
+			"type": "text",
+			"id": "email",
+			"default": "{{ shop.email }}",
+			"label": "Email"
+		},
+		{
+			"type": "number",
+			"id": "phone",
+  			"label": "Store phone number"
+		},
+		{
+			"type": "url",
+			"id": "location",
+			"label": "Url Map Location"
+		},
     {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "t:sections.header.settings.logo.label"
-    },
+			"type": "header",
+			"content": "MOBILE MENU"
+		},
     {
-      "type": "range",
-      "id": "logo_width",
-      "min": 50,
-      "max": 250,
-      "step": 10,
-      "default": 100,
-      "unit": "t:sections.header.settings.logo_width.unit",
-      "label": "t:sections.header.settings.logo_width.label"
-    },
-    {
-      "type": "link_list",
-      "id": "menu",
-      "default": "main-menu",
-      "label": "t:sections.header.settings.menu.label"
-    }
-  ]
+			"type": "image_picker",
+			"id": "mobile_logo",
+			"label": "logo mobile menu"
+		}
+	]
 }
 {% endschema %}
