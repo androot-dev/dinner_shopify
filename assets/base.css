@@ -2864,16 +2864,15 @@ details-disclosure > details {
 
 
 .search__input.field__input{
-  padding-right: 5rem;
-    box-shadow: -5px 4px 0px rgb(0 0 0 / 25%);
-    width: 75%;
-    outline: none;
-    background: rgb(221, 221, 221);
-    border-radius: 30px;
-    padding: 10px;
-    font-size: 15px;
-    padding-bottom: 0;
-    color: black;
+  background-color: white;
+  padding: 10px;
+  border: none;
+  outline-color: #FF9900;
+  font-family: "Kanit-Medium", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: inherit;
+  height: 45px;
 }
 
 details[open] .modal-overlay:after{
