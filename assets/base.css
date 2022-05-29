@@ -2873,4 +2873,7 @@ predictive-search[open] .predictive-search{
   .search__input.field__input{
   	font-size: 0.7em; 
   }
+  .search__input.field__input{
+    border: solid 1px #ededed;
+  }
 /* MY OVERWRITE STYLES */
