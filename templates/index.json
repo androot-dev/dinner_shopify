@@ -104,8 +104,8 @@
       "settings": {
         "title-section": "Best Sellers",
         "subtitle-section": "Our Best Dishes",
-        "description-section": "",
-        "background-color": "",
+        "description-section": "<p>In our menu you will find the best dishes in the whole city, dishes made with fresh ingredients and excellent quality, and selected with great care to offer you unique dishes, so that you live with us a unique experience<\/p>",
+        "background-color": "#ffffff",
         "padding_top": 40,
         "padding_bottom": 52
       }
