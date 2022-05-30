@@ -25,7 +25,7 @@
     .item-food {
         border-radius: 0px;
         border: none;
-        
+
         {% if width %}
             width: {{width}}px;
             {% else %}
@@ -40,11 +40,17 @@
         {% endif %}
        
     }
+
     .item-food .card-img-top {
         min-height: calc({{height}}px - 40px);
         max-height: calc({{height}}px - 40px);
         -o-object-fit: cover;
             object-fit: cover;
+    }
+
+    .item-food {
+        border-radius: 0px;
+        border: none;
     }
     .item-food .name-plate {
         font-family: "Kanit", sans-serif;
