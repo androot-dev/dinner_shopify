@@ -20,12 +20,24 @@
 
 
 {% style %}
+
     
     .item-food {
         border-radius: 0px;
         border: none;
-        width: {{width}}px;
-        height: {{height}}px;
+        {% if width %}
+            width: {{width}}px;
+            {% else %}
+            width: 300px;
+        {% endif %}
+
+        
+        {% if height %}
+            height: {{height}}px;
+            {% else %}
+            height: 350px;
+        {% endif %}
+       
     }
     .item-food .card-img-top {
         min-height: calc({{height}}px - 40px);
