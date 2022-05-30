@@ -184,13 +184,13 @@
 
 @media (max-width: 767px) {
   .my-section {
-    font-size: 23.5px;
+    font-size: 23.5px !important;
   }
 }
 
 @media (max-width: 360px) {
   .my-section {
-    font-size: 22px;
+    font-size: 22px !important;
   }
 }
 
