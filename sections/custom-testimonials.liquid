@@ -205,50 +205,45 @@
             <h1 class="w-100 title-section">{{section.settings.title-section}}</h1>
             <h2 class="title">{{section.settings.subtitle-section}}</h2>
             <p>
-               {{ section.settings.description-section }}
+               {{ section.settings.description }}
             </p>
 
-            <?php $button_action_5 = get_field( 'button_action_5', "576" ); ?>
-            <?php if ( $button_action_5 ) : ?>
+            {% if section.settings.button_text and section.settings.button_url %}
             <div class="d-none d-md-flex justify-content-start">
-                <a href="<?php echo esc_url( $button_action_5['url'] ); ?>"
-                    target="<?php echo esc_attr( $button_action_5['target'] ); ?>" class="btn-primary">
-                    <?php echo esc_html( $button_action_5['title'] ); ?>
+                <a href="{{section.settings.button_url}}" class="btn-primary">
+                    {{ section.settings.button_text }}
                 </a>
             </div>
-            <?php endif; ?>
-
+            {% endif %}
         </div>
 
         <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
             <div class="grid-carousel">
                 <div class="owl-carousel owl-theme">
 
-                    <?php if ( have_rows( 'videos_testimonials', "576" ) ) : ?>
-                    <?php while ( have_rows( 'videos_testimonials', "576" ) ) : the_row(); ?>
-                    <div class="item-test">
-                        <div class="video-container position-relative">
-                            <div class="name"><?php the_sub_field( 'name' ); ?></div>
-                            <video class="video-testimonial" src=" <?php the_sub_field( 'video_url' ); ?>"></video>
-                            <button class="playBtn"></button>
+                   {% for block in section.blocks %}
+                    {% if block.type == 'testimonial' %}
+                        <div class="item-test">
+                            <div class="video-container position-relative">
+                                <div class="name">{{ block.settings.name }}</div>
+                                <video class="video-testimonial" src=" {{ block.settings.video_url }}"></video>
+                                <button class="playBtn"></button>
+                            </div>
                         </div>
-                    </div>
-                    <?php endwhile; ?>
-                    <?php endif; ?>
+                    {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
 
     </div>
-    <?php $button_action_5 = get_field( 'button_action_5', "576" ); ?>
-    <?php if ( $button_action_5 ) : ?>
-    <div class="d-flex d-md-none justify-content-center">
-        <a href="<?php echo esc_url( $button_action_5['url'] ); ?>"
-            target="<?php echo esc_attr( $button_action_5['target'] ); ?>" class="btn-primary">
-            <?php echo esc_html( $button_action_5['title'] ); ?>
-        </a>
-    </div>
-    <?php endif; ?>
+    {% if section.settings.button_text and section.settings.button_url %}
+        <div class="d-flex d-md-none justify-content-center">
+            <a href="{{section.settings.button_url}}" class="btn-primary">
+                {{ section.settings.button_text }}
+            </a>
+        </div>
+    {% endif %} 
   </section>
 {% schema %}
 {
@@ -267,6 +262,11 @@
         "id": "subtitle-section",
         "label": "Subtitle Section",
         "default": "What do our customers say"
+    },
+    {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description"      
     },
     {
       "type": "header",
@@ -300,6 +300,39 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 52
+    },
+    {
+        "type": "header",
+        "content": "Button action"
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "VIEW MORE"
+    },
+    {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+    }
+  ],
+  "blocks":[
+    {
+        "type": "testimonials",
+		"name": "Testimonials",
+        "settings":[
+            {
+                "type": "url",
+                "id": "video_url",
+                "label": "Video URL"
+            },
+            {
+                "type": "text",
+                "id": "name",
+                "label": "Name"
+            }
+        ] 
     }
   ],
   "presets": [
