@@ -1,5 +1,6 @@
 
 
+
 <div onclick="goDetails(  '{{product.url}}' )" class="card item-food card position-relative">
     <img class="card-img-top" src="{{product.images.first | img_url : "master" }}" width="400" height="350" alt="{{product.title}}">
     <div class="tag-price">{{product.price | money}}</div>
@@ -64,4 +65,149 @@
     width: 20%;
     }
 
+
+
+/* 
+.......
+
+*/
+
+
+.item-food .tag-price {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  height: 35px;
+  padding: 8px 30px;
+  background: var(--primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+  color: white;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: inherit;
+  -webkit-box-shadow: 4px 6px 45px -14px rgba(0, 0, 0, 0.863);
+          box-shadow: 4px 6px 45px -14px rgba(0, 0, 0, 0.863);
+}
+
+.menu-food-sub .item-food {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  pointer-events: all;
+  min-width: 200px;
+}
+
+.menu-food-sub .item-food .card-img-top {
+  min-height: 260px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 260px;
+}
+
+.menu-food-sub .btn-primary-small {
+  color: white !important;
+  margin-right: 1px;
+  pointer-events: none;
+}
+
+.menu-food-sub .btn-primary-small i {
+  pointer-events: all;
+}
+
+.menu-food-sub .category .card-body {
+  min-height: 360px;
+  max-height: 750px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .menu-food-sub .category .card-body {
+    max-height: 672px !important;
+  }
+}
+
+.menu-food-sub .category .card-body::-webkit-scrollbar {
+  width: 3px !important;
+  height: 3px !important;
+  margin-left: -19px !important;
+}
+
+.menu-food-sub .category .card-body::-webkit-scrollbar-thumb {
+  background: var(--primary) !important;
+  border-radius: 0px !important;
+  margin-left: -9px !important;
+}
+
+.menu-food-sub .category .card-body::-webkit-scrollbar-thumb:hover {
+  background: #2d2d2d !important;
+  -webkit-box-shadow: 0 0 2px 1px rgba(56, 56, 56, 0) !important;
+          box-shadow: 0 0 2px 1px rgba(56, 56, 56, 0) !important;
+}
+
+.menu-food-sub .category .card-body::-webkit-scrollbar-thumb:active {
+  background-color: var(--primary) !important;
+}
+
+.menu-food-sub .category .card-deck {
+  pointer-events: none;
+  height: auto !important;
+}
+
+.menu-food-sub .category .card-img-overlay {
+  background: rgba(34, 34, 34, 0.521) !important;
+  z-index: 1;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.menu-food-sub .category .header {
+  position: relative;
+}
+
+.menu-food-sub .category .header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 250px;
+  min-height: 150px;
+  z-index: 1;
+}
+
+.menu-food-sub .category .tag-banner {
+  font-size: 1em;
+}
+
+@media (max-width: 575px) {
+  .menu-food-sub {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu-food-sub {
+    padding: 0 5%;
+  }
+}
 {% endstyle %}
