@@ -226,6 +226,73 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "custom-hero-sub": {
+        "type": "custom-hero-sub",
+        "blocks": {
+          "9bfdc8f6-d448-497a-93ed-5bc6a2281a6e": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Facebook",
+              "social_link": "https:\/\/www.facebook.com"
+            }
+          },
+          "7d9c4c17-ce01-4498-a6cd-830d102b7546": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Twitter",
+              "social_link": "https:\/\/www.twitter.com"
+            }
+          },
+          "04357a42-7938-48a3-8529-c37fb5a944f6": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Youtube",
+              "social_link": "https:\/\/www.youtube.com"
+            }
+          },
+          "4da7a59a-c362-4522-8672-957afe879602": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Linkedin",
+              "social_link": "https:\/\/www.linkedin.com"
+            }
+          },
+          "09cf2d0f-693a-49f0-8e0e-5b90c81e2aa6": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Instagram",
+              "social_link": "https:\/\/www.instagram.com"
+            }
+          }
+        },
+        "block_order": [
+          "9bfdc8f6-d448-497a-93ed-5bc6a2281a6e",
+          "7d9c4c17-ce01-4498-a6cd-830d102b7546",
+          "04357a42-7938-48a3-8529-c37fb5a944f6",
+          "4da7a59a-c362-4522-8672-957afe879602",
+          "09cf2d0f-693a-49f0-8e0e-5b90c81e2aa6"
+        ],
+        "settings": {
+          "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
+          "title-page": "",
+          "banner-text": "DELICIOUS FOOD",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
+      },
+      "custom-contact-sub": {
+        "type": "custom-contact-sub",
+        "settings": {
+          "title-section": "Contact Us",
+          "subtitle-section": "",
+          "form_title": "Get In Touch",
+          "embed_map": "",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
       }
     },
     "content_for_index": [
