@@ -34,6 +34,11 @@
     width: 20%;
     bottom: 35px;
   }
+  @media (max-width: 575px) {
+ .title-section:before {
+    display: none;
+  }
+}
 .faq .card-header {
   border: 1px solid #e7e7e700;
   background: rgba(255, 255, 255, 0.89);
@@ -42,11 +47,7 @@
   margin: 0px;
   border-radius: 0 !important;
 }
-@media (max-width: 575px) {
- .title-section:before {
-    display: none;
-  }
-}
+
 .faq .card-header a {
   cursor: pointer;
 }
