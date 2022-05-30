@@ -128,10 +128,16 @@
     "16538770224b68a50b": {
       "type": "custom-menu",
       "blocks": {
-        "88f33989-3d88-4195-a9a6-46ecc2c4bc0e": {
+        "0a18e609-7cfe-4943-97a6-23b9ec02ee1c": {
           "type": "category",
           "settings": {
-            "collection": "desserts"
+            "collection": "soup"
+          }
+        },
+        "52a66fa8-5c76-491e-bd0f-3a2390c43eaf": {
+          "type": "category",
+          "settings": {
+            "collection": "hors-doeuvres"
           }
         },
         "80013d67-a83d-4c51-a0f2-aca3117505fb": {
@@ -140,24 +146,32 @@
             "collection": "fittings"
           }
         },
+        "88f33989-3d88-4195-a9a6-46ecc2c4bc0e": {
+          "type": "category",
+          "settings": {
+            "collection": "desserts"
+          }
+        },
         "d720c473-6ef1-40cb-9dd0-71d1888c64bf": {
           "type": "category",
           "settings": {
-            "collection": ""
+            "collection": "gourmet"
           }
         }
       },
       "block_order": [
-        "88f33989-3d88-4195-a9a6-46ecc2c4bc0e",
+        "0a18e609-7cfe-4943-97a6-23b9ec02ee1c",
+        "52a66fa8-5c76-491e-bd0f-3a2390c43eaf",
         "80013d67-a83d-4c51-a0f2-aca3117505fb",
+        "88f33989-3d88-4195-a9a6-46ecc2c4bc0e",
         "d720c473-6ef1-40cb-9dd0-71d1888c64bf"
       ],
       "settings": {
         "title-section": "Menu",
         "subtitle-section": "Meet all our dishes",
-        "background-color": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "background-color": "#ffffff",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
