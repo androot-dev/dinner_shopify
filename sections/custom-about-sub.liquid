@@ -27,14 +27,15 @@
                 <div class="images-about">
                     <img src="{{ section.settings.image_2 }}">
                 </div>
-                
+
             </div>
         </div>
         <div class="col-12 col-md-6 order-1 order-md-2 pl-4 ">
-            <h1 class="mx-0 title-section row justify-content-md-start"><?php the_field( 'title_section' ); ?></h1>
+            <h1 class="mx-0 title-section row justify-content-md-start">{{section.settings.title-section}}</h1>
             <h2 class="mx-0 title row justify-content-md-start justify-content-center">
-                <?php the_field( 'subtitle_section' ); ?></h2>
-            <p><?php the_field( 'description' ); ?></p>
+                {{section.settings.subtitle-section}}
+            </h2>
+            <p>{{section.settings.description}}</p>
             <?php $button = get_field( 'button' ); ?>
             <?php if ( $button ) : ?>
             <div class="pt-5 d-none d-md-flex justify-content-end pr-5">
@@ -120,7 +121,22 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 52
-    }
+    },
+    {
+        "type": "header",
+        "content": "Button action"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "View Menu"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      },
   ],
   "presets": [
     {
