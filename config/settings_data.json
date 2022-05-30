@@ -295,10 +295,10 @@
           "b2c12c56-396c-4018-9b50-ca6f92f91df5": {
             "type": "info-box",
             "settings": {
-              "heading": "Heading",
-              "icon": "",
-              "label": "Label",
-              "url": "",
+              "heading": "Call Us",
+              "icon": "bxs-phone",
+              "label": "+5005555400",
+              "url": "tel:05050505",
               "new_tab": false
             }
           },
