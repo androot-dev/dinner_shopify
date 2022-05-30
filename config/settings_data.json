@@ -382,6 +382,19 @@
           "padding_top": 40,
           "padding_bottom": 52
         }
+      },
+      "custom-about-sub": {
+        "type": "custom-about-sub",
+        "settings": {
+          "title-section": "About Us",
+          "subtitle-section": "Our History",
+          "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex cum molestiae nam, autem voluptatibus perspiciatis repellat enim mollitia sint. Voluptas esse nam, alias sit cupiditate ex officia corrupti temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta iusto fugit laudantium atque magni eligendi blanditiis aliquam, voluptatum impedit inventore, sequi natus ratione vel asperiores, qui voluptas nemo? Est.<\/p>",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52,
+          "button_text": "View Menu",
+          "button_url": ""
+        }
       }
     },
     "content_for_index": [
