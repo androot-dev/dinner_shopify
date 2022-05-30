@@ -1,69 +1,5 @@
 {
   "sections": {
-    "165379797322edf4d0": {
-      "type": "custom-hero",
-      "blocks": {
-        "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897": {
-          "type": "button",
-          "settings": {
-            "button_label": "MAKE A ORDER",
-            "button_link": "shopify:\/\/pages\/menu"
-          }
-        },
-        "29bf634d-90a7-450a-b125-faf6a9f48439": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Facebook",
-            "social_link": "https:\/\/www.facebook.com"
-          }
-        },
-        "356d083c-a080-4da4-9153-a7c9fa6617be": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Twtter",
-            "social_link": "https:\/\/www.twitter.com"
-          }
-        },
-        "7ae3b478-2463-4735-a73b-d0506c86b9cc": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Youtube",
-            "social_link": "https:\/\/www.youtube.com"
-          }
-        },
-        "99ee2abd-4fba-4e0f-9fa8-e10a11bc0f43": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Linkedin",
-            "social_link": "https:\/\/www.linkedin.com"
-          }
-        },
-        "55b1f562-3756-4ebc-85d9-319b7001f3c8": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Instagram",
-            "social_link": "https:\/\/www.instagram.com"
-          }
-        }
-      },
-      "block_order": [
-        "4f7fccef-20fc-4d75-a4f9-de4f5ebc3897",
-        "29bf634d-90a7-450a-b125-faf6a9f48439",
-        "356d083c-a080-4da4-9153-a7c9fa6617be",
-        "7ae3b478-2463-4735-a73b-d0506c86b9cc",
-        "99ee2abd-4fba-4e0f-9fa8-e10a11bc0f43",
-        "55b1f562-3756-4ebc-85d9-319b7001f3c8"
-      ],
-      "settings": {
-        "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
-        "line-title-1": "ONLY GIVE THE BEST",
-        "line-title-2": "TO YOUR PALATE",
-        "banner-text": "DELICIOUS FOOD",
-        "background-color": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "1653859416754852bf": {
       "type": "custom-bestsellers",
       "blocks": {
@@ -223,7 +159,6 @@
     }
   },
   "order": [
-    "165379797322edf4d0",
     "1653859416754852bf",
     "16538617038ea41206",
     "16538770224b68a50b",
