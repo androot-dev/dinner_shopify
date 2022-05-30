@@ -212,6 +212,20 @@
     },
     "16538949699a0d3a0c": {
       "type": "custom-contact-sub",
+      "blocks": {
+        "224ddb83-6fc7-4dd7-ac93-e3c065ebf60e": {
+          "type": "info-box",
+          "settings": {
+            "heading": "Email Us",
+            "icon": "bxs-envelope",
+            "label": "info@dinner.com",
+            "url": "mailto:info@dinner.com"
+          }
+        }
+      },
+      "block_order": [
+        "224ddb83-6fc7-4dd7-ac93-e3c065ebf60e"
+      ],
       "settings": {
         "title-section": "Contact Us",
         "subtitle-section": "",
