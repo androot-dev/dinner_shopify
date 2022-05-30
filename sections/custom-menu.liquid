@@ -40,10 +40,10 @@
         {% endif %}
         
         
-          {% assign url_coll = routes.root_url | append : "/pages/menu?id_collection=" | append : block.settings.collection.id %}
+         
       
           <div class="col-md-{{col}} p-2">
-            <a href="{{url_coll}}" class=" banner-image ">
+            <a href="{{block.settings.collection.url}}" class=" banner-image ">
 
               {% if block.settings.collection.image %}
                 <div class="image" style="background-image:url('{{block.settings.collection.image | img_url : "master"}}');"></div>
