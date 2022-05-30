@@ -13,15 +13,199 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 }
+
+.testimonials .col-md-6 {
+  padding: 0 5%;
+}
+
+.testimonials .grid-carousel {
+  width: 350px;
+}
+
+@media (max-width: 767px) {
+  .testimonials .grid-carousel {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .testimonials .grid-carousel {
+    width: 250px;
+  }
+}
+
+.testimonials .title-section {
+  position: relative;
+}
+
+.testimonials .title-section:before {
+  content: "";
+  background: #FF9900;
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  width: 60%;
+  left: -45%;
+  bottom: 22px;
+}
+
+@media (max-width: 575px) {
+  .testimonials .title-section:before {
+    display: none;
+  }
+}
+
+.testimonials .btn-primary {
+  margin-top: 50px;
+}
+
+.testimonials p {
+  padding-bottom: 30px;
+}
+
+.testimonials .btn-primary {
+  margin-left: 20%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .testimonials .btn-primary {
+    margin-left: 0;
+  }
+}
+
+.testimonials p, .testimonials h1, .testimonials h2 {
+  padding-left: 20%;
+}
+
+@media (max-width: 767px) {
+  .testimonials p, .testimonials h1, .testimonials h2 {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonials p, .testimonials h1, .testimonials h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.testimonials .item-test {
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+  .testimonials .item-test {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .testimonials .item-test {
+    margin-left: 0;
+  }
+  .testimonials .item-test .name {
+    display: none !important;
+  }
+  .testimonials .item-test .video-container {
+    margin-right: 0px;
+  }
+}
+
+.testimonials .item-test .name {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#383838));
+  background: linear-gradient(180deg, #000000 0%, #383838 100%);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95%;
+  position: absolute;
+  left: -62px;
+  top: 0;
+  width: 50px;
+  font-family: "Kanit", sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.testimonials .item-test .video-container {
+  width: 265px;
+  height: 100%;
+  background-color: #D88100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials .item-test .video-container .video-testimonial {
+  width: 100%;
+  height: 97%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+  margin-left: -15px;
+}
 {%- endstyle -%}
 
   <section class="testimonials my-section container-fluid section-{{ section.id }}-padding section-{{ section.id }}">
     <div class="row">
         <div class="col-12 col-md-6 m-0 p-0">
-            <h1 class="w-100 title-section"><?php the_field( 'title_section_5', "576" ); ?></h1>
-            <h2 class="title"><?php the_field( 'subtitle_section_5', "576" ); ?></h2>
+            <h1 class="w-100 title-section">{{section.settings.title-section}}</h1>
+            <h2 class="title">{{section.settings.subtitle-section}}</h2>
             <p>
-                <?php the_field( 'description_section_5', "576" ); ?>
+               {{ section.settings.description-section }}
             </p>
 
             <?php $button_action_5 = get_field( 'button_action_5', "576" ); ?>
