@@ -129,6 +129,19 @@
   position: relative;
 }
 
+.overlay-med-left::after {
+  height: 100%;
+  width: 25%;
+  background-color: var(--primary);
+  opacity: 0.1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 200px;
+  min-width: 60px;
+  z-index: -2;
+}
 
 .overlay-med-left::before {
   height: 100%;
