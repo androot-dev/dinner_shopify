@@ -445,6 +445,42 @@
       },
       "custom-hero": {
         "type": "custom-hero",
+        "blocks": {
+          "d7e4dc76-5d6e-44f1-9d11-b40bdf1cbdac": {
+            "type": "button",
+            "settings": {
+              "button_label": "MAKE A ORDER",
+              "button_link": "shopify:\/\/pages\/menu"
+            }
+          },
+          "9b87f5ef-921a-494b-ac2c-8f01e5667067": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Facebook",
+              "social_link": "https:\/\/facebook.com"
+            }
+          },
+          "5e26f21e-0a16-49da-bb11-ec32ebeea8b6": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Instagram",
+              "social_link": "https:\/\/instagram.com"
+            }
+          },
+          "23f67774-4621-42c9-b60f-36526ebc1e30": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Youtube",
+              "social_link": "https:\/\/youtube.com"
+            }
+          }
+        },
+        "block_order": [
+          "d7e4dc76-5d6e-44f1-9d11-b40bdf1cbdac",
+          "9b87f5ef-921a-494b-ac2c-8f01e5667067",
+          "5e26f21e-0a16-49da-bb11-ec32ebeea8b6",
+          "23f67774-4621-42c9-b60f-36526ebc1e30"
+        ],
         "settings": {
           "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
           "line-title-1": "ONLY GIVE THE BEST",
