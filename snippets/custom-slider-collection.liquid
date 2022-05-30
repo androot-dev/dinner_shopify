@@ -7,30 +7,29 @@
     <div id="category-{{ collection.id }}" class="owl-carousel owl-theme">
         {% for product in collection %}        
          {% render "custom-product", product: product %}
-
-        {% javascript %}
-            $("#category-{{collection.id}} .owl-carousel").owlCarousel({
-            loop: true,
-            nav: false,
-            margin: 150,
-            items: 1,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            center: true,
-            responsive: {
-            500: {
-                center: false,
-                items: 2,
-                margin: 50
-            },
-            860: {
-                items: 3,
-                margin: 50
-            }
-            }
-        })
-        {% endjavascript %}
+            {% javascript %}
+                $("#category-{{collection.id}} .owl-carousel").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 150,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                center: true,
+                responsive: {
+                500: {
+                    center: false,
+                    items: 2,
+                    margin: 50
+                },
+                860: {
+                    items: 3,
+                    margin: 50
+                }
+                }
+            })
+            {% endjavascript %}
         {% endfor %}    
     </div>
 
