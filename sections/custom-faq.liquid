@@ -22,11 +22,8 @@
     </h1>
 
     <div id="accordion">
-        <?php if ( have_rows( 'questions' ) ) : $count = 0; ?>
-        <?php while ( have_rows( 'questions' ) ) : the_row(); ?>
-
-        <?php $count++; ?>
-
+        {% for block in section.blocks %}
+            {% if block.type == "" %}
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
@@ -103,16 +100,22 @@
   ],
   "blocks":[
     {
-        "type": "text",
-        "id": "question",
+        "type": "faq-item",
         "label": "Question",
-        "default": "Your question here"
-    },
-    {
-        "type": "text",
-        "id": "answer",
-        "label": "Answer",
-        "default": "Your answer here"
+        "settings": [
+            {
+                "type": "text",
+                "id": "question",
+                "label": "Question",
+                "default": "Your question here"
+            },
+            {
+                "type": "text",
+                "id": "answer",
+                "label": "Answer",
+                "default": "Your answer here"
+            }
+        ]
     }
  ],
   "presets": [
