@@ -247,7 +247,50 @@
   </section>
 
   {% javascript %}
+
+
     $(document).ready(function() {
+
+
+        let playButtons = document.querySelectorAll(".playBtn");
+    playButtons.forEach(element => {
+        let videoElem = element.parentNode.querySelector(".video-testimonial");
+
+        element.addEventListener("click", () => {
+            handlePlayButton(element, videoElem);
+        }, false);
+        videoElem.onended = () => {
+            element.style.display = "block";
+            videoElem.controls = false;
+            $(".testimonials .owl-carousel").trigger('next.owl.carousel');
+        }
+        playVideo(element, videoElem);
+    });
+
+
+    async function playVideo(playButton, videoElem) {
+        try {
+            await videoElem.play();
+            playButton.style.display = "none";
+        } catch (err) {
+
+            playButton.style.display = "block";
+        }
+
+    }
+
+    function handlePlayButton(playButton, videoElem) {
+
+        videoElem.controls = true;
+        if (videoElem.paused) {
+            playVideo(playButton, videoElem);
+        } else {
+            videoElem.pause();
+            console.log(playButton)
+            playButton.style.display = "block";
+        }
+    }
+
         $('.testimonials .owl-carousel').owlCarousel({
             loop: true,
             items: 1,
