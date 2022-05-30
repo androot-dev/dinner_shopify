@@ -22,7 +22,7 @@
 
 .about-us:after {
     
-  background-image: url("{{ section.settings.image_background_overlay | img_url }}") !important;
+  background-image: url("{{ section.settings.image_background_overlay | img_url : "master"}}") !important;
 }
 
 @media (max-width: 575px) {
