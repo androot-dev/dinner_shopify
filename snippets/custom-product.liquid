@@ -1,7 +1,7 @@
 
 
 <div class="card item-food card position-relative">
-    <img class="card-img-top" src="{{product.images.first | img_url }}" width="400" height="350" alt="{{product.title}}">
+    <img class="card-img-top" src="{{product.images.first | img_url : "master" }}" width="400" height="350" alt="{{product.title}}">
     <div class="tag-price">{{product.price | money}}</div>
     <div class="card-footer  p-0 d-flex justify-content-between">
       <span class="name-plate">{{product.title}}</span>
