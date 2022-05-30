@@ -442,6 +442,18 @@
           "padding_top": 40,
           "padding_bottom": 52
         }
+      },
+      "custom-hero": {
+        "type": "custom-hero",
+        "settings": {
+          "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
+          "line-title-1": "ONLY GIVE THE BEST",
+          "line-title-2": "TO YOUR PALATE",
+          "banner-text": "DELICIOUS FOOD",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
       }
     },
     "content_for_index": [
