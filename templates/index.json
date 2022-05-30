@@ -185,10 +185,18 @@
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a3dbfb00c7f345f7b70b5812a50f5a17.mp4",
             "name": "Ana Maria"
           }
+        },
+        "4248528f-b97b-494e-9d56-fd633bcf2abe": {
+          "type": "testimonial",
+          "settings": {
+            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f3f02013a6a34ba68f46923c6d96199f.mp4",
+            "name": "Angela Maria"
+          }
         }
       },
       "block_order": [
-        "02ae0dd4-e676-40e5-96a7-503576e7e2ad"
+        "02ae0dd4-e676-40e5-96a7-503576e7e2ad",
+        "4248528f-b97b-494e-9d56-fd633bcf2abe"
       ],
       "settings": {
         "title-section": "Testimonials",
