@@ -222,7 +222,12 @@
   </section>
 
 {% javascript %}
+
 $(document).ready(function () {
+
+  $(".owl-item").on("click", function () {
+    alert("pin")
+  });
      $('.best-sellers .owl-carousel').owlCarousel({
         loop: true,
         nav: false,
