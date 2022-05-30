@@ -2879,5 +2879,18 @@ predictive-search[open] .predictive-search{
   .search-modal.modal__content{
   	background: #0000004f
   }
- 
-/* MY OVERWRITE STYLES */
+  .cart-item__image-container{
+  	width: 110px;
+    height: 110px;
+    border: var(--primary) solid px;
+    border-radius: 90px;
+  }
+  .cart-item__image-container img{
+  	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+  }
+  
+/* MY OVERWRITE STYLES END */
