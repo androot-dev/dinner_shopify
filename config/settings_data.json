@@ -395,8 +395,20 @@
           "background-color": "",
           "padding_top": 40,
           "padding_bottom": 52,
-          "button_text": "Contact Us",
-          "button_url": "shopify:\/\/pages\/contact-us"
+          "button_text": "Contact Us"
+        }
+      },
+      "custom-testimonials": {
+        "type": "custom-testimonials",
+        "settings": {
+          "title-section": "Testimonials",
+          "subtitle-section": "What do our customers say",
+          "description": "<p>For us it is very important to know the opinions of our clients, since they inspire us to do things better every day. Give us your opinion about our services and let's improve together more and more<\/p>",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52,
+          "button_text": "VIEW MORE",
+          "button_url": "https:\/\/www.google.com\/intl\/es_es\/business\/"
         }
       }
     },
