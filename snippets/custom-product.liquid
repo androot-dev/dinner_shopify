@@ -9,14 +9,15 @@
       <a href="#" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
     </div>
     <p class="d-none description">{{product.description}}</p>
+    <script>
+        function goDetails(url) {
+            window.location.href = url;
+        }
+    </script>
 </div>
 
 
-<script>
-    function goDetails(url) {
-        window.location.href = url;
-    }
-</script>
+
 
 
 {% style %}
