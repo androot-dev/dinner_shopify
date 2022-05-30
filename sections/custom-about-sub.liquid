@@ -36,14 +36,15 @@
                 {{section.settings.subtitle-section}}
             </h2>
             <p>{{section.settings.description}}</p>
-            <?php $button = get_field( 'button' ); ?>
-            <?php if ( $button ) : ?>
+            {% if section.settings.button_text != blank and section.settings.button_link != blank %} 
+           
             <div class="pt-5 d-none d-md-flex justify-content-end pr-5">
-                <a target="<?php echo esc_attr( $button['target'] ); ?>" role="button"
-                    href="<?php echo esc_url( $button['url'] ); ?>"
-                    class="btn-primary"><?php echo esc_html( $button['title'] ); ?></a>
+                <a  role="button"
+                    href="{{section.settings.button_link}}"
+                    class="btn-primary">{{section.settings.button_text}}</a>
             </div>
-            <?php endif; ?>
+           {% endif; %}
+          
         </div>
         <?php $button = get_field( 'button' ); ?>
         <?php if ( $button ) : ?>
