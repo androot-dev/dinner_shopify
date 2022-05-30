@@ -2879,6 +2879,8 @@ predictive-search[open] .predictive-search{
   .search-modal.modal__content{
   	background: #0000004f
   }
+  
+  /* MY  CART */
   .cart-item__image-container{
   	width: 110px;
     height: 110px;
@@ -2895,5 +2897,13 @@ predictive-search[open] .predictive-search{
   .cart-item{
   	 font-family: "Kanit";
   }
+  .cart-item *{
+  	 font-size: 1.5rem;
+  }
+  .cart-item *:hover , .title-wrapper-with-link .underline-link:hover{
+  	color: var(--primary);
+  }
+  
+  /* MY CART  */
   
 /* MY OVERWRITE STYLES END */
