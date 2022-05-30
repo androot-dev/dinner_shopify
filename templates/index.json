@@ -230,11 +230,21 @@
             "label": "000055500",
             "url": "tel:00000055"
           }
+        },
+        "5547a5d8-cd97-4329-9ec0-0f35e1b7dec2": {
+          "type": "info-box",
+          "settings": {
+            "heading": "Adreess",
+            "icon": "bxs-map",
+            "label": "5191 Eastside Hwy",
+            "url": "https:\/\/www.google.com\/maps"
+          }
         }
       },
       "block_order": [
         "224ddb83-6fc7-4dd7-ac93-e3c065ebf60e",
-        "dc3164bd-524b-4bd8-8e8b-d7d566afbb7c"
+        "dc3164bd-524b-4bd8-8e8b-d7d566afbb7c",
+        "5547a5d8-cd97-4329-9ec0-0f35e1b7dec2"
       ],
       "settings": {
         "title-section": "Contact Us",
