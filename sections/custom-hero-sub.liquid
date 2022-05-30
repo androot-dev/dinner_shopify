@@ -116,10 +116,10 @@
        
         </div>
         {% for collection in collections %}
-           
+            collection:  {{ collection.title }}
             {% for products in collection.products %}
            
-                collection:  {{ products.first.title }}
+             
                 {% for product in products %}
                     {% render "custom-product", product: product %}
                 {% endfor %}
