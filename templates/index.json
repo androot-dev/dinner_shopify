@@ -67,6 +67,13 @@
     "1653859416754852bf": {
       "type": "custom-bestsellers",
       "blocks": {
+        "3943b9b3-748e-47d4-a814-cc37b9b16c1b": {
+          "type": "button",
+          "settings": {
+            "button_label": "MAKE A ORDER",
+            "button_link": "shopify:\/\/pages\/menu"
+          }
+        },
         "476213eb-1f14-4395-ae82-53c2e346a150": {
           "type": "best_product",
           "settings": {
@@ -78,27 +85,20 @@
           "settings": {
             "best_product": "gourmet"
           }
-        },
-        "3943b9b3-748e-47d4-a814-cc37b9b16c1b": {
-          "type": "button",
-          "settings": {
-            "button_label": "MAKE A ORDER",
-            "button_link": "shopify:\/\/pages\/menu"
-          }
         }
       },
       "block_order": [
+        "3943b9b3-748e-47d4-a814-cc37b9b16c1b",
         "476213eb-1f14-4395-ae82-53c2e346a150",
-        "2f0a7ca4-2704-471b-9eb1-133a256ce7d7",
-        "3943b9b3-748e-47d4-a814-cc37b9b16c1b"
+        "2f0a7ca4-2704-471b-9eb1-133a256ce7d7"
       ],
       "settings": {
         "title-section": "Best Sellers",
         "subtitle-section": "Our Best Dishes",
         "description": "<p>In our menu you will find the best dishes in the whole city, dishes made with fresh ingredients and excellent quality, and selected with great care to offer you unique dishes, so that you live with us a unique experience<\/p>",
         "background-color": "#ffffff",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 52,
+        "padding_bottom": 0
       }
     },
     "16538617038ea41206": {
@@ -170,8 +170,8 @@
         "title-section": "Menu",
         "subtitle-section": "Meet all our dishes",
         "background-color": "#ffffff",
-        "padding_top": 24,
-        "padding_bottom": 24,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "button_text": "VIEW MENU",
         "button_url": "shopify:\/\/pages\/menu"
       }
