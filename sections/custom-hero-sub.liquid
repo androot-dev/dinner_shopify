@@ -118,7 +118,7 @@
         {% for collection in collections %}
             {% for products in collection.products %}
                 {% for product in products %}
-                    {% render "custom-product" product %}
+                    {% render "custom-product", product: product %}
                 {% endfor %}
             {% endfor %}
         {% endfor %}
