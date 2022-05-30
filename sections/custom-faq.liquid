@@ -13,6 +13,26 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 }
+#accordion li::before {
+            content: "";
+            background: #D88100;
+            display: inline-block;
+            font-size: 50px;
+            width: 11px;
+            height: 11px;
+            margin-right: 8px;
+        }
+        
+        #accordion li,
+        #accordion p,
+        #accordion a {
+            font-size: 1em;
+            color: black;
+        }
+        
+        #accordion a:hover {
+            color: #FF9900;
+        }
 {%- endstyle -%}
 
   <section class="section-{{ section.id }}-padding section-{{ section.id }}  p-sm-5 p-2 pb-5 m-0 faq my-section menu-food container-fluid position-relative overlay-med-left">
@@ -28,24 +48,45 @@
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="text-primary-normal color-secondary hover_a" data-toggle="collapse"
-                        data-target="#collapse<?php echo $count; ?>" aria-expanded="true" aria-controls="collapseOne">
+                        data-target="#collapse{{forloop.index}}" aria-expanded="true" aria-controls="collapseOne">
                         <i class=" bx bxs-down-arrow pr-3"></i> {{block.settings.question}}
                     </a>
                 </h5>
             </div>
 
-            <div id="collapse<?php echo $count; ?>" class="collapse" aria-labelledby="headingOne"
+            <div id="collapse{{forloop.index}}" class="collapse" aria-labelledby="headingOne"
                 data-parent="#accordion">
                 <div class="card-body color-secondary text-primary-small">
                     {{block.settings.answer}}
                 </div>
             </div>
         </div>
-
-        <?php endwhile; ?>
-        <?php endif; ?>
+            {% endif %}
+        {% endfor %}
     </div>
+
   </section>
+
+{% javascript %}
+$('.collapse').on('hidden.bs.collapse', function(evt) {
+    let header = evt.currentTarget.parentNode.querySelector('.card-header');
+    let i = evt.currentTarget.parentNode.querySelector('i');
+    let a = evt.currentTarget.parentNode.querySelector('a');
+    i.style.transform = "scaleY(1)";
+    header.classList.remove('bg-primary');
+    header.classList.add('bg-light');
+})
+$('.collapse').on('shown.bs.collapse', function(evt) {
+    let header = evt.currentTarget.parentNode.querySelector('.card-header');
+
+    let i = evt.currentTarget.parentNode.querySelector('i');
+    let a = evt.currentTarget.parentNode.querySelector('a');
+    i.style.transform = "scaleY(-1)";
+    header.classList.remove('bg-light');
+    header.classList.add('bg-primary');
+})
+
+{% endjavascript %}
 {% schema %}
 {
   "name": "Custom FAQs",
