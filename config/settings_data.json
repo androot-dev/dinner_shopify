@@ -430,6 +430,17 @@
           "button_text": "VIEW MORE",
           "button_url": "https:\/\/www.google.com\/intl\/es_es\/business\/"
         }
+      },
+      "custom-subscribe": {
+        "type": "custom-subscribe",
+        "settings": {
+          "title-section": "Subscribe To Newsletter",
+          "subtitle-section": "Meet our Promotions",
+          "image-background": "shopify:\/\/shop_images\/Subscribe.jpg",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
       }
     },
     "content_for_index": [
