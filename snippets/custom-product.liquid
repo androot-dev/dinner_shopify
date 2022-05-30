@@ -9,44 +9,43 @@
       <a href="#" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
     </div>
     <p class="d-none description">{{product.description}}</p>
+    <style>
 
+        {% if width %}
+        #product-{{product.id}} {
+            width: {{width}}px;
+        }
+        {% else %}
+        #product-{{product.id}} {
+            min-width: 300px;
+        }
+        {% endif %}
+        
+        
+        {% if height %}
+            #product-{{product.id}} {
+                height: {{height}}px;     
+            }
+            #product-{{product.id}} .card-img-top {
+                min-height: calc({{height}}px - 40px);
+                max-height: calc({{height}}px - 40px);
+            }         
+            {% else %}
+            #product-{{product.id}} {
+                height: 300px;     
+            }
+            #product-{{product.id}} .card-img-top {
+                min-height: 260px;
+                max-height: 260px;
+            } 
+        {% endif %}
+        
+        
+        
+        </style>
 </div>
 
 
 
 
 
-{% style %}
-
-{% if width %}
-#product-{{product.id}} {
-    width: {{width}}px;
-}
-{% else %}
-#product-{{product.id}} {
-    min-width: 300px;
-}
-{% endif %}
-
-
-{% if height %}
-    #product-{{product.id}} {
-        height: {{height}}px;     
-    }
-    #product-{{product.id}} .card-img-top {
-        min-height: calc({{height}}px - 40px);
-        max-height: calc({{height}}px - 40px);
-    }         
-    {% else %}
-    #product-{{product.id}} {
-        height: 300px;     
-    }
-    #product-{{product.id}} .card-img-top {
-        min-height: 260px;
-        max-height: 260px;
-    } 
-{% endif %}
-
-
-
-{% endstyle %}
