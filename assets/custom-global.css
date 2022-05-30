@@ -60,7 +60,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #383838;
+  color: var(--secondary);
 }
 
 .border-menu::after {
@@ -201,7 +201,7 @@
 }
 
 .text-secondary {
-  color: #383838;
+  color: var(--secondary);
   font-family: "Poppins-Bold";
   font-size: 0.75em;
 }
@@ -219,13 +219,13 @@
 }
 
 .text-secondary-small {
-  color: #383838;
+  color: var(--secondary);
   font-family: "Poppins-Bold";
   font-size: 0.75em;
 }
 
 .text-secondary-normal {
-  color: #383838;
+  color: var(--secondary);
   font-family: "Poppins-Bold";
   font-size: 0.9em;
 }
@@ -237,7 +237,7 @@
 }
 
 .text-secondary-medium {
-  color: #383838;
+  color: var(--secondary);
   font-family: "Poppins-Bold";
   font-size: 1.2em;
 }
@@ -249,7 +249,7 @@
 }
 
 .text-secondary-large {
-  color: #383838;
+  color: var(--secondary);
   font-family: "Poppins-Bold";
   font-size: 1.3em;
 }
@@ -293,7 +293,7 @@
 }
 
 .bg-secondary {
-  background-color: #383838 !important;
+  background-color: var(--secondary) !important;
 }
 
 .color-primary {
@@ -309,7 +309,7 @@
 }
 
 .color-secondary {
-  color: #383838 !important;
+  color: var(--secondary) !important;
 }
 
 .color-secondary-light {
@@ -471,7 +471,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #383838 !important;
+  background: var(--secondary) !important;
   border-radius: 0px !important;
   margin-left: -9px !important;
 }
@@ -519,7 +519,7 @@ ul {
   font-size: 1.3em !important;
   font-style: normal !important;
   font-weight: inherit !important;
-  color: #383838 !important;
+  color: var(--secondary) !important;
   padding-bottom: 30px !important;
 }
 
@@ -629,7 +629,7 @@ p {
 }
 
 .banner-image {
-  background-color: #383838;
+  background-color: var(--secondary);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
