@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
       <h1 class="title-section text-center px-4 w-100">{{ collection.title }}</h1>
     </div>
-    <div class="owl-carousel owl-theme">
+    <div id="category-{{ collection.id }}" class="owl-carousel owl-theme">
         {% for product in collection %}        
         <div class="card item-food card position-relative">
             <img class="card-img-top" src="{{product.images.first | img_url : "master" }}" alt="{{product.title}}">
@@ -14,9 +14,34 @@
             <a href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
             </div>
         </div>
+
+        {% javascript %}
+            $("#categroy-{{collection.id}} .owl-carousel").owlCarousel({
+            loop: true,
+            nav: false,
+            margin: 150,
+            items: 1,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            center: true,
+            responsive: {
+            500: {
+                center: false,
+                items: 2,
+                margin: 50
+            },
+            860: {
+                items: 3,
+                margin: 50
+            }
+            }
+        })
+        {% endjavascript %}
         {% endfor %}    
     </div>
-  </div>
+
+</div>
 
 {% style %}
     .menu-food-sub .title-section {
