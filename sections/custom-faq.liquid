@@ -67,6 +67,7 @@
         #accordion a:hover {
             color: #FF9900;
         }
+
 {%- endstyle -%}
 
   <section class="section-{{ section.id }}-padding section-{{ section.id }}  p-sm-5 p-2 pb-5 m-0 faq my-section menu-food container-fluid position-relative overlay-med-left">
@@ -80,8 +81,8 @@
             {% if block.type == "faq-item" %}
         <div class="card">
             <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                    <a class="text-primary-normal color-secondary hover_a" data-toggle="collapse"
+                <h5 class="mb-0 text-primary-normal">
+                    <a class=" color-secondary hover_a" data-toggle="collapse"
                         data-target="#collapse{{forloop.index}}" aria-expanded="true" aria-controls="collapseOne">
                         <i class=" bx bxs-down-arrow pr-3"></i> {{block.settings.question}}
                     </a>
