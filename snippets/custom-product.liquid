@@ -16,3 +16,52 @@
         window.location.href = url;
     }
 </script>
+
+
+{% style %}
+    
+    .item-food {
+    border-radius: 0px;
+    border: none;
+    }
+
+    .item-food .name-plate {
+    font-family: "Kanit", sans-serif;
+    font-size: 0.6em;
+    font-style: normal;
+    font-weight: 900;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    color: black;
+    }
+
+    @media (max-width: 767px) {
+    .item-food .name-plate {
+        font-size: 0.7em;
+    }
+    }
+
+    .item-food .card-footer {
+    background: transparent;
+    border: none !important;
+    }
+
+    .item-food .card-footer .btn-primary-small {
+    width: 20%;
+    }
+
+{% endstyle %}
