@@ -407,10 +407,18 @@
               "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f3f02013a6a34ba68f46923c6d96199f.mp4",
               "name": "Ana Maria"
             }
+          },
+          "a9b5cc60-6947-4eca-8387-cb6e60bfc243": {
+            "type": "testimonial",
+            "settings": {
+              "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a3dbfb00c7f345f7b70b5812a50f5a17.mp4",
+              "name": "Josefa Maria"
+            }
           }
         },
         "block_order": [
-          "50b0a7b7-4443-413f-a585-b57ad8f21587"
+          "50b0a7b7-4443-413f-a585-b57ad8f21587",
+          "a9b5cc60-6947-4eca-8387-cb6e60bfc243"
         ],
         "settings": {
           "title-section": "Testimonials",
