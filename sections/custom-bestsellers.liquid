@@ -190,15 +190,15 @@
                 <div class="owl-carousel owl-theme justify-content-md-around justify-content-center d-flex">
                     {% for block in section.blocks %}
                         {% if block.type == "best_product" %}
-                                  <a href="{{ block.settings.best_product.url }}" class="item-food card position-relative">
-                                    <img class="card-img-top" src="{{ block.settings.best_product.images.first | img_url: "master" }}" alt="{{ block.settings.best_product.title }}">
-                                    <div class="tag-price">{{ block.settings.best_product.price | money }} </div>
-                                    <div class="card-footer  p-0 d-flex justify-content-between">
-                                        <span class="name-plate"> {{ block.settings.best_product.title }}</span>
-                                        <a href="{{routes.cart_add_url}}?id={{ block.settings.best_product.variants.first.id }}&quantity=1" role="button" class="btn-primary-small">
-                                          <i class="bx bx-tada-hover bx-cart"></i>
-                                          </a>
-                                    </div>
+                          <a href="{{ block.settings.best_product.url }}" class="item-food card position-relative">
+                            <img class="card-img-top" src="{{ block.settings.best_product.images.first | img_url: "master" }}" alt="{{ block.settings.best_product.title }}">
+                            <div class="tag-price">{{ block.settings.best_product.price | money }} </div>
+                                <div class="card-footer  p-0 d-flex justify-content-between">
+                                   <span class="name-plate"> {{ block.settings.best_product.title }}</span>
+                                    <a href="{{routes.cart_add_url}}?id={{ block.settings.best_product.variants.first.id }}&quantity=1" role="button" class="btn-primary-small">
+                                      <i class="bx bx-tada-hover bx-cart"></i>
+                                    </a>
+                                </div>
                                   </a>
                    
                         {% endif %}
