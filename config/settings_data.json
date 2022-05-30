@@ -389,6 +389,8 @@
           "title-section": "About Us",
           "subtitle-section": "Our History",
           "description": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ex cum molestiae nam, autem voluptatibus perspiciatis repellat enim mollitia sint. Voluptas esse nam, alias sit cupiditate ex officia corrupti temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque soluta iusto fugit laudantium atque magni eligendi blanditiis aliquam, voluptatum impedit inventore, sequi natus ratione vel asperiores, qui voluptas nemo? Est.<\/p>",
+          "image_1": "shopify:\/\/shop_images\/ABOUT.jpg",
+          "image_2": "shopify:\/\/shop_images\/person_3.png",
           "image_background_overlay": "shopify:\/\/shop_images\/HERO.jpg",
           "background-color": "",
           "padding_top": 40,
