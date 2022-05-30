@@ -6,7 +6,7 @@
     <div class="tag-price">{{product.price | money}}</div>
     <div class="card-footer  p-0 d-flex justify-content-between">
       <span class="name-plate">{{product.title}}</span>
-      <a href="#" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
+      <a href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
     </div>
     <p class="d-none description">{{product.description}}</p>
     <style>
