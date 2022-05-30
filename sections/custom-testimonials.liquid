@@ -245,6 +245,17 @@
         </div>
     {% endif %} 
   </section>
+
+  {% javascript %}
+    $(document).ready(function() {
+        $('.testimonials .owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+            margin: 50
+        })
+    });
+
+    {% endjavascript %}
 {% schema %}
 {
   "name": "Custom Testimonials",
