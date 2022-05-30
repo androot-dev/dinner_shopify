@@ -14,6 +14,7 @@
   }
 }
 {%- endstyle -%}
+    
 
   <section class="contactUs my-section section-{{ section.id }}-padding section-{{ section.id }}">
     <div class="container contact-form">
@@ -32,7 +33,7 @@
           </div>
 
           <div class="col-lg-6 form-col p-5 ">
-            {%- form 'contact', id: 'ContactForm', class: 'email-form' -%}
+            <form method="post" action="/contact#ContactForm" id="ContactForm" accept-charset="UTF-8" class="email-form" onsubmit="window.Shopify.recaptchaV3.addToken(this, &quot;contact&quot;); return false;"><input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
               <div class="row ">
                 <h2 class="title text-center w-100">{{ section.settings.form_title }}</h2>
                 {%- if form.posted_successfully? -%}
@@ -73,7 +74,7 @@
               </div>
               <div class="d-flex justify-content-center align-items-end"><button class="btn-primary" type="submit">SEND
                   MESSAGE</button></div>
-            {%- endform -%} 
+            </form>
 
 
           </div>
