@@ -18,83 +18,90 @@
   <section class="contactUs my-section section-{{ section.id }}-padding section-{{ section.id }}">
     <div class="container contact-form">
 
-        <h2 class=" pb-3 pt-5 text-center title-section">Contact Us</h2>
+        <h2 class=" pb-3 pt-2 text-center  pb-5 title-section">Contact Us</h2>
 
         <div class="row mb-5 align-items-center p-3">
 
-            <div class="col-lg-6 ">
-                <iframe class="mb-4 mb-lg-0" src="<?php the_field( 'map_embed_url' ); ?>"
-                    style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2742.5416320746876!2d-114.05711289999999!3d46.576529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535e9d7ef9f69d0d%3A0xcd730b6742b60b98!2s5191%20Eastside%20Hwy%2C%20Stevensville%2C%20MT%2059870%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sve!4v1653246992173!5m2!1ses-419!2sve"
+              style="border:0; width: 100%; height: 384px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
 
-            <div class="col-lg-6 form-col p-5 ">
-
-                <div class="row ">
-                    <h2 class="title text-center w-100"><?php the_field( 'title_form' ); ?></h2>
+          <div class="col-lg-6 form-col p-5 ">
+            <form method="post" role="form" class=" email-form">
+              <div class="row ">
+                <h2 class="title text-center w-100">Get In Touch</h2>
+              </div>
+              <div class="row">
+                <div class="col form-group">
+                  <input type="text" name="name" class="input-primary form-control" id="name" placeholder="Your Name"
+                    required="">
                 </div>
-
-
-                <?php echo do_shortcode( '[contact-form-7 id="417" title="contact us"]' ); ?>
-            </div>
+                <div class="col form-group">
+                  <input type="email" class="form-control input-primary name=" email" id="email"
+                    placeholder="Your Email" required="">
+                </div>
+              </div>
+              <div class="form-group">
+                <select class="input-primary form-control" name="subject" id="subject">
+                  <option>Feedback</option>
+                  <option>Claim</option>
+                  <option>Another reason</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class=" input-primary form-control" name="message" rows="5" placeholder="Message"
+                  required=""></textarea>
+              </div>
+              <div class="d-flex justify-content-center align-items-end"><button class="btn-primary" type="submit">SEND
+                  MESSAGE</button></div>
+            </form>
+          </div>
 
         </div>
 
         <div class="row mb-5">
-            <?php if ( have_rows( 'more_information', 'option' ) ): ?>
-            <?php while ( have_rows( 'more_information', 'option' ) ) : the_row(); ?>
-            <?php if ( get_row_layout() == 'location' ) : ?>
-            <div class="col-lg-6 ">
+          <div class="col-lg-6 ">
+            <div class="info-box flex-column border-menu d-flex flex-wrap align-items-center mb-4">
 
-
-
-                <div class="info-box flex-column border-menu d-flex flex-wrap align-items-center mb-4">
-                    <h3 class="d-flex align-items-center text-primary-normal justify-content-center"> <i
-                            class="pr-2 bx <?php the_sub_field( 'icon' ); ?>"></i>Address
-                    </h3>
-                    <p class="m-0 p-0">
-                        <a class="text-primary-normal color-secondary hover_a" target="_blank"
-                            href=" <?php the_sub_field( 'link' ); ?>">
-                            <?php the_sub_field( 'label' ); ?>
-                        </a>
-                    </p>
-                </div>
-
+              <h3 class="d-flex align-items-center text-primary-normal justify-content-center"> <i
+                  class="pr-2 bx bxs-map"></i>Address
+              </h3>
+              <p class="m-0 p-0"> <a class="text-primary-normal color-secondary hover_a" target="_blank"
+                  href="https://www.google.com/maps">
+                  5191 Eastside Hwy Stevensville, MT 59870
+                </a></p>
             </div>
-            <?php elseif ( get_row_layout() == 'Email' ) : ?>
-            <div class="col-lg-3  col-md-6">
-                <div class="info-box border-menu flex-column d-flex flex-wrap align-items-center mb-4">
+          </div>
 
-                    <h3 class="d-flex align-items-center text-primary-normal"><i
-                            class="pr-2 bx <?php the_sub_field( 'icon' ); ?>"></i>
-                        Email Us
-                    </h3>
-                    <p class="mb-0 pb-0"> <a class="text-primary-normal color-secondary hover_a" target="_blank"
-                            href="mailto:<?php the_sub_field( 'email' ); ?>">
-                            <?php the_sub_field( 'label' ); ?>
-                        </a> </p>
-                </div>
-            </div>
-            <?php elseif ( get_row_layout() == 'phone' ) : ?>
-            <div class="col-lg-3  col-md-6">
-                <div class="info-box flex-column border-menu d-flex flex-wrap align-items-center mb-4">
+          <div class="col-lg-3  col-md-6">
+            <div class="info-box border-menu flex-column d-flex flex-wrap align-items-center mb-4">
 
-                    <h3 class="d-flex align-items-center text-primary-normal"> <i
-                            class="pr-2 bx <?php the_sub_field( 'icon' ); ?> "></i>Call Us
-                    </h3>
-                    <p class="mb-0 pb-0"><a class="text-primary-normal color-secondary hover_a" target="_blank"
-                            href="tel:<?php the_sub_field( 'phone' ); ?>">
-                            <?php the_sub_field( 'label' ); ?>
-                        </a></p>
-                </div>
+              <h3 class="d-flex align-items-center text-primary-normal"><i class="pr-2 bx bxs-envelope "></i>Email Us
+              </h3>
+              <p class="mb-0 pb-0"> <a class="text-primary-normal color-secondary hover_a" target="_blank"
+                  href="mailto:info@glamping.global">
+                  info@glamping.global
+                </a> </p>
             </div>
-            <?php endif; ?>
-            <?php endwhile; ?>
-            <?php endif; ?>
+          </div>
+
+          <div class="col-lg-3  col-md-6">
+            <div class="info-box flex-column border-menu d-flex flex-wrap align-items-center mb-4">
+
+              <h3 class="d-flex align-items-center text-primary-normal"> <i class="pr-2 bx bxs-phone "></i>Call Us
+              </h3>
+              <p class="mb-0 pb-0"><a class="text-primary-normal color-secondary hover_a" target="_blank"
+                  href="tel:1844WEGLAMP">
+                  Tel: 1-844-WEGLAMP
+                </a></p>
+            </div>
+          </div>
+
         </div>
-
-
-    </div>
+      </div>
   </section>
 
 
@@ -106,6 +113,18 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+        "type": "text",
+        "id": "title-section",
+        "label": "Title Section",
+        "default": "Menu"
+      },
+      {
+        "type": "text",
+        "id": "subtitle-section",
+        "label": "Subtitle Section",
+        "default": "Meet all our dishes"
+      },
     {
       "type": "header",
       "content": "Custom Colors"
