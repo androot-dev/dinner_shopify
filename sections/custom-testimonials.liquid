@@ -221,17 +221,17 @@
             <div class="grid-carousel">
                 <div class="owl-carousel owl-theme">
 
-                    <?php if ( have_rows( 'videos_testimonials', "576" ) ) : ?>
-                    <?php while ( have_rows( 'videos_testimonials', "576" ) ) : the_row(); ?>
-                    <div class="item-test">
-                        <div class="video-container position-relative">
-                            <div class="name"><?php the_sub_field( 'name' ); ?></div>
-                            <video class="video-testimonial" src=" <?php the_sub_field( 'video_url' ); ?>"></video>
-                            <button class="playBtn"></button>
+                   {% for block in section.blocks %}
+                    {% if block.type == 'testimonial' %}
+                        <div class="item-test">
+                            <div class="video-container position-relative">
+                                <div class="name">{{ block.settings.name }}</div>
+                                <video class="video-testimonial" src=" {{ block.settings.video_url }}"></video>
+                                <button class="playBtn"></button>
+                            </div>
                         </div>
-                    </div>
-                    <?php endwhile; ?>
-                    <?php endif; ?>
+                    {% endif %}
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -332,7 +332,7 @@
             }
         ] 
     }
-  ]
+  ],
   "presets": [
     {
       "name": "Custom Testimonials"
