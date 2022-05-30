@@ -115,6 +115,19 @@
     width: 204px;
   }
 }
+
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.overlay-med-left {
+  position: relative;
+}
 .overlay-med-left::after {
   height: 100%;
   width: 25%;
@@ -128,19 +141,6 @@
   min-width: 60px;
   z-index: -2;
 }
-
-.hero::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.overlay-med-left {
-  position: relative;
-}
-
 .overlay-med-left::after {
   height: 100%;
   width: 25%;
