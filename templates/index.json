@@ -179,24 +179,16 @@
     "16538895282bf0481a": {
       "type": "custom-testimonials",
       "blocks": {
-        "4b46f20f-ba46-4973-bd99-02dabe3561b6": {
-          "type": "testimonials",
+        "02ae0dd4-e676-40e5-96a7-503576e7e2ad": {
+          "type": "testimonial",
           "settings": {
             "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a3dbfb00c7f345f7b70b5812a50f5a17.mp4",
             "name": "Ana Maria"
           }
-        },
-        "88befe40-f02d-4b6c-a6b2-02c76b0ce191": {
-          "type": "testimonials",
-          "settings": {
-            "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f3f02013a6a34ba68f46923c6d96199f.mp4",
-            "name": "Ada Maria"
-          }
         }
       },
       "block_order": [
-        "4b46f20f-ba46-4973-bd99-02dabe3561b6",
-        "88befe40-f02d-4b6c-a6b2-02c76b0ce191"
+        "02ae0dd4-e676-40e5-96a7-503576e7e2ad"
       ],
       "settings": {
         "title-section": "Testimonials",
