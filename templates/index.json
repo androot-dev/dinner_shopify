@@ -219,7 +219,8 @@
             "heading": "Email Us",
             "icon": "bxs-envelope",
             "label": "info@dinner.com",
-            "url": "mailto:info@dinner.com"
+            "url": "mailto:info@dinner.com",
+            "new_tab": false
           }
         },
         "dc3164bd-524b-4bd8-8e8b-d7d566afbb7c": {
@@ -228,7 +229,8 @@
             "heading": "Call Us",
             "icon": "bxs-phone",
             "label": "000055500",
-            "url": "tel:00000055"
+            "url": "tel:00000055",
+            "new_tab": false
           }
         },
         "5547a5d8-cd97-4329-9ec0-0f35e1b7dec2": {
@@ -237,7 +239,8 @@
             "heading": "Adreess",
             "icon": "bxs-map",
             "label": "5191 Eastside Hwy",
-            "url": "https:\/\/www.google.com\/maps"
+            "url": "https:\/\/www.google.com\/maps",
+            "new_tab": true
           }
         }
       },
