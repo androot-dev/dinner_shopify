@@ -4,12 +4,18 @@
       "type": "custom-hero-sub",
       "settings": {
         "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/66ccdee2d5c542b48a8ccee8637308e1.mp4",
-        "title-page": "404",
+        "title-page": "PAGE NOT FOUND",
         "banner-text": "ERROR"
+      }
+    },
+    "main": {
+      "type": "main-404",
+      "settings": {
       }
     }
   },
   "order": [
-    "custom-hero-sub"
+    "custom-hero-sub",
+    "main"
   ]
 }
