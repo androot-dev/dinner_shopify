@@ -28,9 +28,11 @@
                     <h1 class="col-12 title-section text-white">{{section.settings.title-section}}</h1>
                     <h2 class="col-12 title color-secondary">{{section.settings.subtitle-section}}</h2>
                 </div>
-
-              
-
+                {%- form 'contact', id: 'ContactForm', class: 'subscribe-form d-flex w-100' -%}
+                    <input type="text" class="d-none " value="Subscribe" name="contact[body]" >
+                    <input type="email" required name="contact[email]" id="email" class="w-100 input-primary form-control">
+                    <button type="submit" class="ml-4 btn-primary">SUBSCRIBE</button>
+                {%- endform -%}
             </div>
         </div>
     </div>
