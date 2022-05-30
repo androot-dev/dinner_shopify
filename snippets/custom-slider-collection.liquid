@@ -8,33 +8,33 @@
         {% for product in collection.products %}        
          {% render "custom-product", product: product %}
         {% endfor %} 
-        <script>
-            $(document).ready(function(){
-                $("#category-{{collection.id}}").owlCarousel({
-                    loop: true,
-                    nav: false,
-                    margin: 150,
-                    items: 1,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: true,
-                    center: true,
-                    responsive: {
-                        500: {
-                            center: false,
-                            items: 2,
-                            margin: 50
-                        },
-                        860: {
-                            items: 3,
-                            margin: 50
-                        }
-                    }
-                });
-            })
-           
-          </script>   
     </div>
+    <script>
+        $(document).ready(function(){
+            $("#category-{{collection.id}}").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 150,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                center: true,
+                responsive: {
+                    500: {
+                        center: false,
+                        items: 2,
+                        margin: 50
+                    },
+                    860: {
+                        items: 3,
+                        margin: 50
+                    }
+                }
+            });
+        })
+       
+      </script>   
 
 </div>
 
