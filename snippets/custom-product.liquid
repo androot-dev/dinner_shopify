@@ -27,7 +27,12 @@
         width: {{width}}px;
         height: {{height}}px;
     }
-
+    .item-food .card-img-top {
+        min-height: {{height}}px;
+        max-height: {{height}}px;
+        -o-object-fit: cover;
+            object-fit: cover;
+    }
     .item-food .name-plate {
         font-family: "Kanit", sans-serif;
         font-size: 0.6em;
@@ -108,13 +113,6 @@
   border-bottom-right-radius: 0;
   pointer-events: all;
   cursor: pointer;
-}
-
- .item-food .card-img-top {
-  min-height: 260px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 260px;
 }
 
 .item-food .btn-primary-small {
