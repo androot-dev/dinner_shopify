@@ -1,51 +1,15 @@
 {
   "sections": {
     "custom-hero-sub": {
-      "type": "custom-hero-sub",
-      "blocks": {
-        "5a0ac125-1182-4597-9569-195febae92bb": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Facebook",
-            "social_link": "https:\/\/facebook.com"
-          }
-        },
-        "c9548ecd-342b-47b5-ab9a-167e200757ff": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Instagram",
-            "social_link": "https:\/\/instagram.com"
-          }
-        },
-        "0a41323a-8a3f-49ef-8f39-cd5b30680c51": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Youtube",
-            "social_link": "https:\/\/Youtube.com"
-          }
-        },
-        "d93d3a0d-e8cb-41b2-8fb0-409066281536": {
-          "type": "item_social",
-          "settings": {
-            "social_label": "Twitter",
-            "social_link": "https:\/\/twitter.com"
-          }
-        }
-      },
-      "block_order": [
-        "5a0ac125-1182-4597-9569-195febae92bb",
-        "c9548ecd-342b-47b5-ab9a-167e200757ff",
-        "0a41323a-8a3f-49ef-8f39-cd5b30680c51",
-        "d93d3a0d-e8cb-41b2-8fb0-409066281536"
-      ],
-      "settings": {
-        "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/66ccdee2d5c542b48a8ccee8637308e1.mp4",
-        "title-page": "NOT FOUND",
-        "banner-text": "ERROR"
-      }
+      "type": "custom-hero-sub"
+    },
+    "main": {
+      "type": "main-404",
+      "settings": {}
     }
   },
   "order": [
-    "custom-hero-sub"
+    "custom-hero-sub",
+    "main"
   ]
 }
