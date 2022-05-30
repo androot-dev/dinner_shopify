@@ -395,8 +395,40 @@
           "background-color": "",
           "padding_top": 40,
           "padding_bottom": 52,
-          "button_text": "Contact Us",
-          "button_url": "shopify:\/\/pages\/contact-us"
+          "button_text": "Contact Us"
+        }
+      },
+      "custom-testimonials": {
+        "type": "custom-testimonials",
+        "blocks": {
+          "50b0a7b7-4443-413f-a585-b57ad8f21587": {
+            "type": "testimonial",
+            "settings": {
+              "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f3f02013a6a34ba68f46923c6d96199f.mp4",
+              "name": "Angela Maria"
+            }
+          },
+          "a9b5cc60-6947-4eca-8387-cb6e60bfc243": {
+            "type": "testimonial",
+            "settings": {
+              "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a3dbfb00c7f345f7b70b5812a50f5a17.mp4",
+              "name": "Ana Maria"
+            }
+          }
+        },
+        "block_order": [
+          "50b0a7b7-4443-413f-a585-b57ad8f21587",
+          "a9b5cc60-6947-4eca-8387-cb6e60bfc243"
+        ],
+        "settings": {
+          "title-section": "Testimonials",
+          "subtitle-section": "What do our customers say",
+          "description": "<p>For us it is very important to know the opinions of our clients, since they inspire us to do things better every day. Give us your opinion about our services and let's improve together more and more<\/p>",
+          "background-color": "#f1f1f1",
+          "padding_top": 40,
+          "padding_bottom": 0,
+          "button_text": "VIEW MORE",
+          "button_url": "https:\/\/www.google.com\/intl\/es_es\/business\/"
         }
       }
     },
