@@ -22,29 +22,29 @@
 {% style %}
 
 {% if width %}
-.item-food {
+#product-{{product.id}} {
     width: {{width}}px;
 }
 {% else %}
-.item-food {
+#product-{{product.id}} {
     min-width: 300px;
 }
 {% endif %}
 
 
 {% if height %}
-    .item-food {
+    #product-{{product.id}} {
         height: {{height}}px;     
     }
-    .item-food .card-img-top {
+    #product-{{product.id}} .card-img-top {
         min-height: calc({{height}}px - 40px);
         max-height: calc({{height}}px - 40px);
     }         
     {% else %}
-    .item-food {
+    #product-{{product.id}} {
         height: 300px;     
     }
-    .item-food .card-img-top {
+    #product-{{product.id}} .card-img-top {
         min-height: 260px;
         max-height: 260px;
     } 
