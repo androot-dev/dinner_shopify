@@ -116,6 +116,7 @@
        
         </div>
         {% for collection in collections %}
+           collection:  {{ collection }}
             {% for products in collection.products %}
                 {% for product in products %}
                     {% render "custom-product", product: product %}
