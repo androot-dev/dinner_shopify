@@ -2,27 +2,23 @@
 <div class="pb-5 px-sm-5 px-3 container-fluid ">
 
     <div class="row justify-content-center">
-      <h1 class="title-section text-center px-4 w-100">{{ section.settings.title-section }}</h1>
+      <h1 class="title-section text-center px-4 w-100">{{ collection.title }}</h1>
     </div>
     <div class="owl-carousel owl-theme">
-        {% for products in collection %}        
-      <div class="card item-food card position-relative">
-        <img class="card-img-top" src="assets/hors1.jpg" alt="Food">
-        <div class="tag-price">50$</div>
-        <div class="card-footer  p-0 d-flex justify-content-between">
-          <span class="name-plate">Hors Dish 1</span>
-          <a href="#" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
+        {% for product in collection %}        
+        <div class="card item-food card position-relative">
+            <img class="card-img-top" src="{{product.images.first | img_url : "master" }}" alt="{{product.title}}">
+            <div class="tag-price">{{product.price | money }}</div>
+            <div class="card-footer  p-0 d-flex justify-content-between">
+            <span class="name-plate">{{product.title}}</span>
+            <a href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
+            </div>
         </div>
-      </div>
         {% endfor %}    
-
-
-
     </div>
   </div>
 
 {% style %}
-  
     .menu-food-sub .title-section {
         padding-bottom: 50px;
         padding-top: 30px;
