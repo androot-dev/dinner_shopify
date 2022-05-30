@@ -175,7 +175,8 @@ input[type=text]{
               <h3 class="d-flex align-items-center text-primary-normal justify-content-center"> <i
                   class="pr-2 bx {{block.settings.icon}}"></i>{{block.settings.heading}}
               </h3>
-              <p class="m-0 p-0"> <a class="text-primary-normal color-secondary hover_a" target="_blank"
+              <p class="m-0 p-0"> <a 
+                class="text-primary-normal color-secondary hover_a" {% if block.settings.new_tab %} target="_blank"  {% endif %}
                   href="{{block.settings.url}}">
                   {{block.settings.label}}
                 </a></p>
@@ -279,6 +280,11 @@ input[type=text]{
                 "type": "url",
                 "id": "url",
                 "label": "Link Url"
+            },
+            {
+                "type": "checkbox",
+                "id": "new_tab",
+                "label": "Open in new tab"
             }        
         ]
     }
