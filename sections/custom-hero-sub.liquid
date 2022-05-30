@@ -87,7 +87,7 @@
     ]
 }
 {% endschema %}
-
+{{ 'custom-subpages.css' | asset_url  | stylesheet_tag  }}
   <section class="my-section hero section-{{ section.id }}-padding section-{{ section.id }}">
     
         <video autoplay="autoplay" class="video-background" loop="loop" muted playsinline="playsinline"
