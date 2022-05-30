@@ -19,7 +19,9 @@
     <div class="container contact-form">
 
         <h2 class=" pb-3 pt-2 text-center  pb-5 title-section">{{section.settings.title-section}}</h2>
+        {% if section.settings.subtitle-section %}
         <h2 class=" pb-3 pt-2 text-center  pb-5 title-section">{{section.settings.subtitle-section}}</h2>
+        {% endif %}
         <div class="row mb-5 align-items-center p-3">
 
           <div class="col-lg-6 ">
