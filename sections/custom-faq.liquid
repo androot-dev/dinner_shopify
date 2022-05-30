@@ -21,7 +21,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.custom-liquid.name",
+  "name": "Custom FAQs",
   "tag": "section",
   "class": "section",
   "settings": [
@@ -29,13 +29,13 @@
         "type": "text",
         "id": "title-section",
         "label": "Title Section",
-        "default": "Menu"
+        "default": "FAQs"
     },
     {
         "type": "text",
         "id": "subtitle-section",
         "label": "Subtitle Section",
-        "default": "Meet all our dishes"
+        "default": "Frequent questions"
     },
     {
       "type": "header",
@@ -71,9 +71,20 @@
       "default": 52
     }
   ],
+  "blocks":{
+    "type": "text",
+    "id": "question",
+    "label": "Question",
+
+},
+{
+    "type": "text",
+    "id": "answer",
+    "label": "Answer",
+},
   "presets": [
     {
-      "name": "Custom Section"
+      "name": "Custom FAQs"
     }
   ]
 }
