@@ -305,11 +305,11 @@
           "434243b6-59e5-47ab-b515-4660fcc8c3e1": {
             "type": "info-box",
             "settings": {
-              "heading": "Heading",
-              "icon": "",
-              "label": "Label",
-              "url": "",
-              "new_tab": false
+              "heading": "Address",
+              "icon": "bxs-map",
+              "label": "5191 Eastside Hwy",
+              "url": "https:\/\/www.googl.com\/maps",
+              "new_tab": true
             }
           }
         },
