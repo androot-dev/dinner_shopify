@@ -15,10 +15,40 @@
 }
 {%- endstyle -%}
 
-  <section class="section-{{ section.id }}-padding section-{{ section.id }}">
-   
-  </section>
+  <section class="section-{{ section.id }}-padding section-{{ section.id }}  p-sm-5 p-2 pb-5 m-0 faq my-section menu-food container-fluid position-relative overlay-med-left">
+    <h3 class="text-center title-section">{{section.settings.title-section}}</h3>
+    <h1 class="text-center title px-5 mb-3">
+       {{section.settings.subtitle-section}}
+    </h1>
 
+    <div id="accordion">
+        <?php if ( have_rows( 'questions' ) ) : $count = 0; ?>
+        <?php while ( have_rows( 'questions' ) ) : the_row(); ?>
+
+        <?php $count++; ?>
+
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <a class="text-primary-normal color-secondary hover_a" data-toggle="collapse"
+                        data-target="#collapse<?php echo $count; ?>" aria-expanded="true" aria-controls="collapseOne">
+                        <i class=" bx bxs-down-arrow pr-3"></i> <?php the_sub_field( 'question' ); ?>
+                    </a>
+                </h5>
+            </div>
+
+            <div id="collapse<?php echo $count; ?>" class="collapse" aria-labelledby="headingOne"
+                data-parent="#accordion">
+                <div class="card-body color-secondary text-primary-small">
+                    <?php the_sub_field( 'response' ); ?>
+                </div>
+            </div>
+        </div>
+
+        <?php endwhile; ?>
+        <?php endif; ?>
+    </div>
+  </section>
 {% schema %}
 {
   "name": "Custom FAQs",
@@ -84,7 +114,7 @@
         "label": "Answer",
         "default": "Your answer here"
     }
-    ],
+ ],
   "presets": [
     {
       "name": "Custom FAQs"
