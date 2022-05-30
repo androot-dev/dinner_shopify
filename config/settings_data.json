@@ -473,13 +473,29 @@
               "social_label": "Youtube",
               "social_link": "https:\/\/youtube.com"
             }
+          },
+          "2956160c-a489-4fcd-8a2d-b8a7bb2b7a7c": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Linkedin",
+              "social_link": "https:\/\/linkedin.com"
+            }
+          },
+          "6042d81c-f38c-4a68-8003-aee905083c63": {
+            "type": "item_social",
+            "settings": {
+              "social_label": "Facebook",
+              "social_link": "https:\/\/twitter.com"
+            }
           }
         },
         "block_order": [
           "d7e4dc76-5d6e-44f1-9d11-b40bdf1cbdac",
           "9b87f5ef-921a-494b-ac2c-8f01e5667067",
           "5e26f21e-0a16-49da-bb11-ec32ebeea8b6",
-          "23f67774-4621-42c9-b60f-36526ebc1e30"
+          "23f67774-4621-42c9-b60f-36526ebc1e30",
+          "2956160c-a489-4fcd-8a2d-b8a7bb2b7a7c",
+          "6042d81c-f38c-4a68-8003-aee905083c63"
         ],
         "settings": {
           "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
