@@ -37,7 +37,11 @@
 .testimonials .title-section {
   position: relative;
 }
-
+@media (max-width: 767px) {
+  .testimonials .title-section:before {
+    width: 50%;
+  }
+}
 .testimonials .title-section:before {
   content: "";
   background: var(--primary);
