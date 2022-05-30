@@ -343,13 +343,37 @@
           "2a283ea3-8e1b-4602-8c2b-a38d08f1ee01": {
             "type": "faq-item",
             "settings": {
-              "question": "Your question here",
-              "answer": "Your answer here"
+              "question": "At what time can we eat or dine in the restaurant?",
+              "answer": "<p>The restaurant is open during the following hours<\/p><p><strong>Noon<\/strong>: every day from 1:00 p.m. to 3:30 p.m.<\/p><p><strong>Night<\/strong>: Friday and Saturday from 8:00 p.m. to 10:30 p.m<\/p>"
+            }
+          },
+          "5c92601a-c0f1-48e8-9c77-d28a9f982770": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Does the restaurant have a direct phone to reserve?",
+              "answer": "<p>Yes,<\/p><p><a href=\"tel:1-844-WEGLAMP\">1-844-WEGLAMP<\/a><\/p>"
+            }
+          },
+          "9413ce0d-a27b-4367-9168-371b51d83874": {
+            "type": "faq-item",
+            "settings": {
+              "question": "Are there children's menus?",
+              "answer": "<p>No currently we do not have a children’s menu, but we do have some alternatives for children<\/p>"
+            }
+          },
+          "2040bd2a-2577-4a4c-a7cc-ec5de7c8114c": {
+            "type": "faq-item",
+            "settings": {
+              "question": "What are the COVID-19 measures that I should know before going to the facilities?",
+              "answer": "<p>We have been prepared to be a safe place in compliance with all prevention measures with the<strong>highest levels of security<\/strong>.<br\/>The entire center is periodically subjected to cleaning, hygiene and disinfection interventions. The collaboration of<br\/>users is essential to guarantee the effectiveness of these measures.<\/p>"
             }
           }
         },
         "block_order": [
-          "2a283ea3-8e1b-4602-8c2b-a38d08f1ee01"
+          "2a283ea3-8e1b-4602-8c2b-a38d08f1ee01",
+          "5c92601a-c0f1-48e8-9c77-d28a9f982770",
+          "9413ce0d-a27b-4367-9168-371b51d83874",
+          "2040bd2a-2577-4a4c-a7cc-ec5de7c8114c"
         ],
         "settings": {
           "title-section": "FAQs",
