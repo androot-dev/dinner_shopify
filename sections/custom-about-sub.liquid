@@ -123,12 +123,12 @@
     <div class="row">
         <div class="col-md-6 col-12  order-2 order-md-1 d-flex align-items-center justify-content-center ">
             <div class="images-about-container">
-               {% if  section.settings.image_1 %}
+               {% if  section.settings.image_1 != blank %}
                 <div class="images-about">
                     <img src="{{ section.settings.image_1 }}">
                 </div>
             {% endif %}
-            {% if  section.settings.image_2 %}
+            {% if  section.settings.image_2 != blank %}
                 <div class="images-about">
                     <img src="{{ section.settings.image_2 }}">
                 </div>
