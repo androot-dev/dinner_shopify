@@ -2914,6 +2914,9 @@ predictive-search[open] .predictive-search{
   .quantity{
   	border:1px solid #e6e5e5;
   }
+  .cart__footer *{
+  	font-family: "Kanit";
+  }
   /* MY CART  */
   
 /* MY OVERWRITE STYLES END */
