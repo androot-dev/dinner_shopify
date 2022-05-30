@@ -221,10 +221,20 @@
             "label": "info@dinner.com",
             "url": "mailto:info@dinner.com"
           }
+        },
+        "dc3164bd-524b-4bd8-8e8b-d7d566afbb7c": {
+          "type": "info-box",
+          "settings": {
+            "heading": "Phone",
+            "icon": "bxs-phone",
+            "label": "Call Us",
+            "url": "tel:00000055"
+          }
         }
       },
       "block_order": [
-        "224ddb83-6fc7-4dd7-ac93-e3c065ebf60e"
+        "224ddb83-6fc7-4dd7-ac93-e3c065ebf60e",
+        "dc3164bd-524b-4bd8-8e8b-d7d566afbb7c"
       ],
       "settings": {
         "title-section": "Contact Us",
