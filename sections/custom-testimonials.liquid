@@ -37,11 +37,7 @@
 .testimonials .title-section {
   position: relative;
 }
-@media (max-width: 767px) {
-  .testimonials .title-section:before {
-    width: 50%;
-  }
-}
+
 .testimonials .title-section:before {
   content: "";
   background: var(--primary);
@@ -52,7 +48,11 @@
   left: -45%;
   bottom: 22px;
 }
-
+@media (max-width: 767px) {
+  .testimonials .title-section:before {
+    width: 50%;
+  }
+}
 @media (max-width: 575px) {
   .testimonials .title-section:before {
     display: none;
