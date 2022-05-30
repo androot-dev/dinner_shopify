@@ -2900,8 +2900,12 @@ predictive-search[open] .predictive-search{
   .cart-item *{
   	 font-size: 1.5rem;
   }
-  .cart-item *:hover , .title-wrapper-with-link .underline-link:hover{
-  	color: var(--primary);
+  .cart-item, .title-wrapper-with-link{
+  	font-family: "Kanit";
+  } 
+  .cart-item button:hover,.cart-item a:hover , .title-wrapper-with-link .underlined-link:hover{
+  	
+    color: var(--primary);
   }
   
   /* MY CART  */
