@@ -1,1 +1,68 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"show_vendor":false,"padding_top":36,"padding_bottom":36}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["subtotal","buttons"],"settings":{"show_cart_note":false}},"featured-collection":{"type":"featured-collection","settings":{"title":"Featured collection","heading_size":"h2","collection":"all","products_to_show":4,"columns_desktop":4,"show_view_all":true,"color_scheme":"background-1","image_ratio":"square","show_secondary_image":false,"show_vendor":false,"show_rating":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}}},"order":["cart-items","cart-footer","featured-collection"]}
+{
+  "sections": {
+    "custom-hero-sub": {
+      "type": "custom-hero-sub",
+      "settings": {
+        "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/66ccdee2d5c542b48a8ccee8637308e1.mp4",
+        "title-page": "NOT FOUND",
+        "banner-text": "DELICIOUS FOOD"
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "custom-hero-sub",
+    "cart-items",
+    "cart-footer",
+    "featured-collection"
+  ]
+}
