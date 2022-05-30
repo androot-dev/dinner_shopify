@@ -1,12 +1,151 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+{%- style -%}
+.section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+}
+.section-{{ section.id }} {
+  background: {{ section.settings.background-color }};
+}
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+}
+
+.hero {
+    height: 50vh;
+  }
+  
+  .hero .video-background {
+    min-height: 600px;
+  }
+  
+  .hero .hero-action {
+    width: 100%;
+  }
+  
+  .hero .hero-action h1 {
+    font-size: 1.4em !important;
+    text-align: center;
+  }
+  
+{%- endstyle -%}
+  
+
+{% schema %}
+{
+    "name": "Custom Subpage Hero",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Section Settings"
+        },  
+        {
+            "id": "video-hero",
+            "type": "url",
+            "label": "Video Hero"
+        },
+        {
+            "id": "title-page",
+            "type": "text",
+            "label": "Title Page"
+        },
+        {
+            "id": "banner-text",
+            "type": "text",
+            "label": "Banner Text",
+            "default": "DELICIOUS FOOD"
+        },
+        {
+            "type": "header",
+            "content": "Default Settings"
+        },
+        {
+            "id": "background-color",
+            "type": "color_background",
+            "label": "Background Color"
+        },
+        {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+        },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 100,
+            "step": 4,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 52
+        }
+    ],
+    "blocks": [
+        {
+            "type": "item_social", 
+			"name": "Social Item",
+            "limit": 5,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "social_label",
+                    "default": "Facebook",
+                    "label": "Red Social"
+                },
+                {
+                    "type": "url",
+                    "id": "social_link",
+                    "label": "Social Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Custom Subpage Hero"
+        }
+    ]
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+  <section class="my-section hero section-{{ section.id }}-padding section-{{ section.id }}">
+    
+        <video autoplay="autoplay" class="video-background" loop="loop" muted playsinline="playsinline"
+            src="{{ section.settings.video-hero }}"></video>
+        <div class="hero-action">
+            <div class="text">
+                {% if section.settings.title-page %}
+                <h1 class="first-text">{{ section.settings.title-page }}</h1>
+                    {% else %}
+                <h1 class="first-text">{{ page_title }}</h1>
+                {% endif %}
+            </div>
+        </div>
+    
+        <div class="social-bar">
+            <h2 class="large-text">{{ section.settings.banner-text }}</h2>
+            
+            <ul>
+                {% for block in section.blocks %}
+                    {% if block.type == "item_social" %}
+                <li><a target="_blank"
+                        href="{{block.settings.social_link}}">{{ block.settings.social_label }}</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+       
+        </div>
+  </section>
