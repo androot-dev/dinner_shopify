@@ -1,1 +1,18 @@
-{"sections":{"main":{"type":"main-404","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "custom-hero-sub": {
+      "type": "custom-hero-sub",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-404",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "custom-hero-sub",
+    "main"
+  ]
+}
