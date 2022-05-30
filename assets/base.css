@@ -2907,7 +2907,12 @@ predictive-search[open] .predictive-search{
   	
     color: var(--primary);
   }
-  
+  .quantity-input.quantity::after {
+  	box-shadow:none;
+  }
+  .quantity{
+  	border:1px solid #e6e5e5;
+  }
   /* MY CART  */
   
 /* MY OVERWRITE STYLES END */
