@@ -2907,9 +2907,10 @@ predictive-search[open] .predictive-search{
   	
     color: var(--primary);
   }
-  .quantity-input.quantity::after {
+  .quantity-input.quantity::after, .quantity::after {
   	box-shadow:none;
   }
+  
   .quantity{
   	border:1px solid #e6e5e5;
   }
