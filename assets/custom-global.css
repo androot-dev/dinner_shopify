@@ -178,7 +178,7 @@
 }
 
 .my-section {
-  font-size: 25px;
+  font-size: 25px !important;
   min-width: 280px;
 }
 
