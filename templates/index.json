@@ -225,9 +225,9 @@
         "dc3164bd-524b-4bd8-8e8b-d7d566afbb7c": {
           "type": "info-box",
           "settings": {
-            "heading": "Phone",
+            "heading": "Call Us",
             "icon": "bxs-phone",
-            "label": "Call Us",
+            "label": "000055500",
             "url": "tel:00000055"
           }
         }
