@@ -205,7 +205,7 @@
             <h1 class="w-100 title-section">{{section.settings.title-section}}</h1>
             <h2 class="title">{{section.settings.subtitle-section}}</h2>
             <p>
-               {{ section.settings.description-section }}
+               {{ section.settings.description }}
             </p>
 
             <?php $button_action_5 = get_field( 'button_action_5', "576" ); ?>
@@ -300,7 +300,22 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 52
-    }
+    },
+    {
+        "type": "header",
+        "content": "Button action"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "View Menu"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL"
+      }
   ],
   "presets": [
     {
