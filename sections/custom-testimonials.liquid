@@ -208,16 +208,13 @@
                {{ section.settings.description }}
             </p>
 
-            <?php $button_action_5 = get_field( 'button_action_5', "576" ); ?>
-            <?php if ( $button_action_5 ) : ?>
+            {% if section.settings.button_text and section.settings.button_url %}
             <div class="d-none d-md-flex justify-content-start">
-                <a href="<?php echo esc_url( $button_action_5['url'] ); ?>"
-                    target="<?php echo esc_attr( $button_action_5['target'] ); ?>" class="btn-primary">
-                    <?php echo esc_html( $button_action_5['title'] ); ?>
+                <a href="{{section.settings.button_url}}" class="btn-primary">
+                    {{ section.settings.button_text }}
                 </a>
             </div>
-            <?php endif; ?>
-
+            {% endif %}
         </div>
 
         <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
@@ -317,6 +314,25 @@
         "label": "Button URL"
     }
   ],
+  "blocks":[
+    {
+        "type": "testimonials",
+        "id": "testimonials",
+        "label": "Testimonials",
+        "settings":[
+            {
+                "type": "url",
+                "id": "video_url",
+                "label": "Video URL"
+            },
+            {
+                "type": "text",
+                "id": "name",
+                "label": "Name Testimonial"
+            }
+        ] 
+    }
+  ]
   "presets": [
     {
       "name": "Custom Testimonials"
