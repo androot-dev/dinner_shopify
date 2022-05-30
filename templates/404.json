@@ -3,6 +3,9 @@
     "custom-hero-sub": {
       "type": "custom-hero-sub",
       "settings": {
+        "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/66ccdee2d5c542b48a8ccee8637308e1.mp4",
+        "title-page": "",
+        "banner-text": "ERROR"
       }
     },
     "main": {
