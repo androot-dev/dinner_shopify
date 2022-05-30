@@ -395,8 +395,8 @@
           "background-color": "",
           "padding_top": 40,
           "padding_bottom": 52,
-          "button_text": "View Menu",
-          "button_url": ""
+          "button_text": "Contact Us",
+          "button_url": "shopify:\/\/pages\/contact-us"
         }
       }
     },
