@@ -127,7 +127,7 @@
             src="{{ section.settings.video-hero }}"></video>
         <div class="hero-action">
             <div class="text">
-                {% if section.settings.title-page %}
+                {% if section.settings.title-page != blank %}
                 <h1 class="first-text">{{ section.settings.title-page }}</h1>
                     {% else %}
                 <h1 class="first-text">{{ page_title }}</h1>
