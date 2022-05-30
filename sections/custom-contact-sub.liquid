@@ -127,6 +127,12 @@
         "label": "Subtitle Section"
       },
       {
+        "type": "text",
+        "id": "Form Title",
+        "label": "Form Title",
+        "default": "Get In Touch"
+        },
+      {
         "type": "url",
         "id": "embed_map",
         "label": "Map Embed Url",
@@ -163,6 +169,32 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 52
+    }
+  ],
+  "blocks":[
+      {
+        "type": "email",
+        "name": "Info Box",
+        "limit": 1,
+        "settings":[
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Heading"
+            },
+            {
+                "type": "text",
+                "id": "label",
+                "label": "Label",
+                "default": "Label"
+            },
+            {
+                "type": "url",
+                "id": "url",
+                "label": "Link Url"
+            }         
+        ]
     }
   ],
   "presets": [
