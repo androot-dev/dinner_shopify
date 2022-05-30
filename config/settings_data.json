@@ -276,19 +276,53 @@
         "settings": {
           "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
           "title-page": "",
-          "banner-text": "DELICIOUS FOOD",
-          "background-color": "",
-          "padding_top": 40,
-          "padding_bottom": 52
+          "banner-text": "DELICIOUS FOOD"
         }
       },
       "custom-contact-sub": {
         "type": "custom-contact-sub",
+        "blocks": {
+          "3a4359b0-6b80-4f66-923e-dc8101268a43": {
+            "type": "info-box",
+            "settings": {
+              "heading": "Email Us",
+              "icon": "bxs-envelope",
+              "label": "info@gmail.com",
+              "url": "mailto:info@gmail.com",
+              "new_tab": false
+            }
+          },
+          "b2c12c56-396c-4018-9b50-ca6f92f91df5": {
+            "type": "info-box",
+            "settings": {
+              "heading": "Call Us",
+              "icon": "bxs-phone",
+              "label": "+5005555400",
+              "url": "tel:05050505",
+              "new_tab": false
+            }
+          },
+          "434243b6-59e5-47ab-b515-4660fcc8c3e1": {
+            "type": "info-box",
+            "settings": {
+              "heading": "Address",
+              "icon": "bxs-map",
+              "label": "5191 Eastside Hwy",
+              "url": "https:\/\/www.googl.com\/maps",
+              "new_tab": true
+            }
+          }
+        },
+        "block_order": [
+          "3a4359b0-6b80-4f66-923e-dc8101268a43",
+          "b2c12c56-396c-4018-9b50-ca6f92f91df5",
+          "434243b6-59e5-47ab-b515-4660fcc8c3e1"
+        ],
         "settings": {
           "title-section": "Contact Us",
           "subtitle-section": "",
           "form_title": "Get In Touch",
-          "embed_map": "",
+          "embed_map": "https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2742.5416320746876!2d-114.05711289999999!3d46.576529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535e9d7ef9f69d0d%3A0xcd730b6742b60b98!2s5191%20Eastside%20Hwy%2C%20Stevensville%2C%20MT%2059870%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sve!4v1653246992173!5m2!1ses-419!2sve",
           "background-color": "",
           "padding_top": 40,
           "padding_bottom": 52
