@@ -2904,7 +2904,7 @@ predictive-search[open] .predictive-search{
   	font-family: "Kanit";
   } 
   .cart-item button:hover,.cart-item a:hover , .title-wrapper-with-link .underlined-link:hover{
-  	
+  	text-decoration:none;
     color: var(--primary);
   }
   .quantity-input.quantity::after, .quantity::after {
