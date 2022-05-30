@@ -1,5 +1,13 @@
 {
   "sections": {
+    "custom-hero-sub": {
+      "type": "custom-hero-sub",
+      "settings": {
+        "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/66ccdee2d5c542b48a8ccee8637308e1.mp4",
+        "title-page": "NOT FOUND",
+        "banner-text": "DELICIOUS FOOD"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -141,6 +149,7 @@
     }
   },
   "order": [
+    "custom-hero-sub",
     "main",
     "product-recommendations"
   ]
