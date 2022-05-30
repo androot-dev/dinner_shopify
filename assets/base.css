@@ -2918,7 +2918,7 @@ predictive-search[open] .predictive-search{
   	font-family: "Kanit";
   }
   .button:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after{
-  	box-shadow:none;
+  	box-shadow:none !important;
   
   }
   /* MY CART  */
