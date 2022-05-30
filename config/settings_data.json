@@ -226,6 +226,29 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "custom-hero-sub": {
+        "type": "custom-hero-sub",
+        "settings": {
+          "video-hero": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7a9696fbf044ef18ea1a79b2087d214.mp4",
+          "title-page": "",
+          "banner-text": "DELICIOUS FOOD",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
+      },
+      "custom-contact-sub": {
+        "type": "custom-contact-sub",
+        "settings": {
+          "title-section": "Contact Us",
+          "subtitle-section": "",
+          "form_title": "Get In Touch",
+          "embed_map": "",
+          "background-color": "",
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
       }
     },
     "content_for_index": [
