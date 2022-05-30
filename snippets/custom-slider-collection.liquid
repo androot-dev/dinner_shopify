@@ -6,7 +6,7 @@
     </div>
     <div id="category-{{ collection.id }}" class="owl-carousel owl-theme">
         {% for product in collection.products %}        
-         {% render "custom-product", product: product %}
+         {{product.title }}
         {% endfor %} 
     </div>
     <script>
