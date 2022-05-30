@@ -343,8 +343,8 @@
           "2a283ea3-8e1b-4602-8c2b-a38d08f1ee01": {
             "type": "faq-item",
             "settings": {
-              "question": "Your question here",
-              "answer": "Your answer here"
+              "question": "At what time can we eat or dine in the restaurant?",
+              "answer": "<p>The restaurant is open during the following hours<\/p><p><strong>Noon<\/strong>: every day from 1:00 p.m. to 3:30 p.m.<\/p><p><strong>Night<\/strong>: Friday and Saturday from 8:00 p.m. to 10:30 p.m<\/p>"
             }
           }
         },
