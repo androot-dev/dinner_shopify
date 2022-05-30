@@ -310,9 +310,13 @@
 
    
     {% section 'header' %}
-    page ttile :{{ page_title }}
-    routes :{{ template.name }}
+    
+   {% if template.name == "index" %}   
     {% section "custom-hero" %}
+   {% else %}
+    {% section "custom-hero-sub" %}
+  {% endif %}
+
 
 
 
