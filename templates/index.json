@@ -170,8 +170,10 @@
         "title-section": "Menu",
         "subtitle-section": "Meet all our dishes",
         "background-color": "#ffffff",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "button_text": "View Menu",
+        "button_url": "shopify:\/\/pages\/menu"
       }
     }
   },
