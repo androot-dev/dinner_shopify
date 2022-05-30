@@ -13,6 +13,40 @@
     padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 }
+
+.faq i {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.faq .card {
+  border-radius: 0 !important;
+  background: none;
+  border: none;
+  margin-top: 5px;
+}
+
+.faq .card-header {
+  border: 1px solid #e7e7e700;
+  background: rgba(255, 255, 255, 0.89);
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+  margin: 0px;
+  border-radius: 0 !important;
+}
+
+.faq .card-header a {
+  cursor: pointer;
+}
+
+.faq .card-header a:hover {
+  color: black !important;
+}
+
+.faq .card-body, .faq .collapse {
+  border-radius: 0 !important;
+  background: none;
+}
 #accordion li::before {
             content: "";
             background: #D88100;
