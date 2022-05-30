@@ -15,10 +15,57 @@
 }
 {%- endstyle -%}
 
-  <section class="section-{{ section.id }}-padding section-{{ section.id }}">
-   
-  </section>
+  <section class="testimonials my-section container-fluid section-{{ section.id }}-padding section-{{ section.id }}">
+    <div class="row">
+        <div class="col-12 col-md-6 m-0 p-0">
+            <h1 class="w-100 title-section"><?php the_field( 'title_section_5', "576" ); ?></h1>
+            <h2 class="title"><?php the_field( 'subtitle_section_5', "576" ); ?></h2>
+            <p>
+                <?php the_field( 'description_section_5', "576" ); ?>
+            </p>
 
+            <?php $button_action_5 = get_field( 'button_action_5', "576" ); ?>
+            <?php if ( $button_action_5 ) : ?>
+            <div class="d-none d-md-flex justify-content-start">
+                <a href="<?php echo esc_url( $button_action_5['url'] ); ?>"
+                    target="<?php echo esc_attr( $button_action_5['target'] ); ?>" class="btn-primary">
+                    <?php echo esc_html( $button_action_5['title'] ); ?>
+                </a>
+            </div>
+            <?php endif; ?>
+
+        </div>
+
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+            <div class="grid-carousel">
+                <div class="owl-carousel owl-theme">
+
+                    <?php if ( have_rows( 'videos_testimonials', "576" ) ) : ?>
+                    <?php while ( have_rows( 'videos_testimonials', "576" ) ) : the_row(); ?>
+                    <div class="item-test">
+                        <div class="video-container position-relative">
+                            <div class="name"><?php the_sub_field( 'name' ); ?></div>
+                            <video class="video-testimonial" src=" <?php the_sub_field( 'video_url' ); ?>"></video>
+                            <button class="playBtn"></button>
+                        </div>
+                    </div>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <?php $button_action_5 = get_field( 'button_action_5', "576" ); ?>
+    <?php if ( $button_action_5 ) : ?>
+    <div class="d-flex d-md-none justify-content-center">
+        <a href="<?php echo esc_url( $button_action_5['url'] ); ?>"
+            target="<?php echo esc_attr( $button_action_5['target'] ); ?>" class="btn-primary">
+            <?php echo esc_html( $button_action_5['title'] ); ?>
+        </a>
+    </div>
+    <?php endif; ?>
+  </section>
 {% schema %}
 {
   "name": "Custom Testimonials",
