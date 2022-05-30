@@ -7,7 +7,7 @@
     <div id="category-{{ collection.id }}" class="owl-carousel owl-theme">
         {% for product in collection %}        
          {% render "custom-product", product: product %}
-            <scrip>
+            <script>
                 $("#category-{{collection.id}} .owl-carousel").owlCarousel({
                 loop: true,
                 nav: false,
@@ -29,7 +29,7 @@
                 }
                 }
             })
-      		</scrip>
+      		</script>
         {% endfor %}    
     </div>
 
