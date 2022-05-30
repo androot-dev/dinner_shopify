@@ -289,7 +289,7 @@
 }
 
 .bg-primary-dark {
-  background-color: #D88100 !important;
+  background-color: var(--primary-dark) !important;
 }
 
 .bg-secondary {
@@ -305,7 +305,7 @@
 }
 
 .color-primary-dark {
-  color: #D88100 !important;
+  color: var(--primary-dark) !important;
 }
 
 .color-secondary {
@@ -506,7 +506,7 @@ ul {
 
 .quick-links li::before {
   content: "";
-  background: #D88100;
+  background: var(--primary-dark);
   display: inline-block;
   font-size: 50px;
   width: 11px;
