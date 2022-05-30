@@ -27,15 +27,15 @@
 
     {% for block in section.blocks %}
       {% if block.type == "category" %}
-        {% if forloop.index ==  1 %}
+        {% if forloop.index == 1 %}
           {% assign col = "5" %}
-        {% elsif forloop.index == "2"%}
+        {% elsif forloop.index == 2 %}
           {% assign col = "7" %}
-        {% elsif forloop.index == "3"%}
+        {% elsif forloop.index == 3 %}
           {% assign col = "5" %}
-        {% elsif forloop.index == "4"%}
+        {% elsif forloop.index == 4 %}
           {% assign col = "3" %}
-        {% elsif forloop.index == "5"%}
+        {% elsif forloop.index == 5 %}
           {% assign col = "4" %}
         {% endif %}
         
