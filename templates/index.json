@@ -173,7 +173,8 @@
         "padding_top": 0,
         "padding_bottom": 48,
         "button_text": "VIEW MENU",
-        "button_url": "shopify:\/\/pages\/menu"
+        "button_url": "shopify:\/\/pages\/menu",
+        "margin_top_button": 32
       }
     },
     "16538895282bf0481a": {
