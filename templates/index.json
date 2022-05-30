@@ -99,7 +99,7 @@
         "94af4fde-e216-43e3-ae09-cf1a3047bb55": {
           "type": "button",
           "settings": {
-            "button_label": "View More",
+            "button_label": "Read More",
             "button_link": "shopify:\/\/pages\/about-us"
           }
         }
