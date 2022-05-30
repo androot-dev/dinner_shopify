@@ -24,6 +24,87 @@ input[type=text]{
 .form-status{
     font-family: "Kanit" ;
 }
+
+.contactUs .form-col {
+  background-color: #f5f4f4;
+  font-size: 0.9em;
+}
+
+.contactUs .info-box {
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.contactUs .info-box h3, .contactUs .info-box p, .contactUs .info-box a {
+  word-wrap: break-word;
+}
+
+.contactUs .map {
+  height: 550px;
+}
+
+.contactUs .map .load-map {
+  z-index: 1;
+}
+
+.contactUs .map iframe {
+  z-index: 2;
+}
+
+.contactUs .contact-form > .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.contactUs .contact-form > .title-section:before {
+  content: "";
+  background: var(--primary);
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  width: 18%;
+  bottom: 35px;
+}
+
+@media (max-width: 575px) {
+  .contactUs .contact-form > .title-section:before {
+    display: none;
+  }
+}
+
+.contactUs .contact-form form input, .contactUs .contact-form form select, .contactUs .contact-form form textarea {
+  font-family: "Kanit", sans-serif;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: inherit;
+  background: white;
+}
+
+.contactUs .contact-form form .btn-primary {
+  height: 50px;
+  font-size: 0.7em;
+}
+
+.about-us {
+  padding: 50px 10%;
+  height: auto;
+  background-size: cover;
+}
+
 {%- endstyle -%}
     
 
