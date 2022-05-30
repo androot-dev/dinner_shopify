@@ -404,9 +404,9 @@
           "title-section": "Testimonials",
           "subtitle-section": "What do our customers say",
           "description": "<p>For us it is very important to know the opinions of our clients, since they inspire us to do things better every day. Give us your opinion about our services and let's improve together more and more<\/p>",
-          "background-color": "",
+          "background-color": "#f1f1f1",
           "padding_top": 40,
-          "padding_bottom": 52,
+          "padding_bottom": 0,
           "button_text": "VIEW MORE",
           "button_url": "https:\/\/www.google.com\/intl\/es_es\/business\/"
         }
