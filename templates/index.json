@@ -82,7 +82,7 @@
         "3943b9b3-748e-47d4-a814-cc37b9b16c1b": {
           "type": "button",
           "settings": {
-            "button_label": "Make a Order",
+            "button_label": "MAKE A ORDER",
             "button_link": "shopify:\/\/pages\/menu"
           }
         }
