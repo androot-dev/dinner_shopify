@@ -17,7 +17,7 @@
 
   <section class="my-section subscribe position-relative section-{{ section.id }}-padding section-{{ section.id }}"
     {% if section.settings.image-background != blank %}
-        style="background-image:url('{{section.settings.image-background}}')
+        style="background-image:url('{{section.settings.image-background | img_url : "master" }}')
     {% endif %}
     
 ">
