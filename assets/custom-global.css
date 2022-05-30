@@ -180,6 +180,7 @@
 .my-section {
   font-size: 25px !important;
   min-width: 280px;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {
