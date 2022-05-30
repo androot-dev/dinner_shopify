@@ -400,6 +400,18 @@
       },
       "custom-testimonials": {
         "type": "custom-testimonials",
+        "blocks": {
+          "50b0a7b7-4443-413f-a585-b57ad8f21587": {
+            "type": "testimonial",
+            "settings": {
+              "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/f3f02013a6a34ba68f46923c6d96199f.mp4",
+              "name": "Ana Maria"
+            }
+          }
+        },
+        "block_order": [
+          "50b0a7b7-4443-413f-a585-b57ad8f21587"
+        ],
         "settings": {
           "title-section": "Testimonials",
           "subtitle-section": "What do our customers say",
