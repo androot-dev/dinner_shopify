@@ -23,13 +23,13 @@
 
     <div id="accordion">
         {% for block in section.blocks %}
-            {% if block.type == "" %}
+            {% if block.type == "item-faq" %}
         <div class="card">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <a class="text-primary-normal color-secondary hover_a" data-toggle="collapse"
                         data-target="#collapse<?php echo $count; ?>" aria-expanded="true" aria-controls="collapseOne">
-                        <i class=" bx bxs-down-arrow pr-3"></i> <?php the_sub_field( 'question' ); ?>
+                        <i class=" bx bxs-down-arrow pr-3"></i> {{block.settings.question}}
                     </a>
                 </h5>
             </div>
@@ -37,7 +37,7 @@
             <div id="collapse<?php echo $count; ?>" class="collapse" aria-labelledby="headingOne"
                 data-parent="#accordion">
                 <div class="card-body color-secondary text-primary-small">
-                    <?php the_sub_field( 'response' ); ?>
+                    {{block.settings.answer}}
                 </div>
             </div>
         </div>
