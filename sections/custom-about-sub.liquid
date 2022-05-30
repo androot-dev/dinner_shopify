@@ -126,12 +126,12 @@
             <div class="images-about-container">
                {% if  section.settings.image_1 != blank %}
                 <div class="images-about">
-                    <img src="{{ section.settings.image_1 }}">
+                    <img src="{{ section.settings.image_1 | img_url : "master" }}">
                 </div>
             {% endif %}
             {% if  section.settings.image_2 != blank %}
                 <div class="images-about">
-                    <img src="{{ section.settings.image_2 }}">
+                    <img src="{{ section.settings.image_2  | img_url : "master"  }}">
                 </div>
             {% endif %}
 
