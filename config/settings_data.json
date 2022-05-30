@@ -393,9 +393,10 @@
           "image_2": "shopify:\/\/shop_images\/person_3.png",
           "image_background_overlay": "shopify:\/\/shop_images\/HERO.jpg",
           "background-color": "",
-          "padding_top": 40,
+          "padding_top": 52,
           "padding_bottom": 52,
-          "button_text": "Contact Us"
+          "button_text": "Contact Us",
+          "button_link": ""
         }
       },
       "custom-testimonials": {
@@ -425,7 +426,7 @@
           "subtitle-section": "What do our customers say",
           "description": "<p>For us it is very important to know the opinions of our clients, since they inspire us to do things better every day. Give us your opinion about our services and let's improve together more and more<\/p>",
           "background-color": "#f1f1f1",
-          "padding_top": 40,
+          "padding_top": 52,
           "padding_bottom": 0,
           "button_text": "VIEW MORE",
           "button_url": "https:\/\/www.google.com\/intl\/es_es\/business\/"
