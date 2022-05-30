@@ -19,20 +19,15 @@
     <div class="row">
         <div class="col-md-6 col-12  order-2 order-md-1 d-flex align-items-center justify-content-center ">
             <div class="images-about-container">
-                <?php $image_1 = get_field( 'image_1' ); ?>
-                <?php if ( $image_1 ) : ?>
+              
+              
                 <div class="images-about">
-                    <img src="<?php echo esc_url( $image_1['url'] ); ?>"
-                        alt="<?php echo esc_attr( $image_1['alt'] ); ?>">
+                    <img src="{{ section.settings.image_1 }}">
                 </div>
-                <?php endif; ?>
-                <?php $image_2 = get_field( 'image_2' ); ?>
-                <?php if ( $image_2 ) : ?>
                 <div class="images-about">
-                    <img src="<?php echo esc_url( $image_2['url'] ); ?>"
-                        alt="<?php echo esc_attr( $image_2['alt'] ); ?>">
+                    <img src="{{ section.settings.image_2 }}">
                 </div>
-                <?php endif; ?>
+                
             </div>
         </div>
         <div class="col-12 col-md-6 order-1 order-md-2 pl-4 ">
@@ -86,12 +81,12 @@
     {
         "type": "image_picker",
         "id": "image_1",
-        "label": "Select a Image",
+        "label": "Select a Image"
     },
     {
         "type": "image_picker",
         "id": "image_2",
-        "label": "Select a Image",
+        "label": "Select a Image"
     },
     {
       "type": "header",
