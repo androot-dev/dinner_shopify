@@ -7,15 +7,9 @@
         "title-page": "404",
         "banner-text": "ERROR"
       }
-    },
-    "main": {
-      "type": "main-404",
-      "settings": {
-      }
     }
   },
   "order": [
-    "custom-hero-sub",
-    "main"
+    "custom-hero-sub"
   ]
 }
