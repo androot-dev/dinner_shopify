@@ -181,7 +181,7 @@
 }
 
 .hero .social-bar a {
-  color: #383838;
+  color: var(--secondary);
 }
 
 .hero .social-bar a:hover {
