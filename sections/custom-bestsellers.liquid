@@ -191,9 +191,9 @@
                         {% if block.type == "best_product" %}
                           
                           <div class="item-food card position-relative">
-                            <img class="card-img-top" onclick="()=>{
+                            <img onclick="()=>{
                               window.location.href = '{{ block.settings.best_product.url }}'
-                            }"  src="{{ block.settings.best_product.images.first | img_url: "master" }}" alt="{{ block.settings.best_product.title }}">
+                            }" class="card-img-top"  src="{{ block.settings.best_product.images.first | img_url: "master" }}" alt="{{ block.settings.best_product.title }}">
                             <div class="tag-price">{{ block.settings.best_product.price | money }}</div>
                             <div class="card-footer  p-0 d-flex justify-content-between">
                               <span class="name-plate"> {{ block.settings.best_product.title }}</span>
