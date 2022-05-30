@@ -132,6 +132,14 @@
     {% endfor %}
   
   </div>
+
+  {% if section.settings.button_text and section.settings.button_url %}
+
+  <div class="col-12 d-flex justify-content-center">
+    <a href="{{section.settings.button_url}}" class="btn btn-primary" role="button">{{section.settings.button_text}}</a>
+  </div>
+
+  {% endif %}
 </section>
 <!--FOOD -->
 
@@ -201,7 +209,7 @@
       "type": "url",
       "id": "button_url",
       "label": "Button URL",
-      "default": "{{site.url}}/menu"
+      "default": "{{site.url}}/pages/menu"
     }
   ],
   "blocks":[
