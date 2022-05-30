@@ -43,7 +43,7 @@
 .border-menu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 0.5px #FF9900 solid;
+  border: 0.5px var(--primary) solid;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,7 +72,7 @@
   width: calc(100% - 4px);
   height: calc(100% - 4px);
   background-color: transparent;
-  border: 0.5px #FF9900 solid;
+  border: 0.5px var(--primary) solid;
   top: calc( 50% - (100% - 4px)/2);
   left: calc( 50% - (100% - 4px)/2);
   pointer-events: none;
@@ -81,7 +81,7 @@
 .hover_a:hover {
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
-  color: #FF9900 !important;
+  color: var(--primary) !important;
 }
 
 .owl-carousel, .my-dots {
@@ -97,7 +97,7 @@
 }
 
 .owl-carousel .active > span, .my-dots .active > span {
-  background-color: #FF9900 !important;
+  background-color: var(--primary) !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 0.5px white solid;
@@ -147,7 +147,7 @@
   background-color: white;
   padding: 10px;
   border: none;
-  outline-color: #FF9900;
+  outline-color: var(--primary);
   font-family: "Kanit-Medium", sans-serif;
   font-size: 1em;
   font-style: normal;
@@ -195,7 +195,7 @@
 }
 
 .text-primary {
-  color: #FF9900;
+  color: var(--primary);
   font-family: "Kanit";
   font-size: 0.75em;
 }
@@ -207,13 +207,13 @@
 }
 
 .text-primary-small {
-  color: #FF9900;
+  color: var(--primary);
   font-family: "Kanit";
   font-size: 0.75em;
 }
 
 .text-primary-normal {
-  color: #FF9900;
+  color: var(--primary);
   font-family: "Kanit";
   font-size: 0.9em;
 }
@@ -231,7 +231,7 @@
 }
 
 .text-primary-medium {
-  color: #FF9900;
+  color: var(--primary);
   font-family: "Kanit";
   font-size: 1.2em;
 }
@@ -243,7 +243,7 @@
 }
 
 .text-primary-large {
-  color: #FF9900;
+  color: var(--primary);
   font-family: "Kanit";
   font-size: 1.3em;
 }
@@ -265,7 +265,7 @@
 }
 
 .form-control:focus {
-  border-color: #FF9900;
+  border-color: var(--primary);
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 153, 0, 0.6);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 153, 0, 0.6);
   cursor: pointer !important;
@@ -281,7 +281,7 @@
 }
 
 .bg-primary {
-  background-color: #FF9900 !important;
+  background-color: var(--primary) !important;
 }
 
 .bg-primary-light {
@@ -297,7 +297,7 @@
 }
 
 .color-primary {
-  color: #FF9900 !important;
+  color: var(--primary) !important;
 }
 
 .color-primary-light {
@@ -320,7 +320,7 @@
   color: #2d2d2d;
 }
 .btn-primary {
-  background-color: #FF9900 !important;
+  background-color: var(--primary) !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 0.5px white solid;
@@ -388,7 +388,7 @@
 }
 
 .btn-primary-small {
-  background-color: #FF9900 !important;
+  background-color: var(--primary) !important;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 0.5px white solid;
@@ -483,7 +483,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 body::-webkit-scrollbar-thumb:active {
-  background-color: #FF9900 !important;
+  background-color: var(--primary) !important;
 }
 
 a {
@@ -493,7 +493,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #FF9900;
+  color: var(--primary);
 }
 
 ul {
@@ -534,7 +534,7 @@ ul {
   font-size: 1.2em;
   font-style: normal;
   font-weight: 900;
-  color: #FF9900;
+  color: var(--primary);
   padding-bottom: 5px;
 }
 
@@ -560,7 +560,7 @@ p {
 }
 
 .tag-banner {
-  background: #FF9900;
+  background: var(--primary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,7 +691,7 @@ p {
   width: auto;
   height: 18px;
   padding: 20px 20px;
-  background: #FF9900;
+  background: var(--primary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -810,7 +810,7 @@ p {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #FF9900;
+  background: var(--primary);
   -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
           animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
