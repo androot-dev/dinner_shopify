@@ -65,37 +65,24 @@
         </div>
 
         <div class="row mb-5">
+            {% assign class = "" %} 
             {% for block in section.blocks %}
                 {% if block.type == "info-box" %}
                   {% if forloop.index == 1 %}
-                    {% assign col = "5" %}
-                  {% elsif forloop.index == 2 %}
-                    {% assign col = "7" %}
-                  {% elsif forloop.index == 3 %}
-                    {% assign col = "5" %}
-                  {% elsif forloop.index == 4 %}
-                    {% assign col = "3" %}
-                  {% elsif forloop.index == 5 %}
-                    {% assign col = "4" %}
+                    {% assign class = "col-lg-6" %}
+                  {% else %}
+                    {% assign class = "col-lg-3 col-md-6" %} 
                   {% endif %}
                   
-                    <div class="col-md-{{col}} p-2">
-                      <a href="{{block.settings.collection.url}}" class=" banner-image ">
-          
-                        {% if block.settings.collection.image %}
-                          <div class="image" style="background-image:url('{{block.settings.collection.image | img_url : "master"}}');"></div>
-                        {% endif %}
-                          <div class="tag-banner">{{block.settings.collection.title}}</div>
-                      </a>
-                    </div>
-          <div class="col-lg-6 ">
+                 
+          <div class="{{class}}">
             <div class="info-box flex-column border-menu d-flex flex-wrap align-items-center mb-4">
 
               <h3 class="d-flex align-items-center text-primary-normal justify-content-center"> <i
-                  class="pr-2 bx bxs-map"></i>Address
+                  class="pr-2 bx {{block.settings.icon}}"></i>{{block.settings.heading}}
               </h3>
               <p class="m-0 p-0"> <a class="text-primary-normal color-secondary hover_a" target="_blank"
-                  href="https://www.google.com/maps">
+                  href="{{block.settings.url}}">
                   5191 Eastside Hwy Stevensville, MT 59870
                 </a></p>
             </div>
@@ -221,7 +208,7 @@
                 "type": "url",
                 "id": "url",
                 "label": "Link Url"
-            }         
+            }        
         ]
     }
   ],
