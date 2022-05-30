@@ -65,7 +65,29 @@
         </div>
 
         <div class="row mb-5">
-
+            {% for block in section.blocks %}
+                {% if block.type == "info-box" %}
+                  {% if forloop.index == 1 %}
+                    {% assign col = "5" %}
+                  {% elsif forloop.index == 2 %}
+                    {% assign col = "7" %}
+                  {% elsif forloop.index == 3 %}
+                    {% assign col = "5" %}
+                  {% elsif forloop.index == 4 %}
+                    {% assign col = "3" %}
+                  {% elsif forloop.index == 5 %}
+                    {% assign col = "4" %}
+                  {% endif %}
+                  
+                    <div class="col-md-{{col}} p-2">
+                      <a href="{{block.settings.collection.url}}" class=" banner-image ">
+          
+                        {% if block.settings.collection.image %}
+                          <div class="image" style="background-image:url('{{block.settings.collection.image | img_url : "master"}}');"></div>
+                        {% endif %}
+                          <div class="tag-banner">{{block.settings.collection.title}}</div>
+                      </a>
+                    </div>
           <div class="col-lg-6 ">
             <div class="info-box flex-column border-menu d-flex flex-wrap align-items-center mb-4">
 
@@ -174,9 +196,9 @@
   ],
   "blocks":[
       {
-        "type": "email",
+        "type": "info-box",
         "name": "Info Box",
-        "limit": 1,
+        "limit": 3,
         "settings":[
             {
                 "type": "text",
