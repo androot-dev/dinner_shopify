@@ -29,7 +29,19 @@
     font-size: 1.4em !important;
     text-align: center;
   }
-  
+   .breadcrumbs_item:not(:last-child):after {
+    border-style: solid;
+    border-width: .10em .10em 0 0;
+    content: '';
+    display: inline-block;
+    height: .20em;
+    margin: 0 .20em;
+    position: relative;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    width: .20em;
+  }
+
 {%- endstyle -%}
   
 
@@ -111,7 +123,7 @@
                       {%- case t -%}
                         {%- when 'page' -%}
                           <li class="breadcrumb_item">
-                            <a href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+                             <a href="{{ page.url }}" aria-current="page">  {{ page.title }}</a>
                           </li>
                         {%- when 'product' -%}
                           {%- if collection.url -%}
