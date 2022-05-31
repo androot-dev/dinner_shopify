@@ -2975,6 +2975,8 @@ predictive-search[open] .predictive-search{
   .price__badge-sale{
   	background: red;
     border: none;
+    font-size: 15px;
+    font-family: 'POPPINS-BOLD';
   }
   @media screen and (max-width: 575px) {
     .product__description{
