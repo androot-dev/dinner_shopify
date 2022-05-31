@@ -2974,7 +2974,13 @@ predictive-search[open] .predictive-search{
      transform: scale(1.1) !important;
 	}
   
-  
+  .product h1 {
+    font-family: Poppins-Bold;
+    font-size: 3rem;
+}
+.product * {
+    font-family: "Kanit";
+}
   
   /* MY CART  */
   
