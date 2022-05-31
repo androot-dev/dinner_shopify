@@ -2869,7 +2869,11 @@ predictive-search[open] .predictive-search{
   .product-form__submit {
   	border: var(--primary) solid 2px;
     color: var(--primary);
+      transition: all .2s linear;
   }  
+  .product-form__submit:hover{
+  	background: var(--primary);
+  }
   /* Modal */
   .cart-notification{
   	background:white;
