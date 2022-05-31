@@ -2983,7 +2983,10 @@ predictive-search[open] .predictive-search{
 }
  
   /* PRODUCTS DETAIL */
-  
+  .product-grid .grid__item {
+  	
+  	max-width: 370px;
+  }
   @media screen and (max-width: 575px) {
     .product__description{
     	text-align:center;
