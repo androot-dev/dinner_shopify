@@ -2981,7 +2981,19 @@ predictive-search[open] .predictive-search{
 .product * {
     font-family: "Kanit";
 }
+ 
+  /* PRODUCTS DETAIL */
   
-  /* MY CART  */
+  @media screen and (max-width: 575px) {
+    .product__description{
+    	text-align:center;
+      
+    } 
+    .product__title{
+    	text-align:center;
+    }
+  }  
+  
+  
   
 /* MY OVERWRITE STYLES END */
