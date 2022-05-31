@@ -3005,7 +3005,10 @@ predictive-search[open] .predictive-search{
   .slider--tablet.grid--peek .grid__item {
     box-sizing: content-box;
     margin: 0;
-  }
+  }   
 }
   
+  .facets-container *{
+  	 font-family: "Kanit";
+  }
 /* MY OVERWRITE STYLES END */
