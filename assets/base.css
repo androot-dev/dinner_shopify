@@ -3051,6 +3051,7 @@ predictive-search[open] .predictive-search{
   /* LIST COLLECTION */
   .collection-list{
   	grid-gap: 8px;
+    margin-bottom: 50px;
   }
   
   /* CHALLENGE */
