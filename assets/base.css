@@ -3012,7 +3012,12 @@ predictive-search[open] .predictive-search{
   	 font-family: "Kanit";
     text-decorantion: none !important;
   }
-  .facets__disclosure  span:hover{
+  .facets-container *:hover{
+  	text-decoration:none !important;
+    border-bottom: none !important;
+  }
+  
+  .facets__disclosure span:hover{
   	color: var(--primary);
       text-decorantion: none !important;
   }
