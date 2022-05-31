@@ -3035,4 +3035,7 @@ predictive-search[open] .predictive-search{
   .facets__summary span{
   	text-decoration:none !important;
   }
+  .facets__selected:hover{
+  	color: black;
+  }
 /* MY OVERWRITE STYLES END */
