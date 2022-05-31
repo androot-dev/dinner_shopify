@@ -2873,6 +2873,7 @@ predictive-search[open] .predictive-search{
   }  
   .product-form__submit:hover{
   	background: var(--primary);
+      color: white;
   }
   /* Modal */
   .cart-notification{
