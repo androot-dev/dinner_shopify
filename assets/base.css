@@ -2873,6 +2873,13 @@ predictive-search[open] .predictive-search{
   	background:white;
    
   }
+  .cart-notification button.link.button-label {
+    border: none;
+    background: none;
+	}
+  .cart-notification button.link.button-label:hover{
+  	color: var(--primary);
+  }
   .cart-notification *{
   	font-family: "Kanit";
   }
@@ -2977,6 +2984,7 @@ predictive-search[open] .predictive-search{
     font-family: Poppins-Bold;
     font-size: 3rem;
 }
+  
 #shopify-section-header header{
 	z-index: -1;
 }
