@@ -988,7 +988,7 @@ summary::-webkit-details-marker {
   }
 }
 
-@media screen and (max-width: 989px) {
+@media screen and (max-width: 575px) {
   .grid--1-col-tablet-down .grid__item {
     width: 100%;
     max-width: 100%;
