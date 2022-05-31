@@ -3039,4 +3039,8 @@ predictive-search[open] .predictive-search{
   	color: inherit !important;
 
   }
+  .grid{
+  	  column-gap: 20px;
+  	  row-gap: 20px;
+  }
 /* MY OVERWRITE STYLES END */
