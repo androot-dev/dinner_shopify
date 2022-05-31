@@ -2965,7 +2965,13 @@ predictive-search[open] .predictive-search{
     top: calc( 50% - (100% - 6px)/2);
     left: calc( 50% - (100% - 6px)/2);
   }
-  
+  .cart__checkout-button:hover, .shopify-challenge__button:hover, .customer button:hover, .shopify-payment-button__button--unbranded:hover{
+   {
+    border: solid 0.5px #ffffff;
+    -webkit-transform: scale(1.1);
+     transform: scale(1.1);
+}
+
   
   
   
