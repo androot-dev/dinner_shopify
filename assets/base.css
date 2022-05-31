@@ -3022,7 +3022,7 @@ predictive-search[open] .predictive-search{
       text-decorantion: none !important;
   }
   .list-menu__item{
-  	padding: 2rem;
+  	padding:0 2rem;
   
   }
 /* MY OVERWRITE STYLES END */
