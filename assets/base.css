@@ -2963,7 +2963,7 @@ predictive-search[open] .predictive-search{
     font-family: Poppins-Bold;
     font-size: 3rem;
 }
-.shopify-section-header header{
+#shopify-section-header header{
 	z-index: -1;
 }
 .cart-notification.active{
