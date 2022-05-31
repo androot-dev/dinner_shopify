@@ -2979,7 +2979,7 @@ predictive-search[open] .predictive-search{
    {
     border: solid 0.5px #ffffff !important;
     -webkit-transform: scale(1.1) !important;
-     transform: scale(1.1) !important;
+     transform: scale(1.05) !important;
 	}
   
   .product h1 {
