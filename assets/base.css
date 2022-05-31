@@ -2873,8 +2873,11 @@ predictive-search[open] .predictive-search{
   	background:white;
    
   }
-  .cart-notification.active *{
+  .cart-notification *{
   	font-family: "Kanit";
+  }
+  .cart-notification.active svg{
+  	color: black;
   }
   /*End modal */
   .cart-item__image-container{
