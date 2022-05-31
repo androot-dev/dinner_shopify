@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", function(){
             document.body.style.overflowY = 'visible';
         });
       })
-function requestClick(){
-		console.log("executed")
-	};
+
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
   let okClick = true;
  
-  
+  function requestClick(){
+		console.log("executed")
+	};
 
     $(window).on('scroll', function () {
 
