@@ -3032,4 +3032,7 @@ predictive-search[open] .predictive-search{
   	padding:0 2rem;
   
   }
+  .facets__summary span{
+  	text-decoration:none !important;
+  }
 /* MY OVERWRITE STYLES END */
