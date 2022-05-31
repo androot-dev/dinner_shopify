@@ -2972,6 +2972,10 @@ predictive-search[open] .predictive-search{
   	
   	max-width: 370px;
   }
+  .price__badge-sale{
+  	background: red;
+    border: none;
+  }
   @media screen and (max-width: 575px) {
     .product__description{
     	text-align:center;
