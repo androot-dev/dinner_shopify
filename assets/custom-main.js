@@ -32,8 +32,7 @@ $(document).ready(function() {
   	
   })
   owl.on('dragged.owl.carousel', function(event) {
-  	okClick = true;
-  	
+  	okClick = true;	
   })
 
     $(window).on('scroll', function () {
