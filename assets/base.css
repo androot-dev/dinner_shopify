@@ -2953,7 +2953,22 @@ predictive-search[open] .predictive-search{
   .button:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after{
   	box-shadow:none !important;
     
+    content: "";
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: transparent;
+    border: 0.5px white solid;
+    top: calc( 50% - (100% - 6px)/2);
+    left: calc( 50% - (100% - 6px)/2);
   }
+  
+  
+  
+  
   /* MY CART  */
   
 /* MY OVERWRITE STYLES END */
