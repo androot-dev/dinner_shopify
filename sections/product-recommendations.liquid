@@ -20,7 +20,7 @@
   }
 	.background-{{section.id}}{
 		{% if section.settings.background-image %}
-			background-image: url("{{section.settings.background-image | img_url : "master"}}")
+			background-image: url("{{section.settings.background-image | img_url : "master"}}");
 		{% endif %}
 		background-size:cover;
 		background-position:center;
