@@ -210,13 +210,8 @@
                     {%- case item.object_type -%}
                       {%- when 'product' -%}
                         {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
-                        {% render 'card-product',
-                          card_product: item,
-                          media_aspect_ratio: section.settings.image_ratio,
-                          show_secondary_image: section.settings.show_secondary_image,
-                          show_vendor: section.settings.show_vendor,
-                          show_rating: section.settings.show_rating,
-                          lazy_load: lazy_load
+                        {% render 'custom-product', product:item
+                          
                         %}
                       {%- when 'article' -%}
                         {% render 'article-card',
@@ -228,22 +223,7 @@
                           media_aspect_ratio: 1,
                           lazy_load: lazy_load
                         %}
-                      {%- when 'page' -%}
-                        <div class="card-wrapper underline-links-hover">
-                          <div class="card card--card card--text ratio color-{{ settings.card_color_scheme }}" style="--ratio-percent: 100%;">
-                              <div class="card__content">
-                                <div class="card__information">
-                                  <h3 class="card__heading">
-                                    <a href="{{ item.url }}" class="full-unstyled-link">
-                                      {{ item.title | truncate: 50 | escape }}
-                                    </a>
-                                  </h3>
-                                </div>
-                                <div class="card__badge {{ settings.badge_position }}">
-                                  <span class="badge color-background-1">{{ 'templates.search.page' | t }}</span>
-                                </div>
-                          </div>
-                        </div>
+                 
                     {%- endcase -%}
                   </li>
                 {%- endfor -%}
