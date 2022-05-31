@@ -3090,4 +3090,11 @@ predictive-search[open] .predictive-search{
     height: 20px;
     color: white !important;
   }
+  
+  
+  /* PRODUCTS */
+  
+  .facets__form{
+  	margin-bottom: 3rem;
+  }
 /* MY OVERWRITE STYLES END */
