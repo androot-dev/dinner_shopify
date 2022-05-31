@@ -25,10 +25,7 @@ $(document).ready(function() {
   
   })
   
-  
-  
-  
-  	owl.on('changed.owl.carousel', function(event) {
+
     $(window).on('scroll', function () {
 
         let scroll = $(window).scrollTop();
