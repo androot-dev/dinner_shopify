@@ -2,6 +2,10 @@
 
 
 <div id="product-{{product.id}}"  class="card item-food card position-relative">
+    
+  {% if product.compare_at_price > product.price and product.available %}
+  <div class="sale">SALE</div>
+  {% endif %}
     <img class="card-img-top" src="{{product.images.first | img_url : "master" }}" width="400" height="350" alt="{{product.title}}">
     <div class="tag-price">{{product.price | money}}</div>
     <div class="card-footer  p-0 d-flex justify-content-between">
