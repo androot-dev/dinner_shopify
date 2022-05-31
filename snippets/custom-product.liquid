@@ -1,7 +1,7 @@
 
 
 
-<div id="product-{{product.id}}" onclick="(evt)=>{ requestGoProduct(evt, {{product.url}})" class="card item-food card position-relative">
+<div id="product-{{product.id}}" onclick="(evt)=>{ requestGoProduct(evt,  '{{product.url}}') class="card item-food card position-relative">
     
   {% if product.compare_at_price > product.price and product.available %}
   <div class="sale">SALE</div>
