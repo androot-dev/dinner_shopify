@@ -2947,7 +2947,7 @@ predictive-search[open] .predictive-search{
     outline: none;
     height: 3.5em;
     cursor: pointer;
-    width: 204px;
+   
     height: 55px;
       transition: transform 0.2s linear;
   }
