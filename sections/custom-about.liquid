@@ -169,7 +169,7 @@
                         {% if block.settings.button_label != blank and block.settings.button_link != blank %}
                  
                             <div class="d-none d-sm-flex justify-content-end pr-3">
-                                <a href="{{block.settings.button_link}}"{% if block.settings.newtab  %} target="_blank" {% endif %} role="button" class="btn-primary">
+                                <a href="{{block.settings.button_link}}" {% if block.settings.newtab  %} target="_blank" {% endif %} role="button" class="btn-primary">
                                  {{ block.settings.button_label }}   
                                 </a>
                             </div>
