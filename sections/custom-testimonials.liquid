@@ -238,7 +238,7 @@
 
             {% if section.settings.button_text and section.settings.button_url %}
             <div class="d-none d-md-flex justify-content-start">
-                <a href="{{section.settings.button_url}}" class="btn-primary">
+                <a {% if section.settings.newtab  %} target="_blank" {% endif %} href="{{section.settings.button_url}}" class="btn-primary">
                     {{ section.settings.button_text }}
                 </a>
             </div>
@@ -267,7 +267,7 @@
     </div>
     {% if section.settings.button_text and section.settings.button_url %}
         <div class="d-flex d-md-none justify-content-center">
-            <a href="{{section.settings.button_url}}" class="btn-primary">
+            <a {% if section.settings.newtab  %} target="_blank" {% endif %} href="{{section.settings.button_url}}" class="btn-primary">
                 {{ section.settings.button_text }}
             </a>
         </div>
@@ -396,7 +396,12 @@
         "type": "url",
         "id": "button_url",
         "label": "Button URL"
-    }
+    },
+    {
+		"type": "checkbox",
+        "id":"newtab",
+	    "label": "Open in new tab"
+	}
   ],
   "blocks":[
     {
