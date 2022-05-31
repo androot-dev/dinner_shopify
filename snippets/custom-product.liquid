@@ -2,10 +2,10 @@
 
 
 <div id="product-{{product.id}}"  class="card item-food card position-relative">
-    <img onclick="window.location.href ='{{product.url}}'" class="card-img-top" src="{{product.images.first | img_url : "master" }}" width="400" height="350" alt="{{product.title}}">
+    <img class="card-img-top" src="{{product.images.first | img_url : "master" }}" width="400" height="350" alt="{{product.title}}">
     <div class="tag-price">{{product.price | money}}</div>
     <div class="card-footer  p-0 d-flex justify-content-between">
-      <span class="name-plate">{{product.title}}</span>
+      <a href="{{product.url}}" class="name-plate">{{product.title}}</a>
       <a href="{{routes.cart_add_url}}?id={{ product.variants.first.id }}&quantity=1" role="button" class="btn-primary-small"><i class="bx bx-tada-hover bx-cart"></i></a>
     </div>
     <p class="d-none description">{{product.description}}</p>
