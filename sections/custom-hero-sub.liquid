@@ -104,7 +104,7 @@
                   
                   {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
                   {%- assign t = template | split: '.' | first -%}
-                    <h1>{{t}}</h1>
+                    <h1 class="color-primary">{{t}}</h1>
                       <li class="breadcrumb_item">
                         <a href="{{routes.root}}">Home</a>
                       </li>
