@@ -17,8 +17,18 @@ document.addEventListener("DOMContentLoaded", function(){
       })
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
- 
   
+  let owl = $(".owl-carousel");
+  
+  owl.on('drag.owl.carousel', function(event) {
+  	console.log("se arrastra")
+  
+  })
+  
+  
+  
+  
+  	owl.on('changed.owl.carousel', function(event) {
     $(window).on('scroll', function () {
 
         let scroll = $(window).scrollTop();
