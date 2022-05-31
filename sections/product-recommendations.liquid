@@ -23,7 +23,7 @@
 <div class="color-{{ section.settings.color_scheme }}container-fluid  my-section  gradient">
   <product-recommendations class="product-recommendations page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}">
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <ul class="row p-5 justify-content-center" role="list">
+      <ul class="row p-5 mb-3 justify-content-center" role="list">
         <h2 class="col-12 color-secondary title-section">{{ section.settings.heading | escape }}</h2>
         {% for recommendation in recommendations.products %}
           <li class="col-sm-6 col-12 my-3">
