@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
   
-  $(".owl-item").bind('dragstop', function(){
+  $(".owl-item, .owl-stage, .owl-stage-outer").bind('dragstop', function(){
   	alert("asda")
   });
     $(window).on('scroll', function () {
