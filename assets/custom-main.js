@@ -18,10 +18,9 @@ document.addEventListener("DOMContentLoaded", function(){
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
   
-  function requestGoProduct(evt, url){
-  	alert("voy");
+  $(".owl-item").bind('dragstop', function(){
+  	alert("asda")
   }
-  
     $(window).on('scroll', function () {
 
         let scroll = $(window).scrollTop();
