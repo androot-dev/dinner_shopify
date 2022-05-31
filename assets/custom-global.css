@@ -589,13 +589,21 @@ p {
   border-radius: 0px;
   border: none;
 }
- .sale{
+.item-food .sale{
 
 	position: absolute;
     background: red;
     bottom: 50px;
     right: 10px;
     border-radius: 15px;
+    padding: 0px 10px;
+    font-size: 15px;
+    font-family: 'POPPINS-BOLD';
+    color: white;
+}
+.sale{
+	background: red;
+  	border-radius: 15px;
     padding: 0px 10px;
     font-size: 15px;
     font-family: 'POPPINS-BOLD';
