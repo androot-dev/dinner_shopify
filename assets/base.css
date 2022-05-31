@@ -3043,4 +3043,9 @@ predictive-search[open] .predictive-search{
   	  column-gap: 20px;
   	  row-gap: 20px;
   }
+  @media screen and (max-width: 768px){
+    .grid__item {
+    width: 40%;
+    }
+  }
 /* MY OVERWRITE STYLES END */
