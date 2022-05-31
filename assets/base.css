@@ -3010,5 +3010,9 @@ predictive-search[open] .predictive-search{
   
   .facets-container *{
   	 font-family: "Kanit";
+    text-decorantion: none !important;
+  }
+  .facets__disclosure  span:hover{
+  	color: var(--primary);
   }
 /* MY OVERWRITE STYLES END */
