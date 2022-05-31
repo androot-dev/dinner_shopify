@@ -130,7 +130,7 @@
         "products_to_show": 4,
         "columns_desktop": 2,
         "background-image": "shopify:\/\/shop_images\/HERO.jpg",
-        "color_background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(252, 252, 252, 0.49) 57.562%, rgba(252, 252, 252, 0.78) 100%)",
+        "color_background": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(252, 252, 252, 0.92) 30.224%, rgba(252, 252, 252, 0.49) 57.562%, rgba(252, 252, 252, 0.78) 72.31%, rgba(252, 252, 252, 0.73) 100%)",
         "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 28
