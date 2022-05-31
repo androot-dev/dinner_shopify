@@ -3007,7 +3007,7 @@ predictive-search[open] .predictive-search{
     margin: 0;
   }   
 }
-  
+  /* SEARCH RESULT  */
   .facets-container *{
   	 font-family: "Kanit";
     text-decorantion: none !important;
@@ -3020,5 +3020,9 @@ predictive-search[open] .predictive-search{
   .facets__disclosure span:hover{
   	color: var(--primary);
       text-decorantion: none !important;
+  }
+  .list-menu__item{
+  	padding: 2rem;
+  
   }
 /* MY OVERWRITE STYLES END */
