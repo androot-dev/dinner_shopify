@@ -16,7 +16,9 @@
 {%- endstyle -%}
 
   <section class="my-section section-{{ section.id }}-padding section-{{ section.id }}">
-   
+   {% if section.settings.collection %}
+    	{% render "custom-slider-collection" %}
+    {% endif %}
   </section>
 
 {% schema %}
@@ -25,6 +27,11 @@
   "tag": "section",
   "class": "section",
   "settings": [
+	{
+      "type": "collection",
+      "id": "collection",
+      "label": "Select a Collection"
+    },
 	{
       "type": "text",
       "id": "title-section",
