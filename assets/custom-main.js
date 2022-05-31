@@ -21,7 +21,7 @@ $(document).ready(function() {
   let owl = $(".owl-carousel");
   
   owl.on('drag.owl.carousel', function(event) {
-  	console.log("se arrastra")
+  	console.log("se arrastra");
   
   })
   
