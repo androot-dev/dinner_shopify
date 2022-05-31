@@ -104,7 +104,7 @@
                   
                   {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
                   {%- assign t = template | split: '.' | first -%}
-                    <h1 class="color-primary">{{t}}</h1>
+                    
                       <li class="breadcrumb_item">
                         <a href="{{routes.root}}">Home</a>
                       </li>
@@ -157,6 +157,13 @@
                           <li class="breadcrumb_item">
                             <a href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
                           </li>
+                    	{%- when 'search' -%}
+                          <li class="breadcrumb_item">
+                            <a href="{{ request.path }}" aria-current="page">Search</a>
+                          </li>
+                    
+                    
+                    
                         {%- else -%}
                           <li class="breadcrumb_item">
                             <a href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
