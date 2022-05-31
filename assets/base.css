@@ -3036,6 +3036,7 @@ predictive-search[open] .predictive-search{
   	text-decoration:none !important;
   }
   .facets__selected:hover{
-  	color: black !important;
+  	color: inherit !important;
+
   }
 /* MY OVERWRITE STYLES END */
