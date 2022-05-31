@@ -589,7 +589,7 @@ p {
   border-radius: 0px;
   border: none;
 }
-.item-food .sale{
+ .sale{
 
 	position: absolute;
     background: red;
