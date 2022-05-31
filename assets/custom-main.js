@@ -15,14 +15,25 @@ document.addEventListener("DOMContentLoaded", function(){
             document.body.style.overflowY = 'visible';
         });
       })
-
+function requestClick(url){
+  if(okClick){
+  	window.location.href = "asdad";
+  }
+};
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
   let okClick = true;
  
-  function requestClick(){
-		console.log("executed")
-	};
+  let owl = $(".owl-carousel");
+  
+  owl.on('drag.owl.carousel', function(event) {
+  	okClick = false;
+  	
+  })
+  owl.on('dragged.owl.carousel', function(event) {
+  	okClick = true;
+  	
+  })
 
     $(window).on('scroll', function () {
 
