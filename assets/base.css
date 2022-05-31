@@ -2876,6 +2876,7 @@ predictive-search[open] .predictive-search{
   .cart-notification button.link.button-label {
     border: none;
     background: none;
+    color: var(--secondary);
 	}
   .cart-notification button.link.button-label:hover{
   	color: var(--primary);
