@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", function(){
       })
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
+  
+  function requestGoProduct(evt, url){
+  	alert("voy");
+  }
+  
     $(window).on('scroll', function () {
 
         let scroll = $(window).scrollTop();
