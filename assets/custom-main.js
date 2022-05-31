@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", function(){
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
   
-  $(".owl-item, .owl-stage, .owl-stage-outer").bind('dragstop', function(){
-  	alert("asda")
-  });
+  $(".owl-item, .owl-stage, .owl-stage-outer").bind('dragstart', function(){ 
+  console.log("asda")
+  }).bind('drag',      function(){ console.log("asda")   })
+    .bind('dragend',   function(){ console.log("asda")   });
+  
     $(window).on('scroll', function () {
 
         let scroll = $(window).scrollTop();
