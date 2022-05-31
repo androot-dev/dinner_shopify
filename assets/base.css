@@ -3048,4 +3048,9 @@ predictive-search[open] .predictive-search{
     width: 40%;
     }
   }
+  /* CHALLENGE */
+  
+  .shopify-challenge__button{
+  	margin-top: 15px;
+  }
 /* MY OVERWRITE STYLES END */
