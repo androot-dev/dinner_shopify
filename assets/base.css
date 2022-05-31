@@ -3012,6 +3012,13 @@ predictive-search[open] .predictive-search{
   	 font-family: "Kanit";
     text-decorantion: none !important;
   }
+  .facets-container .underlined-link{
+  	color: black;
+    
+  }
+  .facets-container .underlined-link:hover{
+  	color: var(--primary)
+  }
   .facets-container *:hover{
   	text-decoration:none !important;
     border-bottom: none !important;
