@@ -589,7 +589,18 @@ p {
   border-radius: 0px;
   border: none;
 }
+.item-food .sale{
 
+	position: absolute;
+    background: red;
+    bottom: 50px;
+    right: 10px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    font-size: 15px;
+    font-family: 'POPPINS-BOLD';
+    color: white;
+}
 .item-food .name-plate {
   font-family: "Kanit", sans-serif;
   font-size: 0.6em;
