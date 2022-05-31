@@ -20,7 +20,7 @@ $(document).ready(function() {
   
   $(".owl-item").bind('dragstop', function(){
   	alert("asda")
-  }
+  });
     $(window).on('scroll', function () {
 
         let scroll = $(window).scrollTop();
