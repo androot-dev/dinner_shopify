@@ -3048,6 +3048,11 @@ predictive-search[open] .predictive-search{
     width: 40%;
     }
   }
+  /* LIST COLLECTION */
+  .collection-list{
+  	grid-gap: 8px;
+  }
+  
   /* CHALLENGE */
   
   .shopify-challenge__button{
