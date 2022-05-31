@@ -3014,5 +3014,6 @@ predictive-search[open] .predictive-search{
   }
   .facets__disclosure  span:hover{
   	color: var(--primary);
+      text-decorantion: none !important;
   }
 /* MY OVERWRITE STYLES END */
