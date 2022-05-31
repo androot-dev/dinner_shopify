@@ -2916,7 +2916,7 @@ predictive-search[open] .predictive-search{
   .cart__footer *{
   	font-family: "Kanit";
   }
-  .cart__checkout-button, button--primary, .shopify-challenge__button, .customer button, .shopify-payment-button__button--unbranded{
+  .cart__checkout-button, .button--primary, .shopify-challenge__button, .customer button, .shopify-payment-button__button--unbranded{
   	background-color: var(--primary)!important;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -2950,7 +2950,7 @@ predictive-search[open] .predictive-search{
     height: 55px;
       transition: transform 0.2s linear;
   }
-  .button:after, button--primary:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after{
+  .button:after, .button--primary:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after{
   	box-shadow:none !important;
     
     content: "";
