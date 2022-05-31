@@ -45,7 +45,7 @@
           "settings": {
             "button_label": "READ MORE",
             "button_link": "shopify:\/\/pages\/about-us",
-            "newtab": true
+            "newtab": false
           }
         }
       },
