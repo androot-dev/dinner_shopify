@@ -18,12 +18,29 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+	.background-{{section.id}}{
+		{% if section.settings.background-image %}
+			background-image: url("{{s}}")
+		{% endif %}
+		background-size:cover;
+		background-position:center;
 
-}
+	}
+
+	.background-{{section.id}}::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.6);
+	}
+
 
 {%- endstyle -%}
 
-<div class="my-section color-{{ section.settings.color_scheme }} gradient">
+<div class="my-section background-{{section.id}} color-{{ section.settings.color_scheme }} gradient">
   <product-recommendations class="product-recommendations page-width section-{{ section.id }}-padding isolate" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}">
     {% if recommendations.performed and recommendations.products_count > 0 %}
       <h2 class="title product-recommendations__heading{{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
