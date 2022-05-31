@@ -2877,7 +2877,6 @@ predictive-search[open] .predictive-search{
   	font-family: "Kanit";
   }
   
-  
   .cart-item__image-container{
   	width: 110px;
     height: 110px;
@@ -2978,9 +2977,6 @@ predictive-search[open] .predictive-search{
 #shopify-section-header header{
 	z-index: -1;
 }
-.cart-notification.active{
-background:red;
-}  
    /* PRODUCTS DETAIL */
 .product * {
     font-family: "Kanit";
