@@ -21,8 +21,17 @@
    
    <!--MENU FOOD-->
     <div class="container-fluid m-0 p-0 flex-wrap position-relative">
-        {% for collection in collections %}
-         {% render "custom-slider-collection", collection: collection %}
+      {% assign class = "" %}  
+      {% for collection in collections %}
+      		{% if class == "" %}
+      			{% assign class= "bg-light" %}
+      
+      		{% else %}
+      			{% assign class="" %}
+      
+      		{% endif %}
+      		
+         {% render "custom-slider-collection", collection: collection, class: class %}
         {% endfor %}
   
   
