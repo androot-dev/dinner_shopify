@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
             document.body.style.overflowY = 'visible';
         });
       })
+let okClick = true;
 function requestClick(url){
   if(okClick){
   	window.location.href = "asdad";
@@ -22,7 +23,7 @@ function requestClick(url){
 };
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
-  let okClick = true;
+  
  
   let owl = $(".owl-carousel");
   
