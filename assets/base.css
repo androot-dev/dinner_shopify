@@ -2949,6 +2949,7 @@ predictive-search[open] .predictive-search{
     cursor: pointer;
     width: 204px;
     height: 55px;
+      transition: transform 0.2s linear;
   }
   .button:after, .shopify-challenge__button:after, .customer button:after, .shopify-payment-button__button--unbranded:after{
   	box-shadow:none !important;
