@@ -2866,12 +2866,13 @@ predictive-search[open] .predictive-search{
   }
   
   /* MY  CART */
-  
-  
+  .product-form__submit {
+  	border: var(--primary) solid 2px;
+    color: var(--primary);
+  }  
   /* Modal */
   .cart-notification{
   	background:white;
-   
   }
   .cart-notification button.link.button-label {
     border: none;
