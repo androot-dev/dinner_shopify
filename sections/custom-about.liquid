@@ -189,7 +189,7 @@
      
                
         <div class="d-flex d-sm-none justify-content-center">
-            <a href="{{block.settings.button_link}}"
+            <a {% if block.settings.newtab  %} target="_blank" {% endif %}  href="{{block.settings.button_link}}"
                  role="button" class="btn-primary">
                  {{block.settings.button_label}}
             </a>
