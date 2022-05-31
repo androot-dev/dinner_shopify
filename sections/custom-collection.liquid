@@ -17,7 +17,7 @@
 
   <section class="my-section section-{{ section.id }}-padding section-{{ section.id }}">
    {% if section.settings.collection %}
-    	{% render "custom-slider-collection" %}
+    	{% render "custom-slider-collection", collection: section.settings.collection %}
     {% endif %}
   </section>
 
