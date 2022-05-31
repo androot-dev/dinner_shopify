@@ -90,8 +90,11 @@
             <div class="text">
                 <h1 class="first-text">
                   
-                  {{ template.name }}
+                  {% if template.name == "search" %}
+                  	Search
+                  {% else %}
                   {{ page_title }}
+                  {% endif %}
               
               </h1>
             </div>
