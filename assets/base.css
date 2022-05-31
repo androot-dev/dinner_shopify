@@ -2963,11 +2963,18 @@ predictive-search[open] .predictive-search{
     font-family: Poppins-Bold;
     font-size: 3rem;
 }
+.shopify-section-header header{
+	z-index: -1;
+}
+.cart-notification.active{
+background:red;
+}  
+   /* PRODUCTS DETAIL */
 .product * {
     font-family: "Kanit";
 }
  
-  /* PRODUCTS DETAIL */
+ 
   .product-grid .grid__item {
   	
   	max-width: 370px;
