@@ -15,14 +15,17 @@ document.addEventListener("DOMContentLoaded", function(){
             document.body.style.overflowY = 'visible';
         });
       })
+function requestClick(){
+	alert("adas");
+};
 $(document).ready(function() {
     //let scrollNow = window.pageYOffset;
-  
+  let okClick = true;
   let owl = $(".owl-carousel");
   
   owl.on('drag.owl.carousel', function(event) {
   	console.log("se arrastra");
-  
+  	
   })
   
 
