@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function(){
         });
       })
 let okClick = true;
-function requestClick(url){
+function requestClickForCarousels(url_product){
   if(okClick){
-  	window.location.href = "asdad";
+  	window.location.href = url_product;
   }
 };
 $(document).ready(function() {
