@@ -190,7 +190,7 @@
                     {% for block in section.blocks %}
                         {% if block.type == "best_product" %}
                           
-                          <div data-url="{{block.settings.best_product.url}}" class="item-food card position-relative">
+                          <div onclick="requestClickForCarousels('{{block.settings.best_product.url}}')"  class="item-food card position-relative">
                             <img class="card-img-top"  src="{{ block.settings.best_product.images.first | img_url: "master" }}" alt="{{ block.settings.best_product.title }}">
                             <div class="tag-price">{{ block.settings.best_product.price | money }}</div>
                             <div class="card-footer  p-0 d-flex justify-content-between">
