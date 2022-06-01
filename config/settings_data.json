@@ -395,7 +395,7 @@
           "padding_top": 52,
           "padding_bottom": 52,
           "button_text": "Contact Us",
-          "button_link": ""
+          "button_link": "shopify:\/\/pages\/contact-us"
         }
       },
       "custom-testimonials": {
@@ -428,7 +428,8 @@
           "padding_top": 52,
           "padding_bottom": 0,
           "button_text": "VIEW MORE",
-          "button_url": "https:\/\/www.google.com\/intl\/es_es\/business\/"
+          "button_url": "https:\/\/www.google.com\/intl\/es_es\/business\/",
+          "newtab": false
         }
       },
       "custom-subscribe": {
